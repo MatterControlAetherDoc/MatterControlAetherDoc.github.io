@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PointLight
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PointLight
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_RayTracer_Light_PointLight" data-uid="MatterHackers.RayTracer.Light.PointLight">Class PointLight
+              </h1>
+              <div class="markdown level0 summary"><p>a point light</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="MatterHackers.RayTracer.Axis3D.html">Axis3D</a></div>
+                  <div class="level2"><span class="xref">PointLight</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_Transform">Axis3D.Transform</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_AxisToWorld">Axis3D.AxisToWorld</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_WorldToAxis">Axis3D.WorldToAxis</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_Origin">Axis3D.Origin</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_Render_MatterHackers_RayTracer_ICamera_">Axis3D.Render(ICamera)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_MoveToAbsolute_System_Double_System_Double_System_Double_">Axis3D.MoveToAbsolute(Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_MoveToAbsolute_Vector3_">Axis3D.MoveToAbsolute(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_MoveToRelative_System_Double_System_Double_System_Double_">Axis3D.MoveToRelative(Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_MoveToRelative_Vector3_">Axis3D.MoveToRelative(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_MoveToRelativeTo_MatterHackers_RayTracer_Axis3D_System_Double_System_Double_System_Double_">Axis3D.MoveToRelativeTo(Axis3D, Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_PlaceRelativeTo_MatterHackers_RayTracer_Axis3D_System_Double_System_Double_System_Double_">Axis3D.PlaceRelativeTo(Axis3D, Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_RotateAbsolute_MatterHackers_RayTracer_Axis3D_">Axis3D.RotateAbsolute(Axis3D)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_RotateAbsolute_System_Double_System_Double_System_Double_">Axis3D.RotateAbsolute(Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_RotateAbsolute_Vector3_">Axis3D.RotateAbsolute(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_RotateRelative_System_Double_System_Double_System_Double_">Axis3D.RotateRelative(Double, Double, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_RotateRelative_Vector3_">Axis3D.RotateRelative(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_GetRotation_Vector3__">Axis3D.GetRotation(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_SetPosAndRotation_MatterHackers_RayTracer_Axis3D_">Axis3D.SetPosAndRotation(Axis3D)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_Scale_Vector3_">Axis3D.Scale(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_GetYAngleToTarget_Vector3_">Axis3D.GetYAngleToTarget(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_GetXAngleToTarget_Vector3__">Axis3D.GetXAngleToTarget(Vector3)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_PointAt_Vector3_System_Boolean_">Axis3D.PointAt(Vector3, Boolean)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.Axis3D.html#MatterHackers_RayTracer_Axis3D_PointAtOrigin_MatterHackers_RayTracer_Axis3D_System_Boolean_">Axis3D.PointAtOrigin(Axis3D, Boolean)</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.RayTracer.Light</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_RayTracer_Light_PointLight_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class PointLight : Axis3D, ILight</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_RayTracer_Light_PointLight__ctor_" data-uid="MatterHackers.RayTracer.Light.PointLight.#ctor*"></a>
+              <h4 id="MatterHackers_RayTracer_Light_PointLight__ctor_Vector3_RGBA_Floats_" data-uid="MatterHackers.RayTracer.Light.PointLight.#ctor(Vector3,RGBA_Floats)">PointLight(Vector3, RGBA_Floats)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PointLight(Vector3 pos, RGBA_Floats color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td><span class="parametername">pos</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">RGBA_Floats</span></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_RayTracer_Light_PointLight_Color" data-uid="MatterHackers.RayTracer.Light.PointLight.Color">Color</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RGBA_Floats Color</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Floats</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_RayTracer_Light_PointLight_strength" data-uid="MatterHackers.RayTracer.Light.PointLight.strength">strength</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double strength</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_RayTracer_Light_PointLight_Illumination_" data-uid="MatterHackers.RayTracer.Light.PointLight.Illumination*"></a>
+              <h4 id="MatterHackers_RayTracer_Light_PointLight_Illumination" data-uid="MatterHackers.RayTracer.Light.PointLight.Illumination">Illumination()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RGBA_Floats Illumination()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Floats</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.RayTracer.Light.ILight.html#MatterHackers_RayTracer_Light_ILight_Illumination">ILight.Illumination()</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_Light_PointLight_Strength_" data-uid="MatterHackers.RayTracer.Light.PointLight.Strength*"></a>
+              <h4 id="MatterHackers_RayTracer_Light_PointLight_Strength_System_Double_" data-uid="MatterHackers.RayTracer.Light.PointLight.Strength(System.Double)">Strength(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Strength(double distance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">distance</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_RayTracer_Light_PointLight_ToString_" data-uid="MatterHackers.RayTracer.Light.PointLight.ToString*"></a>
+              <h4 id="MatterHackers_RayTracer_Light_PointLight_ToString" data-uid="MatterHackers.RayTracer.Light.PointLight.ToString">ToString()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

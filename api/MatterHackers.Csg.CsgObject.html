@@ -1,0 +1,914 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CsgObject
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CsgObject
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_Csg_CsgObject" data-uid="MatterHackers.Csg.CsgObject">Class CsgObject
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">CsgObject</span></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.CsgObjectWrapper.html">CsgObjectWrapper</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.Operations.Difference.html">Difference</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.Operations.Intersection.html">Intersection</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.Operations.Union.html">Union</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.Solids.Mesh.html">Mesh</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.Solids.Solid.html">Solid</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Csg.Transform.TransformBase.html">TransformBase</a></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.Csg</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_Csg_CsgObject_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class CsgObject</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject__ctor_" data-uid="MatterHackers.Csg.CsgObject.#ctor*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject__ctor_Dictionary_System_String_System_String__" data-uid="MatterHackers.Csg.CsgObject.#ctor(Dictionary{System.String,System.String})">CsgObject(Dictionary&lt;String, String&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CsgObject(Dictionary&lt;string, string&gt; properties)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+                    <td><span class="parametername">properties</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject__ctor_" data-uid="MatterHackers.Csg.CsgObject.#ctor*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject__ctor_System_String_" data-uid="MatterHackers.Csg.CsgObject.#ctor(System.String)">CsgObject(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CsgObject(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_name_" data-uid="MatterHackers.Csg.CsgObject.name*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_name" data-uid="MatterHackers.Csg.CsgObject.name">name</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected string name { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_Name_" data-uid="MatterHackers.Csg.CsgObject.Name*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_Name" data-uid="MatterHackers.Csg.CsgObject.Name">Name</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public String Name { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_Properties_" data-uid="MatterHackers.Csg.CsgObject.Properties*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_Properties" data-uid="MatterHackers.Csg.CsgObject.Properties">Properties</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Properties { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_Size_" data-uid="MatterHackers.Csg.CsgObject.Size*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_Size" data-uid="MatterHackers.Csg.CsgObject.Size">Size</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual Vector3 Size { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_XSize_" data-uid="MatterHackers.Csg.CsgObject.XSize*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_XSize" data-uid="MatterHackers.Csg.CsgObject.XSize">XSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double XSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_YSize_" data-uid="MatterHackers.Csg.CsgObject.YSize*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_YSize" data-uid="MatterHackers.Csg.CsgObject.YSize">YSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double YSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_ZSize_" data-uid="MatterHackers.Csg.CsgObject.ZSize*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_ZSize" data-uid="MatterHackers.Csg.CsgObject.ZSize">ZSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double ZSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_Flatten_" data-uid="MatterHackers.Csg.CsgObject.Flatten*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_Flatten_MatterHackers_Csg_CsgObject_" data-uid="MatterHackers.Csg.CsgObject.Flatten(MatterHackers.Csg.CsgObject)">Flatten(CsgObject)</h4>
+              <div class="markdown level1 summary"><p>Normaly ObjectCSG tree can be dirrected acyclic graphs and have instances appear more than once in the tree.
+This function will ensure that that every Object is a unique instance in the structure.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static CsgObject Flatten(CsgObject dagRoot)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">dagRoot</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><p>A new ObjectCSG root that is a new tree of all the objects in the original tree.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_GetAxisAlignedBoundingBox_" data-uid="MatterHackers.Csg.CsgObject.GetAxisAlignedBoundingBox*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_GetAxisAlignedBoundingBox" data-uid="MatterHackers.Csg.CsgObject.GetAxisAlignedBoundingBox">GetAxisAlignedBoundingBox()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract AxisAlignedBoundingBox GetAxisAlignedBoundingBox()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AxisAlignedBoundingBox</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_GetCenter_" data-uid="MatterHackers.Csg.CsgObject.GetCenter*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_GetCenter" data-uid="MatterHackers.Csg.CsgObject.GetCenter">GetCenter()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 GetCenter()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_GetOposite_" data-uid="MatterHackers.Csg.CsgObject.GetOposite*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_GetOposite_MatterHackers_Csg_Face_" data-uid="MatterHackers.Csg.CsgObject.GetOposite(MatterHackers.Csg.Face)">GetOposite(Face)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Face GetOposite(Face face)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.Face.html">Face</a></td>
+                    <td><span class="parametername">face</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.Face.html">Face</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_NewMirrorAccrossX_" data-uid="MatterHackers.Csg.CsgObject.NewMirrorAccrossX*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_NewMirrorAccrossX_System_Double_System_String_" data-uid="MatterHackers.Csg.CsgObject.NewMirrorAccrossX(System.Double,System.String)">NewMirrorAccrossX(Double, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CsgObject NewMirrorAccrossX(double offsetFromOrigin = 0, string name = &quot;&quot;)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">offsetFromOrigin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_NewMirrorAccrossY_" data-uid="MatterHackers.Csg.CsgObject.NewMirrorAccrossY*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_NewMirrorAccrossY_System_Double_System_String_" data-uid="MatterHackers.Csg.CsgObject.NewMirrorAccrossY(System.Double,System.String)">NewMirrorAccrossY(Double, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CsgObject NewMirrorAccrossY(double offsetFromOrigin = 0, string name = &quot;&quot;)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">offsetFromOrigin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_NewMirrorAccrossZ_" data-uid="MatterHackers.Csg.CsgObject.NewMirrorAccrossZ*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_NewMirrorAccrossZ_System_Double_System_String_" data-uid="MatterHackers.Csg.CsgObject.NewMirrorAccrossZ(System.Double,System.String)">NewMirrorAccrossZ(Double, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CsgObject NewMirrorAccrossZ(double offsetFromOrigin = 0, string name = &quot;&quot;)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">offsetFromOrigin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">name</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_OptomizeTransforms_" data-uid="MatterHackers.Csg.CsgObject.OptomizeTransforms*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_OptomizeTransforms" data-uid="MatterHackers.Csg.CsgObject.OptomizeTransforms">OptomizeTransforms()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void OptomizeTransforms()</code></pre>
+              </div>
+              <h3 id="operators">Operators
+              </h3>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_op_Addition_" data-uid="MatterHackers.Csg.CsgObject.op_Addition*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_op_Addition_MatterHackers_Csg_CsgObject_MatterHackers_Csg_CsgObject_" data-uid="MatterHackers.Csg.CsgObject.op_Addition(MatterHackers.Csg.CsgObject,MatterHackers.Csg.CsgObject)">Addition(CsgObject, CsgObject)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static CsgObject operator +(CsgObject left, CsgObject right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_op_Addition_" data-uid="MatterHackers.Csg.CsgObject.op_Addition*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_op_Addition_MatterHackers_Csg_CsgObject_Union_" data-uid="MatterHackers.Csg.CsgObject.op_Addition(MatterHackers.Csg.CsgObject,Union)">Addition(CsgObject, Union)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Union operator +(CsgObject left, Union right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Union</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Union</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_op_Addition_" data-uid="MatterHackers.Csg.CsgObject.op_Addition*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_op_Addition_Union_MatterHackers_Csg_CsgObject_" data-uid="MatterHackers.Csg.CsgObject.op_Addition(Union,MatterHackers.Csg.CsgObject)">Addition(Union, CsgObject)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Union operator +(Union left, CsgObject right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Union</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Union</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_op_Subtraction_" data-uid="MatterHackers.Csg.CsgObject.op_Subtraction*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_op_Subtraction_Difference_MatterHackers_Csg_CsgObject_" data-uid="MatterHackers.Csg.CsgObject.op_Subtraction(Difference,MatterHackers.Csg.CsgObject)">Subtraction(Difference, CsgObject)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Difference operator -(Difference left, CsgObject right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Difference</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Difference</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Csg_CsgObject_op_Subtraction_" data-uid="MatterHackers.Csg.CsgObject.op_Subtraction*"></a>
+              <h4 id="MatterHackers_Csg_CsgObject_op_Subtraction_MatterHackers_Csg_CsgObject_MatterHackers_Csg_CsgObject_" data-uid="MatterHackers.Csg.CsgObject.op_Subtraction(MatterHackers.Csg.CsgObject,MatterHackers.Csg.CsgObject)">Subtraction(CsgObject, CsgObject)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static CsgObject operator -(CsgObject left, CsgObject right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Csg.CsgObject.html">CsgObject</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

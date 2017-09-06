@@ -1,0 +1,2909 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PrinterConnectionAndCommunication
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PrinterConnectionAndCommunication
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication">Class PrinterConnectionAndCommunication
+              </h1>
+              <div class="markdown level0 summary"><p>This is the class that communicates with a RepRap printer over the serial port.
+It handles opening and closing the serial port and does quite a bit of gcode parsing.
+It should be refactored into better modules at some point.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">PrinterConnectionAndCommunication</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.MatterControl.PrinterCommunication</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class PrinterConnectionAndCommunication</code></pre>
+              </div>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActivePrintItemChanged" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActivePrintItemChanged">ActivePrintItemChanged</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler ActivePrintItemChanged</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_AtxPowerStateChanged" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.AtxPowerStateChanged">AtxPowerStateChanged</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler AtxPowerStateChanged</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_BedTemperatureRead" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.BedTemperatureRead">BedTemperatureRead</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler BedTemperatureRead</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_BedTemperatureSet" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.BedTemperatureSet">BedTemperatureSet</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler BedTemperatureSet</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CommunicationStateChanged" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationStateChanged">CommunicationStateChanged</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler CommunicationStateChanged</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CommunicationUnconditionalFromPrinter" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationUnconditionalFromPrinter">CommunicationUnconditionalFromPrinter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler CommunicationUnconditionalFromPrinter</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CommunicationUnconditionalToPrinter" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationUnconditionalToPrinter">CommunicationUnconditionalToPrinter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler CommunicationUnconditionalToPrinter</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ConnectionFailed" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ConnectionFailed">ConnectionFailed</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler ConnectionFailed</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ConnectionSucceeded" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ConnectionSucceeded">ConnectionSucceeded</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler ConnectionSucceeded</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DestinationChanged" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DestinationChanged">DestinationChanged</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler DestinationChanged</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_EnableChanged" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.EnableChanged">EnableChanged</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler EnableChanged</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ExtruderTemperatureRead" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ExtruderTemperatureRead">ExtruderTemperatureRead</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler ExtruderTemperatureRead</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ExtruderTemperatureSet" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ExtruderTemperatureSet">ExtruderTemperatureSet</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler ExtruderTemperatureSet</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanSpeedSet" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanSpeedSet">FanSpeedSet</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler FanSpeedSet</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FirmwareVersionRead" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareVersionRead">FirmwareVersionRead</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler FirmwareVersionRead</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PositionRead" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PositionRead">PositionRead</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler PositionRead</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintFinished" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintFinished">PrintFinished</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler PrintFinished</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingStateChanged" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingStateChanged">PrintingStateChanged</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler PrintingStateChanged</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadLine" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadLine">ReadLine</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler ReadLine</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_WroteLine" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.WroteLine">WroteLine</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler WroteLine</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActivePrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActivePrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActivePrinter" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActivePrinter">ActivePrinter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PrinterSettings ActivePrinter { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">PrinterSettings</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActivePrintItem_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActivePrintItem*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActivePrintItem" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActivePrintItem">ActivePrintItem</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PrintItemWrapper ActivePrintItem { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">PrintItemWrapper</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActualBedTemperature_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActualBedTemperature*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ActualBedTemperature" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ActualBedTemperature">ActualBedTemperature</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double ActualBedTemperature { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_AtxPowerEnabled_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.AtxPowerEnabled*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_AtxPowerEnabled" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.AtxPowerEnabled">AtxPowerEnabled</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool AtxPowerEnabled { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_BaudRate_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.BaudRate*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_BaudRate" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.BaudRate">BaudRate</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int BaudRate { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CommunicationState_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationState*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CommunicationState" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationState">CommunicationState</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PrinterConnectionAndCommunication.CommunicationStates CommunicationState { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationStates.html">PrinterConnectionAndCommunication.CommunicationStates</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ComPort_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ComPort*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ComPort" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ComPort">ComPort</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string ComPort { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ConnectionFailureMessage_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ConnectionFailureMessage*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ConnectionFailureMessage" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ConnectionFailureMessage">ConnectionFailureMessage</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string ConnectionFailureMessage { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentDestination_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentDestination*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentDestination" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentDestination">CurrentDestination</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 CurrentDestination { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentExtruderDestination_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentExtruderDestination*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentExtruderDestination" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentExtruderDestination">CurrentExtruderDestination</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double CurrentExtruderDestination { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentFeedRate_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentFeedRate*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentFeedRate" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentFeedRate">CurrentFeedRate</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double CurrentFeedRate { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentlyPrintingLayer_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentlyPrintingLayer*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_CurrentlyPrintingLayer" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CurrentlyPrintingLayer">CurrentlyPrintingLayer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int CurrentlyPrintingLayer { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DeviceCode_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DeviceCode*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DeviceCode" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DeviceCode">DeviceCode</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string DeviceCode { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Disconnecting_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Disconnecting*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Disconnecting" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Disconnecting">Disconnecting</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Disconnecting { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DriverType_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DriverType*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DriverType" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DriverType">DriverType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string DriverType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanSpeed0To255_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanSpeed0To255*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanSpeed0To255" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanSpeed0To255">FanSpeed0To255</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int FanSpeed0To255 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FirmwareType_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareType*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FirmwareType" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareType">FirmwareType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PrinterConnectionAndCommunication.FirmwareTypes FirmwareType { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareTypes.html">PrinterConnectionAndCommunication.FirmwareTypes</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FirmwareVersion_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareVersion*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FirmwareVersion" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareVersion">FirmwareVersion</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string FirmwareVersion { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Instance_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Instance*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Instance" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Instance">Instance</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static PrinterConnectionAndCommunication Instance { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.html">PrinterConnectionAndCommunication</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_LastReportedPosition_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.LastReportedPosition*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_LastReportedPosition" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.LastReportedPosition">LastReportedPosition</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 LastReportedPosition { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MonitorPrinterTemperature_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MonitorPrinterTemperature*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MonitorPrinterTemperature" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MonitorPrinterTemperature">MonitorPrinterTemperature</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool MonitorPrinterTemperature { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PercentComplete_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PercentComplete*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PercentComplete" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PercentComplete">PercentComplete</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double PercentComplete { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrePauseCommunicationState_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrePauseCommunicationState*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrePauseCommunicationState" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrePauseCommunicationState">PrePauseCommunicationState</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PrinterConnectionAndCommunication.CommunicationStates PrePauseCommunicationState { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.CommunicationStates.html">PrinterConnectionAndCommunication.CommunicationStates</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterConnectionStatusVerbose_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterConnectionStatusVerbose*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterConnectionStatusVerbose" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterConnectionStatusVerbose">PrinterConnectionStatusVerbose</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string PrinterConnectionStatusVerbose { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterIsConnected_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterIsConnected*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterIsConnected" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterIsConnected">PrinterIsConnected</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool PrinterIsConnected { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterIsPaused_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterIsPaused*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterIsPaused" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterIsPaused">PrinterIsPaused</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool PrinterIsPaused { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterIsPrinting_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterIsPrinting*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterIsPrinting" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterIsPrinting">PrinterIsPrinting</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool PrinterIsPrinting { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingState_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingState*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingState" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingState">PrintingState</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PrinterConnectionAndCommunication.DetailedPrintingState PrintingState { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DetailedPrintingState.html">PrinterConnectionAndCommunication.DetailedPrintingState</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingStateString_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingStateString*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingStateString" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingStateString">PrintingStateString</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string PrintingStateString { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintIsActive_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintIsActive*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintIsActive" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintIsActive">PrintIsActive</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool PrintIsActive { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintIsFinished_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintIsFinished*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintIsFinished" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintIsFinished">PrintIsFinished</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool PrintIsFinished { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintJobName_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintJobName*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintJobName" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintJobName">PrintJobName</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string PrintJobName { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintWasCanceled_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintWasCanceled*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintWasCanceled" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintWasCanceled">PrintWasCanceled</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool PrintWasCanceled { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_RatioIntoCurrentLayer_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.RatioIntoCurrentLayer*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_RatioIntoCurrentLayer" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.RatioIntoCurrentLayer">RatioIntoCurrentLayer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double RatioIntoCurrentLayer { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SecondsPrinted_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SecondsPrinted*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SecondsPrinted" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SecondsPrinted">SecondsPrinted</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int SecondsPrinted { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_TargetBedTemperature_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.TargetBedTemperature*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_TargetBedTemperature" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.TargetBedTemperature">TargetBedTemperature</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double TargetBedTemperature { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_TotalLayersInPrint_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.TotalLayersInPrint*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_TotalLayersInPrint" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.TotalLayersInPrint">TotalLayersInPrint</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int TotalLayersInPrint { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_TotalSecondsInPrint_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.TotalSecondsInPrint*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_TotalSecondsInPrint" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.TotalSecondsInPrint">TotalSecondsInPrint</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int TotalSecondsInPrint { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_AbortConnectionAttempt_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.AbortConnectionAttempt*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_AbortConnectionAttempt_System_String_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.AbortConnectionAttempt(System.String,System.Boolean)">AbortConnectionAttempt(String, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Abort an ongoing attempt to establish communication with a printer due to the specified problem. This is a specialized
+version of the functionality that&apos;s previously been in .Disable but focused specifically on the task of aborting an
+ongoing connection. Ideally we should unify all abort invocations to use this implementation rather than the mix
+of occasional OnConnectionFailed calls, .Disable and .stopTryingToConnect</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AbortConnectionAttempt(string abortReason, bool shutdownReadLoop = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">abortReason</span></td>
+                    <td><p>The concise message which will be used to describe the connection failure</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">shutdownReadLoop</span></td>
+                    <td><p>Shutdown/join the readFromPrinterThread</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ArduinoDtrReset_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ArduinoDtrReset*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ArduinoDtrReset" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ArduinoDtrReset">ArduinoDtrReset()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ArduinoDtrReset()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_BedTemperatureWasWritenToPrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.BedTemperatureWasWritenToPrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_BedTemperatureWasWritenToPrinter_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.BedTemperatureWasWritenToPrinter(System.Object,EventArgs)">BedTemperatureWasWritenToPrinter(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void BedTemperatureWasWritenToPrinter(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ConnectToActivePrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ConnectToActivePrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ConnectToActivePrinter_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ConnectToActivePrinter(System.Boolean)">ConnectToActivePrinter(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ConnectToActivePrinter(bool showHelpIfNoPort = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">showHelpIfNoPort</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DeleteFileFromSdCard_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DeleteFileFromSdCard*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_DeleteFileFromSdCard_System_String_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.DeleteFileFromSdCard(System.String)">DeleteFileFromSdCard(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void DeleteFileFromSdCard(string fileName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">fileName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Disable_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Disable*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Disable" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Disable">Disable()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Disable()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ExtruderTemperatureWasWritenToPrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ExtruderTemperatureWasWritenToPrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ExtruderTemperatureWasWritenToPrinter_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ExtruderTemperatureWasWritenToPrinter(System.Object,EventArgs)">ExtruderTemperatureWasWritenToPrinter(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ExtruderTemperatureWasWritenToPrinter(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanOffWasWritenToPrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanOffWasWritenToPrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanOffWasWritenToPrinter_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanOffWasWritenToPrinter(System.Object,EventArgs)">FanOffWasWritenToPrinter(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void FanOffWasWritenToPrinter(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanSpeedWasWritenToPrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanSpeedWasWritenToPrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FanSpeedWasWritenToPrinter_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FanSpeedWasWritenToPrinter(System.Object,EventArgs)">FanSpeedWasWritenToPrinter(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void FanSpeedWasWritenToPrinter(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FoundStart_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FoundStart*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FoundStart_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FoundStart(System.Object,EventArgs)">FoundStart(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void FoundStart(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_GetActualExtruderTemperature_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.GetActualExtruderTemperature*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_GetActualExtruderTemperature_System_Int32_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.GetActualExtruderTemperature(System.Int32)">GetActualExtruderTemperature(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetActualExtruderTemperature(int extruderIndex0Based)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">extruderIndex0Based</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_GetTargetExtruderTemperature_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.GetTargetExtruderTemperature*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_GetTargetExtruderTemperature_System_Int32_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.GetTargetExtruderTemperature(System.Int32)">GetTargetExtruderTemperature(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetTargetExtruderTemperature(int extruderIndex0Based)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">extruderIndex0Based</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_HaltConnectionThread_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.HaltConnectionThread*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_HaltConnectionThread" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.HaltConnectionThread">HaltConnectionThread()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void HaltConnectionThread()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_HomeAxis_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.HomeAxis*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_HomeAxis_MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Axis_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.HomeAxis(MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Axis)">HomeAxis(PrinterConnectionAndCommunication.Axis)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void HomeAxis(PrinterConnectionAndCommunication.Axis axis)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Axis.html">PrinterConnectionAndCommunication.Axis</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MacroCancel_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MacroCancel*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MacroCancel" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MacroCancel">MacroCancel()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MacroCancel()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MacroContinue_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MacroContinue*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MacroContinue" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MacroContinue">MacroContinue()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MacroContinue()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MacroStart_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MacroStart*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MacroStart" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MacroStart">MacroStart()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MacroStart()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveAbsolute_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveAbsolute*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveAbsolute_MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Axis_System_Double_System_Double_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveAbsolute(MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Axis,System.Double,System.Double)">MoveAbsolute(PrinterConnectionAndCommunication.Axis, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MoveAbsolute(PrinterConnectionAndCommunication.Axis axis, double axisPositionMm, double feedRateMmPerMinute)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Axis.html">PrinterConnectionAndCommunication.Axis</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">axisPositionMm</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">feedRateMmPerMinute</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveAbsolute_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveAbsolute*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveAbsolute_Vector3_System_Double_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveAbsolute(Vector3,System.Double)">MoveAbsolute(Vector3, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MoveAbsolute(Vector3 position, double feedRateMmPerMinute)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td><span class="parametername">position</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">feedRateMmPerMinute</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveExtruderRelative_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveExtruderRelative*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveExtruderRelative_System_Double_System_Double_System_Int32_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveExtruderRelative(System.Double,System.Double,System.Int32)">MoveExtruderRelative(Double, Double, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MoveExtruderRelative(double moveAmountMm, double feedRateMmPerMinute, int extruderNumber = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">moveAmountMm</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">feedRateMmPerMinute</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">extruderNumber</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveRelative_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveRelative*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_MoveRelative_MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Axis_System_Double_System_Double_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.MoveRelative(MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Axis,System.Double,System.Double)">MoveRelative(PrinterConnectionAndCommunication.Axis, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void MoveRelative(PrinterConnectionAndCommunication.Axis axis, double moveAmountMm, double feedRateMmPerMinute)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Axis.html">PrinterConnectionAndCommunication.Axis</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">moveAmountMm</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">feedRateMmPerMinute</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnCommunicationStateChanged_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnCommunicationStateChanged*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnCommunicationStateChanged_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnCommunicationStateChanged(EventArgs)">OnCommunicationStateChanged(EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void OnCommunicationStateChanged(EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnConnectionFailed_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnConnectionFailed*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnConnectionFailed_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnConnectionFailed(EventArgs)">OnConnectionFailed(EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void OnConnectionFailed(EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnIdle_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnIdle*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnIdle" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnIdle">OnIdle()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void OnIdle()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnPrintFinished_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnPrintFinished*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_OnPrintFinished_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.OnPrintFinished(EventArgs)">OnPrintFinished(EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void OnPrintFinished(EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintActivePart_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintActivePart*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintActivePart_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintActivePart(System.Boolean)">PrintActivePart(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrintActivePart(bool overrideAllowGCode = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">overrideAllowGCode</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintActivePartIfPossible_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintActivePartIfPossible*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintActivePartIfPossible_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintActivePartIfPossible(System.Boolean)">PrintActivePartIfPossible(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrintActivePartIfPossible(bool overrideAllowGCode = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">overrideAllowGCode</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterReportsError_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterReportsError*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterReportsError_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterReportsError(System.Object,EventArgs)">PrinterReportsError(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrinterReportsError(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterRequestsResend_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterRequestsResend*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterRequestsResend_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterRequestsResend(System.Object,EventArgs)">PrinterRequestsResend(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrinterRequestsResend(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterStatesExtensions_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterStatesExtensions*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterStatesExtensions_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterStatesExtensions(System.Object,EventArgs)">PrinterStatesExtensions(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrinterStatesExtensions(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterStatesFirmware_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterStatesFirmware*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrinterStatesFirmware_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrinterStatesFirmware(System.Object,EventArgs)">PrinterStatesFirmware(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrinterStatesFirmware(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingCanContinue_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingCanContinue*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PrintingCanContinue_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PrintingCanContinue(System.Object,EventArgs)">PrintingCanContinue(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PrintingCanContinue(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadFromPrinter_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadFromPrinter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadFromPrinter_MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadThread_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadFromPrinter(MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadThread)">ReadFromPrinter(PrinterConnectionAndCommunication.ReadThread)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReadFromPrinter(PrinterConnectionAndCommunication.ReadThread readThreadHolder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadThread.html">PrinterConnectionAndCommunication.ReadThread</a></td>
+                    <td><span class="parametername">readThreadHolder</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadPosition_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadPosition*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadPosition" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadPosition">ReadPosition()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReadPosition()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadSdProgress_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadSdProgress*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadSdProgress_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadSdProgress(System.Object,EventArgs)">ReadSdProgress(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReadSdProgress(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadTargetPositions_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadTargetPositions*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadTargetPositions_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadTargetPositions(System.Object,EventArgs)">ReadTargetPositions(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReadTargetPositions(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadTemperatures_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadTemperatures*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadTemperatures_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadTemperatures(System.Object,EventArgs)">ReadTemperatures(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReadTemperatures(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_RebootBoard_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.RebootBoard*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_RebootBoard" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.RebootBoard">RebootBoard()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RebootBoard()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReleaseMotors_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReleaseMotors*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReleaseMotors" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReleaseMotors">ReleaseMotors()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ReleaseMotors()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_RequestPause_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.RequestPause*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_RequestPause" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.RequestPause">RequestPause()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RequestPause()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ResetToReadyState_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ResetToReadyState*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ResetToReadyState" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ResetToReadyState">ResetToReadyState()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ResetToReadyState()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Resume_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Resume*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Resume" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Resume">Resume()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLinesToPrinterNow_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLinesToPrinterNow*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLinesToPrinterNow_System_String___" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLinesToPrinterNow(System.String[])">SendLinesToPrinterNow(String[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SendLinesToPrinterNow(string[] linesToWrite)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span>[]</td>
+                    <td><span class="parametername">linesToWrite</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLineToPrinterNow_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLineToPrinterNow*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLineToPrinterNow_System_String_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLineToPrinterNow(System.String)">SendLineToPrinterNow(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SendLineToPrinterNow(string lineToWrite)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">lineToWrite</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SerialPortIsAvailable_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SerialPortIsAvailable*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SerialPortIsAvailable_System_String_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SerialPortIsAvailable(System.String)">SerialPortIsAvailable(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool SerialPortIsAvailable(string portName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">portName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SetMovementToAbsolute_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SetMovementToAbsolute*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SetMovementToAbsolute" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SetMovementToAbsolute">SetMovementToAbsolute()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMovementToAbsolute()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SetMovementToRelative_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SetMovementToRelative*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SetMovementToRelative" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SetMovementToRelative">SetMovementToRelative()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMovementToRelative()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SetTargetExtruderTemperature_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SetTargetExtruderTemperature*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SetTargetExtruderTemperature_System_Int32_System_Double_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SetTargetExtruderTemperature(System.Int32,System.Double,System.Boolean)">SetTargetExtruderTemperature(Int32, Double, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetTargetExtruderTemperature(int extruderIndex0Based, double temperature, bool forceSend = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">extruderIndex0Based</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">temperature</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">forceSend</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_StartPrint_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.StartPrint*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_StartPrint_System_String_PrintTask_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.StartPrint(System.String,PrintTask)">StartPrint(String, PrintTask)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void StartPrint(string gcodeFilename, PrintTask printTaskToUse = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">gcodeFilename</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">PrintTask</span></td>
+                    <td><span class="parametername">printTaskToUse</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_StartSdCardPrint_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.StartSdCardPrint*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_StartSdCardPrint" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.StartSdCardPrint">StartSdCardPrint()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool StartSdCardPrint()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Stop_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Stop*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_Stop_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.Stop(System.Boolean)">Stop(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Stop(bool markPrintCanceled = true)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">markPrintCanceled</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SuppressEcho_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SuppressEcho*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SuppressEcho_System_Object_EventArgs_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SuppressEcho(System.Object,EventArgs)">SuppressEcho(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SuppressEcho(object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

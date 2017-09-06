@@ -1,0 +1,1054 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AxisAlignedBoundingBox
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AxisAlignedBoundingBox
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_VectorMath_AxisAlignedBoundingBox" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox">Class AxisAlignedBoundingBox
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">AxisAlignedBoundingBox</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.VectorMath</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class AxisAlignedBoundingBox</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox__ctor_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.#ctor*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox__ctor_MatterHackers_VectorMath_Vector3_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.#ctor(MatterHackers.VectorMath.Vector3,MatterHackers.VectorMath.Vector3)">AxisAlignedBoundingBox(Vector3, Vector3)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public AxisAlignedBoundingBox(Vector3 minXYZ, Vector3 maxXYZ)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">minXYZ</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">maxXYZ</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_maxXYZ" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.maxXYZ">maxXYZ</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 maxXYZ</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_minXYZ" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.minXYZ">minXYZ</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 minXYZ</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Center_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Center*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Center" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Center">Center</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 Center { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Empty_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Empty*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Empty" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Empty">Empty</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static AxisAlignedBoundingBox Empty { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Item_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Item*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Item_System_Int32_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Item(System.Int32)">Item[Int32]</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 this[int index] { get; }</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">index</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Size_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Size*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Size" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Size">Size</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 Size { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_XSize_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.XSize*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_XSize" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.XSize">XSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double XSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_YSize_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.YSize*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_YSize" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.YSize">YSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double YSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_ZSize_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.ZSize*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_ZSize" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.ZSize">ZSize</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double ZSize { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Clamp_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Clamp*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Clamp_MatterHackers_VectorMath_Vector3__" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Clamp(MatterHackers.VectorMath.Vector3@)">Clamp(ref Vector3)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Clamp(ref Vector3 positionToClamp)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">positionToClamp</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Contains_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Contains*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Contains_MatterHackers_VectorMath_AxisAlignedBoundingBox_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Contains(MatterHackers.VectorMath.AxisAlignedBoundingBox)">Contains(AxisAlignedBoundingBox)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Contains(AxisAlignedBoundingBox bounds)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">bounds</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Equals_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Equals*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Equals_MatterHackers_VectorMath_AxisAlignedBoundingBox_System_Double_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Equals(MatterHackers.VectorMath.AxisAlignedBoundingBox,System.Double)">Equals(AxisAlignedBoundingBox, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(AxisAlignedBoundingBox bounds, double equalityTolerance = 0)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">bounds</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">equalityTolerance</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetBottomCorner_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetBottomCorner*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetBottomCorner_System_Int32_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetBottomCorner(System.Int32)">GetBottomCorner(Int32)</h4>
+              <div class="markdown level1 summary"><p>Geth the corners by quadrant of the bottom</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 GetBottomCorner(int quadrantIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">quadrantIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetCenter_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetCenter*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetCenter" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetCenter">GetCenter()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 GetCenter()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetCenterX_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetCenterX*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetCenterX" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetCenterX">GetCenterX()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetCenterX()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetIntersectCost_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetIntersectCost*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetIntersectCost" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetIntersectCost">GetIntersectCost()</h4>
+              <div class="markdown level1 summary"><p>This is the computation cost of doing an intersection with the given type.
+Attempt to give it in average CPU cycles for the intersection.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static double GetIntersectCost()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetSurfaceArea_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetSurfaceArea*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetSurfaceArea" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetSurfaceArea">GetSurfaceArea()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetSurfaceArea()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetTopCorner_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetTopCorner*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetTopCorner_System_Int32_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetTopCorner(System.Int32)">GetTopCorner(Int32)</h4>
+              <div class="markdown level1 summary"><p>Geth the corners by quadrant of the top</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 GetTopCorner(int quadrantIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">quadrantIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetVolume_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetVolume*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_GetVolume" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.GetVolume">GetVolume()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetVolume()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Intersection_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Intersection*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Intersection_MatterHackers_VectorMath_AxisAlignedBoundingBox_MatterHackers_VectorMath_AxisAlignedBoundingBox_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Intersection(MatterHackers.VectorMath.AxisAlignedBoundingBox,MatterHackers.VectorMath.AxisAlignedBoundingBox)">Intersection(AxisAlignedBoundingBox, AxisAlignedBoundingBox)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static AxisAlignedBoundingBox Intersection(AxisAlignedBoundingBox boundsA, AxisAlignedBoundingBox boundsB)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">boundsA</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">boundsB</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Intersects_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Intersects*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Intersects_MatterHackers_VectorMath_AxisAlignedBoundingBox_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Intersects(MatterHackers.VectorMath.AxisAlignedBoundingBox)">Intersects(AxisAlignedBoundingBox)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Intersects(AxisAlignedBoundingBox bounds)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">bounds</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_NewTransformed_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.NewTransformed*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_NewTransformed_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.NewTransformed(MatterHackers.VectorMath.Matrix4X4)">NewTransformed(Matrix4X4)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public AxisAlignedBoundingBox NewTransformed(Matrix4X4 transform)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">transform</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_ToString_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.ToString*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_ToString" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.ToString">ToString()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Union_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Union*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Union_MatterHackers_VectorMath_AxisAlignedBoundingBox_MatterHackers_VectorMath_AxisAlignedBoundingBox_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Union(MatterHackers.VectorMath.AxisAlignedBoundingBox,MatterHackers.VectorMath.AxisAlignedBoundingBox)">Union(AxisAlignedBoundingBox, AxisAlignedBoundingBox)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static AxisAlignedBoundingBox Union(AxisAlignedBoundingBox boundsA, AxisAlignedBoundingBox boundsB)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">boundsA</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">boundsB</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Union_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Union*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_Union_MatterHackers_VectorMath_AxisAlignedBoundingBox_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.Union(MatterHackers.VectorMath.AxisAlignedBoundingBox,MatterHackers.VectorMath.Vector3)">Union(AxisAlignedBoundingBox, Vector3)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static AxisAlignedBoundingBox Union(AxisAlignedBoundingBox bounds, Vector3 vertex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">bounds</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">vertex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="operators">Operators
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_AxisAlignedBoundingBox_op_Addition_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.op_Addition*"></a>
+              <h4 id="MatterHackers_VectorMath_AxisAlignedBoundingBox_op_Addition_MatterHackers_VectorMath_AxisAlignedBoundingBox_MatterHackers_VectorMath_AxisAlignedBoundingBox_" data-uid="MatterHackers.VectorMath.AxisAlignedBoundingBox.op_Addition(MatterHackers.VectorMath.AxisAlignedBoundingBox,MatterHackers.VectorMath.AxisAlignedBoundingBox)">Addition(AxisAlignedBoundingBox, AxisAlignedBoundingBox)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static AxisAlignedBoundingBox operator +(AxisAlignedBoundingBox A, AxisAlignedBoundingBox B)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">A</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td><span class="parametername">B</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.AxisAlignedBoundingBox.html">AxisAlignedBoundingBox</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

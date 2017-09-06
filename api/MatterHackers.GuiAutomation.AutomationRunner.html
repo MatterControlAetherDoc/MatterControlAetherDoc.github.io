@@ -1,0 +1,2386 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AutomationRunner
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AutomationRunner
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_GuiAutomation_AutomationRunner" data-uid="MatterHackers.GuiAutomation.AutomationRunner">Class AutomationRunner
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">AutomationRunner</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.GuiAutomation</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_GuiAutomation_AutomationRunner_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class AutomationRunner</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner__ctor_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.#ctor*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner__ctor_System_String_MatterHackers_GuiAutomation_AutomationRunner_InputType_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.#ctor(System.String,MatterHackers.GuiAutomation.AutomationRunner.InputType)">AutomationRunner(String, AutomationRunner.InputType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public AutomationRunner(string imageDirectory = &quot;&quot;, AutomationRunner.InputType inputType = AutomationRunner.InputType.Native)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageDirectory</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.InputType.html">AutomationRunner.InputType</a></td>
+                    <td><span class="parametername">inputType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_MatchLimit" data-uid="MatterHackers.GuiAutomation.AutomationRunner.MatchLimit">MatchLimit</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long MatchLimit</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_UpDelaySeconds" data-uid="MatterHackers.GuiAutomation.AutomationRunner.UpDelaySeconds">UpDelaySeconds</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double UpDelaySeconds</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_TimeToMoveMouse_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.TimeToMoveMouse*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_TimeToMoveMouse" data-uid="MatterHackers.GuiAutomation.AutomationRunner.TimeToMoveMouse">TimeToMoveMouse</h4>
+              <div class="markdown level1 summary"><p>The number of seconds to move the mouse when going to a new position.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static double TimeToMoveMouse { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ClickByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ClickByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ClickByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_System_Double_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ClickByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin,System.Double)">ClickByName(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin, Double)</h4>
+              <div class="markdown level1 summary"><p>Look for a widget with the given name and click it. It and all its parents must be visible and enabled.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ClickByName(string widgetName, double secondsToWait = 5, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center, double delayBeforeReturn = 0.2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td><p>The given widget name</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td><p>Total seconds to stay in this function waiting for the named widget to become visible.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">delayBeforeReturn</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ClickImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ClickImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ClickImage_ImageBuffer_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_MouseButtons_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ClickImage(ImageBuffer,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin,MouseButtons)">ClickImage(ImageBuffer, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin, MouseButtons)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ClickImage(ImageBuffer imageNeedle, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center, MouseButtons mouseButtons = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedle</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">MouseButtons</span></td>
+                    <td><span class="parametername">mouseButtons</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ClickImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ClickImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ClickImage_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_MouseButtons_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ClickImage(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin,MouseButtons)">ClickImage(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin, MouseButtons)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ClickImage(string imageName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center, MouseButtons mouseButtons = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">MouseButtons</span></td>
+                    <td><span class="parametername">mouseButtons</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_CurrentMousePosition_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.CurrentMousePosition*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_CurrentMousePosition" data-uid="MatterHackers.GuiAutomation.AutomationRunner.CurrentMousePosition">CurrentMousePosition()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Point2D CurrentMousePosition()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_Delay_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Delay*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_Delay_Func_System_Boolean__System_Double_System_Int32_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Delay(Func{System.Boolean},System.Double,System.Int32)">Delay(Func&lt;Boolean&gt;, Double, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Delay(Func&lt;bool&gt; checkConditionSatisfied, double maxSeconds, int checkInterval = 200)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><span class="parametername">checkConditionSatisfied</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">maxSeconds</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">checkInterval</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_Delay_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Delay*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_Delay_System_Double_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Delay(System.Double)">Delay(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Delay(double secondsToWait = 0.2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_Dispose_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Dispose*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_Dispose" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DoubleClickByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DoubleClickByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DoubleClickByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DoubleClickByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DoubleClickByName(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DoubleClickByName(string widgetName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DoubleClickImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DoubleClickImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DoubleClickImage_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DoubleClickImage(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DoubleClickImage(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DoubleClickImage(string imageName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DragByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DragByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DragByName(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DragByName(string widgetName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DragDropByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragDropByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DragDropByName_System_String_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragDropByName(System.String,System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DragDropByName(String, String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DragDropByName(string widgetNameDrag, string widgetNameDrop, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offsetDrag = null, AutomationRunner.ClickOrigin originDrag = AutomationRunner.ClickOrigin.Center, Point2D offsetDrop = null, AutomationRunner.ClickOrigin originDrop = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetNameDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetNameDrop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offsetDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">originDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offsetDrop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">originDrop</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DragDropImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragDropImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DragDropImage_ImageBuffer_ImageBuffer_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragDropImage(ImageBuffer,ImageBuffer,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DragDropImage(ImageBuffer, ImageBuffer, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DragDropImage(ImageBuffer imageNeedleDrag, ImageBuffer imageNeedleDrop, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offsetDrag = null, AutomationRunner.ClickOrigin originDrag = AutomationRunner.ClickOrigin.Center, Point2D offsetDrop = null, AutomationRunner.ClickOrigin originDrop = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedleDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedleDrop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offsetDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">originDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offsetDrop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">originDrop</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DragDropImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragDropImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DragDropImage_System_String_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragDropImage(System.String,System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DragDropImage(String, String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DragDropImage(string imageNameDrag, string imageNameDrop, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offsetDrag = null, AutomationRunner.ClickOrigin originDrag = AutomationRunner.ClickOrigin.Center, Point2D offsetDrop = null, AutomationRunner.ClickOrigin originDrop = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageNameDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageNameDrop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offsetDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">originDrag</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offsetDrop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">originDrop</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DragImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DragImage_ImageBuffer_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragImage(ImageBuffer,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DragImage(ImageBuffer, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DragImage(ImageBuffer imageNeedle, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedle</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DragImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DragImage_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DragImage(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DragImage(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DragImage(string imageName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_Drop_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Drop*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_Drop_Point2D_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Drop(Point2D)">Drop(Point2D)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Drop(Point2D offset = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DropByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DropByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DropByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DropByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DropByName(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DropByName(string widgetName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DropImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DropImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DropImage_ImageBuffer_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DropImage(ImageBuffer,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DropImage(ImageBuffer, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DropImage(ImageBuffer imageNeedle, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedle</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_DropImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DropImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_DropImage_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.DropImage(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">DropImage(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool DropImage(string imageName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_GetCurrentScreen_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetCurrentScreen*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_GetCurrentScreen" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetCurrentScreen">GetCurrentScreen()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ImageBuffer GetCurrentScreen()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_GetInterpolatedValue_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetInterpolatedValue*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_GetInterpolatedValue_System_Double_MatterHackers_GuiAutomation_AutomationRunner_InterpolationType_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetInterpolatedValue(System.Double,MatterHackers.GuiAutomation.AutomationRunner.InterpolationType)">GetInterpolatedValue(Double, AutomationRunner.InterpolationType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetInterpolatedValue(double compleatedRatio0To1, AutomationRunner.InterpolationType interpolationType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">compleatedRatio0To1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.InterpolationType.html">AutomationRunner.InterpolationType</a></td>
+                    <td><span class="parametername">interpolationType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_GetRegionByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetRegionByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_GetRegionByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetRegionByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion)">GetRegionByName(String, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public SearchRegion GetRegionByName(string widgetName, double secondsToWait = 0, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_GetWidgetByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetWidgetByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_GetWidgetByName_System_String_SystemWindow__System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetWidgetByName(System.String,SystemWindow@,System.Double,MatterHackers.GuiAutomation.SearchRegion)">GetWidgetByName(String, out SystemWindow, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GuiWidget GetWidgetByName(string widgetName, out SystemWindow containingWindow, double secondsToWait = 0, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">SystemWindow</span></td>
+                    <td><span class="parametername">containingWindow</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GuiWidget</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_GetWidgetsByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetWidgetsByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_GetWidgetsByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.GetWidgetsByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion)">GetWidgetsByName(String, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;AutomationRunner.GetResults&gt; GetWidgetsByName(string widgetName, double secondsToWait = 0, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.GetResults.html">AutomationRunner.GetResults</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ImageExists_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ImageExists*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ImageExists_ImageBuffer_System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ImageExists(ImageBuffer,System.Double,MatterHackers.GuiAutomation.SearchRegion)">ImageExists(ImageBuffer, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ImageExists(ImageBuffer imageNeedle, double secondsToWait = 0, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedle</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ImageExists_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ImageExists*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ImageExists_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ImageExists(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion)">ImageExists(String, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ImageExists(string imageName, double secondsToWait = 0, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_KeyDown_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.KeyDown*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_KeyDown_KeyEventArgs_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.KeyDown(KeyEventArgs)">KeyDown(KeyEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void KeyDown(KeyEventArgs keyEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">KeyEventArgs</span></td>
+                    <td><span class="parametername">keyEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_KeyUp_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.KeyUp*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_KeyUp_KeyEventArgs_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.KeyUp(KeyEventArgs)">KeyUp(KeyEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void KeyUp(KeyEventArgs keyEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">KeyEventArgs</span></td>
+                    <td><span class="parametername">keyEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_MoveToByName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.MoveToByName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_MoveToByName_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.MoveToByName(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">MoveToByName(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool MoveToByName(string widgetName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_MoveToImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.MoveToImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_MoveToImage_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_Point2D_MatterHackers_GuiAutomation_AutomationRunner_ClickOrigin_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.MoveToImage(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion,Point2D,MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin)">MoveToImage(String, Double, SearchRegion, Point2D, AutomationRunner.ClickOrigin)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool MoveToImage(string imageName, double secondsToWait = 0, SearchRegion searchRegion = null, Point2D offset = null, AutomationRunner.ClickOrigin origin = AutomationRunner.ClickOrigin.Center)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">offset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.ClickOrigin.html">AutomationRunner.ClickOrigin</a></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_NameExists_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.NameExists*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_NameExists_System_String_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.NameExists(System.String,MatterHackers.GuiAutomation.SearchRegion)">NameExists(String, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool NameExists(string widgetName, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_RenderMouse_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.RenderMouse*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_RenderMouse_GuiWidget_Graphics2D_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.RenderMouse(GuiWidget,Graphics2D)">RenderMouse(GuiWidget, Graphics2D)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RenderMouse(GuiWidget targetWidget, Graphics2D graphics2D)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GuiWidget</span></td>
+                    <td><span class="parametername">targetWidget</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Graphics2D</span></td>
+                    <td><span class="parametername">graphics2D</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ScreenToSystemWindow_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ScreenToSystemWindow*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ScreenToSystemWindow_Point2D_SystemWindow_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ScreenToSystemWindow(Point2D,SystemWindow)">ScreenToSystemWindow(Point2D, SystemWindow)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Point2D ScreenToSystemWindow(Point2D pointOnScreen, SystemWindow containingWindow)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td><span class="parametername">pointOnScreen</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">SystemWindow</span></td>
+                    <td><span class="parametername">containingWindow</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Point2D</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_SetMouseCursorPosition_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.SetMouseCursorPosition*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_SetMouseCursorPosition_System_Int32_System_Int32_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.SetMouseCursorPosition(System.Int32,System.Int32)">SetMouseCursorPosition(Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMouseCursorPosition(int x, int y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_SetMouseCursorPosition_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.SetMouseCursorPosition*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_SetMouseCursorPosition_SystemWindow_System_Int32_System_Int32_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.SetMouseCursorPosition(SystemWindow,System.Int32,System.Int32)">SetMouseCursorPosition(SystemWindow, Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMouseCursorPosition(SystemWindow systemWindow, int x, int y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">SystemWindow</span></td>
+                    <td><span class="parametername">systemWindow</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_ShowWindowAndExecuteTests_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ShowWindowAndExecuteTests*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_ShowWindowAndExecuteTests_SystemWindow_MatterHackers_GuiAutomation_AutomationTest_System_Double_System_String_MatterHackers_GuiAutomation_AutomationRunner_InputType_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.ShowWindowAndExecuteTests(SystemWindow,MatterHackers.GuiAutomation.AutomationTest,System.Double,System.String,MatterHackers.GuiAutomation.AutomationRunner.InputType)">ShowWindowAndExecuteTests(SystemWindow, AutomationTest, Double, String, AutomationRunner.InputType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Task ShowWindowAndExecuteTests(SystemWindow initialSystemWindow, AutomationTest testMethod, double secondsToTestFailure, string imagesDirectory = &quot;&quot;, AutomationRunner.InputType inputType = AutomationRunner.InputType.Native)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">SystemWindow</span></td>
+                    <td><span class="parametername">initialSystemWindow</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationTest.html">AutomationTest</a></td>
+                    <td><span class="parametername">testMethod</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToTestFailure</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imagesDirectory</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.AutomationRunner.InputType.html">AutomationRunner.InputType</a></td>
+                    <td><span class="parametername">inputType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_StaticDelay_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.StaticDelay*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_StaticDelay_Func_System_Boolean__System_Double_System_Int32_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.StaticDelay(Func{System.Boolean},System.Double,System.Int32)">StaticDelay(Func&lt;Boolean&gt;, Double, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void StaticDelay(Func&lt;bool&gt; checkConditionSatisfied, double maxSeconds, int checkInterval = 200)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td><span class="parametername">checkConditionSatisfied</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">maxSeconds</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">checkInterval</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_SystemWindowToScreen_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.SystemWindowToScreen*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_SystemWindowToScreen_RectangleDouble_SystemWindow_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.SystemWindowToScreen(RectangleDouble,SystemWindow)">SystemWindowToScreen(RectangleDouble, SystemWindow)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static ScreenRectangle SystemWindowToScreen(RectangleDouble rectOnScreen, SystemWindow containingWindow)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RectangleDouble</span></td>
+                    <td><span class="parametername">rectOnScreen</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">SystemWindow</span></td>
+                    <td><span class="parametername">containingWindow</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.ScreenRectangle.html">ScreenRectangle</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_Type_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Type*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_Type_System_String_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.Type(System.String)">Type(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Type(string textToType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">textToType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_WaitForImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitForImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_WaitForImage_ImageBuffer_System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitForImage(ImageBuffer,System.Double,MatterHackers.GuiAutomation.SearchRegion)">WaitForImage(ImageBuffer, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitForImage(ImageBuffer imageNeedle, double secondsToWait, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td><span class="parametername">imageNeedle</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_WaitForImage_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitForImage*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_WaitForImage_System_String_System_Double_MatterHackers_GuiAutomation_SearchRegion_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitForImage(System.String,System.Double,MatterHackers.GuiAutomation.SearchRegion)">WaitForImage(String, Double, SearchRegion)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitForImage(string imageName, double secondsToWait, SearchRegion searchRegion = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">imageName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GuiAutomation.SearchRegion.html">SearchRegion</a></td>
+                    <td><span class="parametername">searchRegion</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_WaitForName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitForName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_WaitForName_System_String_System_Double_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitForName(System.String,System.Double)">WaitForName(String, Double)</h4>
+              <div class="markdown level1 summary"><p>Wait up to secondsToWait for the named widget to exist and be visible.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitForName(string widgetName, double secondsToWait = 1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GuiAutomation_AutomationRunner_WaitVanishForName_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitVanishForName*"></a>
+              <h4 id="MatterHackers_GuiAutomation_AutomationRunner_WaitVanishForName_System_String_System_Double_" data-uid="MatterHackers.GuiAutomation.AutomationRunner.WaitVanishForName(System.String,System.Double)">WaitVanishForName(String, Double)</h4>
+              <div class="markdown level1 summary"><p>Wait up to secondsToWait for the named widget to vanish.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WaitVanishForName(string widgetName, double secondsToWait)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">widgetName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">secondsToWait</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

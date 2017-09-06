@@ -1,0 +1,1409 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LibraryProvider
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LibraryProvider
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider">Class LibraryProvider
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">IDisposable</span></div>
+                  <div class="level1"><span class="xref">LibraryProvider</span></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProviderFileSystem.html">LibraryProviderFileSystem</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProviderHistory.html">LibraryProviderHistory</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProviderQueue.html">LibraryProviderQueue</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProviderSelector.html">LibraryProviderSelector</a></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProviderSQLite.html">LibraryProviderSQLite</a></div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.MatterControl.PrintLibrary.Provider</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class LibraryProvider : IDisposable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider__ctor_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.#ctor*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider__ctor_MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_Action_MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider__" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.#ctor(MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider,Action{MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider})">LibraryProvider(LibraryProvider, Action&lt;LibraryProvider&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LibraryProvider(LibraryProvider parentLibraryProvider, Action&lt;LibraryProvider&gt; setCurrentLibraryProvider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.html">LibraryProvider</a></td>
+                    <td><span class="parametername">parentLibraryProvider</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.html">LibraryProvider</a>&gt;</td>
+                    <td><span class="parametername">setCurrentLibraryProvider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_itemReportProgressHandlers" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.itemReportProgressHandlers">itemReportProgressHandlers</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Dictionary&lt;int, LibraryProvider.ProgressPlug&gt; itemReportProgressHandlers</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ProgressPlug.html">LibraryProvider.ProgressPlug</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_CanShare_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.CanShare*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_CanShare" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.CanShare">CanShare</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract bool CanShare { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_CollectionCount_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.CollectionCount*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_CollectionCount" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.CollectionCount">CollectionCount</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract int CollectionCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_HasParent_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.HasParent*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_HasParent" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.HasParent">HasParent</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool HasParent { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ItemCount_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ItemCount*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ItemCount" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ItemCount">ItemCount</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract int ItemCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_KeywordFilter_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.KeywordFilter*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_KeywordFilter" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.KeywordFilter">KeywordFilter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string KeywordFilter { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_Name_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.Name*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_Name" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.Name">Name</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string Name { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_NormalFolderImage_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.NormalFolderImage*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_NormalFolderImage" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.NormalFolderImage">NormalFolderImage</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static ImageBuffer NormalFolderImage { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ParentLibraryProvider_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ParentLibraryProvider*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ParentLibraryProvider" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ParentLibraryProvider">ParentLibraryProvider</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LibraryProvider ParentLibraryProvider { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.html">LibraryProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ProviderKey_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ProviderKey*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ProviderKey" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ProviderKey">ProviderKey</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract string ProviderKey { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_SetCurrentLibraryProvider_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.SetCurrentLibraryProvider*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_SetCurrentLibraryProvider" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.SetCurrentLibraryProvider">SetCurrentLibraryProvider</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Action&lt;LibraryProvider&gt; SetCurrentLibraryProvider { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.html">LibraryProvider</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_StatusMessage_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.StatusMessage*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_StatusMessage" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.StatusMessage">StatusMessage</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string StatusMessage { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_UpFolderImage_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.UpFolderImage*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_UpFolderImage" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.UpFolderImage">UpFolderImage</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static ImageBuffer UpFolderImage { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_AddCollectionToLibrary_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.AddCollectionToLibrary*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_AddCollectionToLibrary_System_String_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.AddCollectionToLibrary(System.String)">AddCollectionToLibrary(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void AddCollectionToLibrary(string collectionName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">collectionName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_AddFilesToLibrary_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.AddFilesToLibrary*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_AddFilesToLibrary_IList_System_String__ReportProgressRatio_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.AddFilesToLibrary(IList{System.String},ReportProgressRatio)">AddFilesToLibrary(IList&lt;String&gt;, ReportProgressRatio)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddFilesToLibrary(IList&lt;string&gt; files, ReportProgressRatio reportProgress = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IList</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><span class="parametername">files</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">ReportProgressRatio</span></td>
+                    <td><span class="parametername">reportProgress</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_AddItem_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.AddItem*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_AddItem_PrintItemWrapper_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.AddItem(PrintItemWrapper)">AddItem(PrintItemWrapper)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void AddItem(PrintItemWrapper itemToAdd)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">PrintItemWrapper</span></td>
+                    <td><span class="parametername">itemToAdd</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_Dispose_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.Dispose*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_Dispose" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.Dispose">Dispose()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionChildCollectionCount_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionChildCollectionCount*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionChildCollectionCount_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionChildCollectionCount(System.Int32)">GetCollectionChildCollectionCount(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int GetCollectionChildCollectionCount(int collectionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">collectionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionFolderImage_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionFolderImage*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionFolderImage_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionFolderImage(System.Int32)">GetCollectionFolderImage(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual ImageBuffer GetCollectionFolderImage(int collectionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">collectionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionItem_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionItem*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionItem_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionItem(System.Int32)">GetCollectionItem(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract PrintItemCollection GetCollectionItem(int collectionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">collectionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">PrintItemCollection</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionItemCount_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionItemCount*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetCollectionItemCount_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetCollectionItemCount(System.Int32)">GetCollectionItemCount(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual int GetCollectionItemCount(int collectionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">collectionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetItemProgressPlug_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetItemProgressPlug*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetItemProgressPlug_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetItemProgressPlug(System.Int32)">GetItemProgressPlug(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected LibraryProvider.ProgressPlug GetItemProgressPlug(int itemIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ProgressPlug.html">LibraryProvider.ProgressPlug</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetItemThumbnail_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetItemThumbnail*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetItemThumbnail_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetItemThumbnail(System.Int32)">GetItemThumbnail(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual GuiWidget GetItemThumbnail(int printItemIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">printItemIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">GuiWidget</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetPrintItemName_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetPrintItemName*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetPrintItemName_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetPrintItemName(System.Int32)">GetPrintItemName(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual string GetPrintItemName(int itemIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetPrintItemWrapperAsync_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetPrintItemWrapperAsync*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetPrintItemWrapperAsync_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetPrintItemWrapperAsync(System.Int32)">GetPrintItemWrapperAsync(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract Task&lt;PrintItemWrapper&gt; GetPrintItemWrapperAsync(int itemIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">PrintItemWrapper</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetProviderForCollection_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetProviderForCollection*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetProviderForCollection_PrintItemCollection_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetProviderForCollection(PrintItemCollection)">GetProviderForCollection(PrintItemCollection)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract LibraryProvider GetProviderForCollection(PrintItemCollection collection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">PrintItemCollection</span></td>
+                    <td><span class="parametername">collection</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.html">LibraryProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetProviderLocator_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetProviderLocator*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetProviderLocator" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetProviderLocator">GetProviderLocator()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;ProviderLocatorNode&gt; GetProviderLocator()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.ProviderLocatorNode.html">ProviderLocatorNode</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetRootProvider_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetRootProvider*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_GetRootProvider" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.GetRootProvider">GetRootProvider()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public LibraryProvider GetRootProvider()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.html">LibraryProvider</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_IsItemProtected_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.IsItemProtected*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_IsItemProtected_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.IsItemProtected(System.Int32)">IsItemProtected(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsItemProtected(int itemIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_IsItemReadOnly_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.IsItemReadOnly*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_IsItemReadOnly_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.IsItemReadOnly(System.Int32)">IsItemReadOnly(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsItemReadOnly(int itemIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_IsProtected_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.IsProtected*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_IsProtected" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.IsProtected">IsProtected()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual bool IsProtected()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_MoveItems_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.MoveItems*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_MoveItems_System_Int32___" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.MoveItems(System.Int32[])">MoveItems(Int32[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void MoveItems(int[] indexes)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">indexes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_OnDataReloaded_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.OnDataReloaded*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_OnDataReloaded_EventArgs_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.OnDataReloaded(EventArgs)">OnDataReloaded(EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void OnDataReloaded(EventArgs eventArgs)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">eventArgs</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RegisterForProgress_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RegisterForProgress*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RegisterForProgress_System_Int32_ReportProgressRatio_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RegisterForProgress(System.Int32,ReportProgressRatio)">RegisterForProgress(Int32, ReportProgressRatio)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RegisterForProgress(int itemIndex, ReportProgressRatio reportProgress)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndex</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">ReportProgressRatio</span></td>
+                    <td><span class="parametername">reportProgress</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RemoveCollection_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RemoveCollection*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RemoveCollection_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RemoveCollection(System.Int32)">RemoveCollection(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void RemoveCollection(int collectionIndexToRemove)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">collectionIndexToRemove</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RemoveItem_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RemoveItem*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RemoveItem_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RemoveItem(System.Int32)">RemoveItem(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void RemoveItem(int itemIndexToRemove)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndexToRemove</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RemoveItems_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RemoveItems*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RemoveItems_System_Int32___" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RemoveItems(System.Int32[])">RemoveItems(Int32[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void RemoveItems(int[] indexes)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">indexes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RenameCollection_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RenameCollection*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RenameCollection_System_Int32_System_String_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RenameCollection(System.Int32,System.String)">RenameCollection(Int32, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void RenameCollection(int collectionIndexToRename, string newName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">collectionIndexToRename</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">newName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RenameItem_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RenameItem*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_RenameItem_System_Int32_System_String_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.RenameItem(System.Int32,System.String)">RenameItem(Int32, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void RenameItem(int itemIndexToRename, string newName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndexToRename</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">newName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ShareItem_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ShareItem*"></a>
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_ShareItem_System_Int32_" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.ShareItem(System.Int32)">ShareItem(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void ShareItem(int itemIndexToShare)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">itemIndexToShare</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="events">Events
+              </h3>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrintLibrary_Provider_LibraryProvider_DataReloaded" data-uid="MatterHackers.MatterControl.PrintLibrary.Provider.LibraryProvider.DataReloaded">DataReloaded</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler DataReloaded</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GCodeFileLoaded
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GCodeFileLoaded
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded">Class GCodeFileLoaded
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html">GCodeFile</a></div>
+                  <div class="level2"><span class="xref">GCodeFileLoaded</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_Max32BitFileSize">GCodeFile.Max32BitFileSize</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_AssertDebugNotDefined">GCodeFile.AssertDebugNotDefined()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_CalculateChecksum_System_String_">GCodeFile.CalculateChecksum(String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_IsLayerChange_System_String_">GCodeFile.IsLayerChange(String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_FileTooBigToLoad_System_String_">GCodeFile.FileTooBigToLoad(String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFirstNumberAfter_System_String_System_String_System_Int32__System_Int32_System_String_">GCodeFile.GetFirstNumberAfter(String, String, Int32, Int32, String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFirstNumberAfter_System_String_System_String_System_Double__System_Int32_System_String_">GCodeFile.GetFirstNumberAfter(String, String, Double, Int32, String)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFirstStringAfter_System_String_System_String_System_String_System_String__System_Int32_">GCodeFile.GetFirstStringAfter(String, String, String, String, Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_ReplaceNumberAfter_System_Char_System_String_System_Double_">GCodeFile.ReplaceNumberAfter(Char, String, Double)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetSecondsThisLine_Vector3_System_Double_System_Double_">GCodeFile.GetSecondsThisLine(Vector3, Double, Double)</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.GCodeVisualizer</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class GCodeFileLoaded : GCodeFile</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded__ctor_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.#ctor*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded__ctor_System_Boolean_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.#ctor(System.Boolean)">GCodeFileLoaded(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GCodeFileLoaded(bool gcodeHasExplicitLayerChangeInfo = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">gcodeHasExplicitLayerChangeInfo</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded__ctor_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.#ctor*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded__ctor_System_String_System_Boolean_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.#ctor(System.String,System.Boolean)">GCodeFileLoaded(String, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public GCodeFileLoaded(string pathAndFileName, bool gcodeHasExplicitLayerChangeInfo = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">pathAndFileName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">gcodeHasExplicitLayerChangeInfo</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Center_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Center*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Center" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Center">Center</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector2 Center { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_LineCount_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.LineCount*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_LineCount" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.LineCount">LineCount</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int LineCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_LineCount">GCodeFile.LineCount</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_NumChangesInZ_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.NumChangesInZ*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_NumChangesInZ" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.NumChangesInZ">NumChangesInZ</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int NumChangesInZ { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_NumChangesInZ">GCodeFile.NumChangesInZ</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_TotalSecondsInPrint_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.TotalSecondsInPrint*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_TotalSecondsInPrint" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.TotalSecondsInPrint">TotalSecondsInPrint</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double TotalSecondsInPrint { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_TotalSecondsInPrint">GCodeFile.TotalSecondsInPrint</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Add_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Add*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Add_MatterHackers_GCodeVisualizer_PrinterMachineInstruction_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Add(MatterHackers.GCodeVisualizer.PrinterMachineInstruction)">Add(PrinterMachineInstruction)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Add(PrinterMachineInstruction printerMachineInstruction)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GCodeVisualizer.PrinterMachineInstruction.html">PrinterMachineInstruction</a></td>
+                    <td><span class="parametername">printerMachineInstruction</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Clear_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Clear*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Clear" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Clear">Clear()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+              </div>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_Clear">GCodeFile.Clear()</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetBounds_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetBounds*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetBounds" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetBounds">GetBounds()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override RectangleDouble GetBounds()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RectangleDouble</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetBounds">GCodeFile.GetBounds()</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentCubicMm_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentCubicMm*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentCubicMm_System_Double_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentCubicMm(System.Double)">GetFilamentCubicMm(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetFilamentCubicMm(double filamentDiameterMm)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">filamentDiameterMm</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFilamentCubicMm_System_Double_">GCodeFile.GetFilamentCubicMm(Double)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentDiameter_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentDiameter*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentDiameter" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentDiameter">GetFilamentDiameter()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetFilamentDiameter()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFilamentDiameter">GCodeFile.GetFilamentDiameter()</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentUsedMm_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentUsedMm*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentUsedMm_System_Double_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentUsedMm(System.Double)">GetFilamentUsedMm(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetFilamentUsedMm(double filamentDiameter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">filamentDiameter</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFilamentUsedMm_System_Double_">GCodeFile.GetFilamentUsedMm(Double)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentWeightGrams_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentWeightGrams*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFilamentWeightGrams_System_Double_System_Double_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFilamentWeightGrams(System.Double,System.Double)">GetFilamentWeightGrams(Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetFilamentWeightGrams(double filamentDiameterMm, double densityGramsPerCubicCm)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">filamentDiameterMm</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">densityGramsPerCubicCm</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFilamentWeightGrams_System_Double_System_Double_">GCodeFile.GetFilamentWeightGrams(Double, Double)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFirstLayerHeight_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFirstLayerHeight*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetFirstLayerHeight" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetFirstLayerHeight">GetFirstLayerHeight()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetFirstLayerHeight()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetFirstLayerHeight">GCodeFile.GetFirstLayerHeight()</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetInstructionIndexAtLayer_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetInstructionIndexAtLayer*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetInstructionIndexAtLayer_System_Int32_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetInstructionIndexAtLayer(System.Int32)">GetInstructionIndexAtLayer(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetInstructionIndexAtLayer(int layerIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">layerIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetInstructionIndexAtLayer_System_Int32_">GCodeFile.GetInstructionIndexAtLayer(Int32)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetLayerHeight_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetLayerHeight*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetLayerHeight" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetLayerHeight">GetLayerHeight()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetLayerHeight()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetLayerHeight">GCodeFile.GetLayerHeight()</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetLayerIndex_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetLayerIndex*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetLayerIndex_System_Int32_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetLayerIndex(System.Int32)">GetLayerIndex(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetLayerIndex(int instructionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">instructionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetLayerIndex_System_Int32_">GCodeFile.GetLayerIndex(Int32)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetWeightedCenter_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetWeightedCenter*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_GetWeightedCenter" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.GetWeightedCenter">GetWeightedCenter()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override Vector2 GetWeightedCenter()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_GetWeightedCenter">GCodeFile.GetWeightedCenter()</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Insert_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Insert*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Insert_System_Int32_MatterHackers_GCodeVisualizer_PrinterMachineInstruction_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Insert(System.Int32,MatterHackers.GCodeVisualizer.PrinterMachineInstruction)">Insert(Int32, PrinterMachineInstruction)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Insert(int insertIndex, PrinterMachineInstruction printerMachineInstruction)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">insertIndex</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GCodeVisualizer.PrinterMachineInstruction.html">PrinterMachineInstruction</a></td>
+                    <td><span class="parametername">printerMachineInstruction</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Instruction_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Instruction*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Instruction_System_Int32_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Instruction(System.Int32)">Instruction(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override PrinterMachineInstruction Instruction(int index)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">index</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GCodeVisualizer.PrinterMachineInstruction.html">PrinterMachineInstruction</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_Instruction_System_Int32_">GCodeFile.Instruction(Int32)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_IsExtruding_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.IsExtruding*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_IsExtruding_System_Int32_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.IsExtruding(System.Int32)">IsExtruding(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool IsExtruding(int instructionIndexToCheck)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">instructionIndexToCheck</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_IsExtruding_System_Int32_">GCodeFile.IsExtruding(Int32)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Load_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Load*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Load_Stream_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Load(Stream)">Load(Stream)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static GCodeFileLoaded Load(Stream fileStream)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stream</span></td>
+                    <td><span class="parametername">fileStream</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFileLoaded.html">GCodeFileLoaded</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Load_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Load*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Load_System_String_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Load(System.String)">Load(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Load(string gcodePathAndFileName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">gcodePathAndFileName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_LoadInBackground_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.LoadInBackground*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_LoadInBackground_BackgroundWorker_System_String_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.LoadInBackground(BackgroundWorker,System.String)">LoadInBackground(BackgroundWorker, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void LoadInBackground(BackgroundWorker backgroundWorker, string fileName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">BackgroundWorker</span></td>
+                    <td><span class="parametername">backgroundWorker</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">fileName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_ParseFileContents_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.ParseFileContents*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_ParseFileContents_System_Object_DoWorkEventArgs_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.ParseFileContents(System.Object,DoWorkEventArgs)">ParseFileContents(Object, DoWorkEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void ParseFileContents(object sender, DoWorkEventArgs doWorkEventArgs)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">DoWorkEventArgs</span></td>
+                    <td><span class="parametername">doWorkEventArgs</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_ParseGCodeString_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.ParseGCodeString*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_ParseGCodeString_System_String_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.ParseGCodeString(System.String)">ParseGCodeString(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static GCodeFile ParseGCodeString(string gcodeContents)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">gcodeContents</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html">GCodeFile</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_PercentComplete_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.PercentComplete*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_PercentComplete_System_Int32_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.PercentComplete(System.Int32)">PercentComplete(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double PercentComplete(int instructionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">instructionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_PercentComplete_System_Int32_">GCodeFile.PercentComplete(Int32)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Ratio0to1IntoContainedLayer_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Ratio0to1IntoContainedLayer*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Ratio0to1IntoContainedLayer_System_Int32_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Ratio0to1IntoContainedLayer(System.Int32)">Ratio0to1IntoContainedLayer(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double Ratio0to1IntoContainedLayer(int instructionIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">instructionIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.GCodeVisualizer.GCodeFile.html#MatterHackers_GCodeVisualizer_GCodeFile_Ratio0to1IntoContainedLayer_System_Int32_">GCodeFile.Ratio0to1IntoContainedLayer(Int32)</a></div>
+              
+              
+              <a id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Save_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Save*"></a>
+              <h4 id="MatterHackers_GCodeVisualizer_GCodeFileLoaded_Save_System_String_" data-uid="MatterHackers.GCodeVisualizer.GCodeFileLoaded.Save(System.String)">Save(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Save(string dest)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">dest</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1701 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Graphics2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Graphics2D
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_Agg_Graphics2D" data-uid="MatterHackers.Agg.Graphics2D">Class Graphics2D
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">Graphics2D</span></div>
+                  <div class="level2"><a class="xref" href="MatterHackers.Agg.ImageGraphics2D.html">ImageGraphics2D</a></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.Agg</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_Agg_Graphics2D_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class Graphics2D</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D__ctor_" data-uid="MatterHackers.Agg.Graphics2D.#ctor*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D__ctor" data-uid="MatterHackers.Agg.Graphics2D.#ctor">Graphics2D()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Graphics2D()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D__ctor_" data-uid="MatterHackers.Agg.Graphics2D.#ctor*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D__ctor_IImageByte_MatterHackers_Agg_ScanlineRasterizer_" data-uid="MatterHackers.Agg.Graphics2D.#ctor(IImageByte,MatterHackers.Agg.ScanlineRasterizer)">Graphics2D(IImageByte, ScanlineRasterizer)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Graphics2D(IImageByte destImage, ScanlineRasterizer rasterizer)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">destImage</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.ScanlineRasterizer.html">ScanlineRasterizer</a></td>
+                    <td><span class="parametername">rasterizer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_Agg_Graphics2D_affineTransformStack" data-uid="MatterHackers.Agg.Graphics2D.affineTransformStack">affineTransformStack</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Stack&lt;Affine&gt; affineTransformStack</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stack</span>&lt;<span class="xref">Affine</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_Agg_Graphics2D_destImageByte" data-uid="MatterHackers.Agg.Graphics2D.destImageByte">destImageByte</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IImageByte destImageByte</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_Agg_Graphics2D_destImageFloat" data-uid="MatterHackers.Agg.Graphics2D.destImageFloat">destImageFloat</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected IImageFloat destImageFloat</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageFloat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_Agg_Graphics2D_rasterizer" data-uid="MatterHackers.Agg.Graphics2D.rasterizer">rasterizer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected ScanlineRasterizer rasterizer</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.ScanlineRasterizer.html">ScanlineRasterizer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_Agg_Graphics2D_StrockedText" data-uid="MatterHackers.Agg.Graphics2D.StrockedText">StrockedText</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Stroke StrockedText</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Stroke</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_DestImage_" data-uid="MatterHackers.Agg.Graphics2D.DestImage*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_DestImage" data-uid="MatterHackers.Agg.Graphics2D.DestImage">DestImage</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IImageByte DestImage { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_DestImageFloat_" data-uid="MatterHackers.Agg.Graphics2D.DestImageFloat*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_DestImageFloat" data-uid="MatterHackers.Agg.Graphics2D.DestImageFloat">DestImageFloat</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IImageFloat DestImageFloat { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageFloat</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_ImageRenderQuality_" data-uid="MatterHackers.Agg.Graphics2D.ImageRenderQuality*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_ImageRenderQuality" data-uid="MatterHackers.Agg.Graphics2D.ImageRenderQuality">ImageRenderQuality</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Graphics2D.TransformQuality ImageRenderQuality { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.Graphics2D.TransformQuality.html">Graphics2D.TransformQuality</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Rasterizer_" data-uid="MatterHackers.Agg.Graphics2D.Rasterizer*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Rasterizer" data-uid="MatterHackers.Agg.Graphics2D.Rasterizer">Rasterizer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ScanlineRasterizer Rasterizer { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.ScanlineRasterizer.html">ScanlineRasterizer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_ScanlineCache_" data-uid="MatterHackers.Agg.Graphics2D.ScanlineCache*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_ScanlineCache" data-uid="MatterHackers.Agg.Graphics2D.ScanlineCache">ScanlineCache</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract IScanlineCache ScanlineCache { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IScanlineCache.html">IScanlineCache</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_TransformStackCount_" data-uid="MatterHackers.Agg.Graphics2D.TransformStackCount*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_TransformStackCount" data-uid="MatterHackers.Agg.Graphics2D.TransformStackCount">TransformStackCount</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int TransformStackCount { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_AssertDebugNotDefined_" data-uid="MatterHackers.Agg.Graphics2D.AssertDebugNotDefined*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_AssertDebugNotDefined" data-uid="MatterHackers.Agg.Graphics2D.AssertDebugNotDefined">AssertDebugNotDefined()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void AssertDebugNotDefined()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Circle_" data-uid="MatterHackers.Agg.Graphics2D.Circle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Circle_System_Double_System_Double_System_Double_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Graphics2D.Circle(System.Double,System.Double,System.Double,MatterHackers.Agg.RGBA_Bytes)">Circle(Double, Double, Double, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Circle(double x, double y, double radius, RGBA_Bytes color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">radius</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Circle_" data-uid="MatterHackers.Agg.Graphics2D.Circle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Circle_Vector2_System_Double_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Graphics2D.Circle(Vector2,System.Double,MatterHackers.Agg.RGBA_Bytes)">Circle(Vector2, Double, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Circle(Vector2 origin, double radius, RGBA_Bytes color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">origin</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">radius</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Clear_" data-uid="MatterHackers.Agg.Graphics2D.Clear*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Clear_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.Clear(MatterHackers.Agg.IColorType)">Clear(IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void Clear(IColorType color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_DrawString_" data-uid="MatterHackers.Agg.Graphics2D.DrawString*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_DrawString_System_String_System_Double_System_Double_System_Double_Justification_Baseline_MatterHackers_Agg_RGBA_Bytes_System_Boolean_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Graphics2D.DrawString(System.String,System.Double,System.Double,System.Double,Justification,Baseline,MatterHackers.Agg.RGBA_Bytes,System.Boolean,MatterHackers.Agg.RGBA_Bytes)">DrawString(String, Double, Double, Double, Justification, Baseline, RGBA_Bytes, Boolean, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void DrawString(string Text, double x, double y, double pointSize = 12, Justification justification = null, Baseline baseline = null, RGBA_Bytes color = null, bool drawFromHintedCach = false, RGBA_Bytes backgroundColor = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">Text</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">pointSize</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Justification</span></td>
+                    <td><span class="parametername">justification</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Baseline</span></td>
+                    <td><span class="parametername">baseline</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">drawFromHintedCach</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">backgroundColor</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_FillRectangle_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_FillRectangle_MatterHackers_Agg_RectangleDouble_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle(MatterHackers.Agg.RectangleDouble,MatterHackers.Agg.IColorType)">FillRectangle(RectangleDouble, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void FillRectangle(RectangleDouble rect, IColorType fillColor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleDouble.html">RectangleDouble</a></td>
+                    <td><span class="parametername">rect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">fillColor</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_FillRectangle_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_FillRectangle_MatterHackers_Agg_RectangleInt_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle(MatterHackers.Agg.RectangleInt,MatterHackers.Agg.IColorType)">FillRectangle(RectangleInt, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void FillRectangle(RectangleInt rect, IColorType fillColor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td><span class="parametername">rect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">fillColor</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_FillRectangle_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_FillRectangle_System_Double_System_Double_System_Double_System_Double_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle(System.Double,System.Double,System.Double,System.Double,MatterHackers.Agg.IColorType)">FillRectangle(Double, Double, Double, Double, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void FillRectangle(double left, double bottom, double right, double top, IColorType fillColor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">fillColor</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_FillRectangle_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_FillRectangle_Vector2_Vector2_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.FillRectangle(Vector2,Vector2,MatterHackers.Agg.IColorType)">FillRectangle(Vector2, Vector2, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void FillRectangle(Vector2 leftBottom, Vector2 rightTop, IColorType fillColor)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">leftBottom</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">rightTop</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">fillColor</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_GetClippingRect_" data-uid="MatterHackers.Agg.Graphics2D.GetClippingRect*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_GetClippingRect" data-uid="MatterHackers.Agg.Graphics2D.GetClippingRect">GetClippingRect()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract RectangleDouble GetClippingRect()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleDouble.html">RectangleDouble</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_GetTransform_" data-uid="MatterHackers.Agg.Graphics2D.GetTransform*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_GetTransform" data-uid="MatterHackers.Agg.Graphics2D.GetTransform">GetTransform()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Affine GetTransform()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Affine</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Initialize_" data-uid="MatterHackers.Agg.Graphics2D.Initialize*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Initialize_IImageByte_MatterHackers_Agg_ScanlineRasterizer_" data-uid="MatterHackers.Agg.Graphics2D.Initialize(IImageByte,MatterHackers.Agg.ScanlineRasterizer)">Initialize(IImageByte, ScanlineRasterizer)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Initialize(IImageByte destImage, ScanlineRasterizer rasterizer)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">destImage</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.ScanlineRasterizer.html">ScanlineRasterizer</a></td>
+                    <td><span class="parametername">rasterizer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Initialize_" data-uid="MatterHackers.Agg.Graphics2D.Initialize*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Initialize_IImageFloat_MatterHackers_Agg_ScanlineRasterizer_" data-uid="MatterHackers.Agg.Graphics2D.Initialize(IImageFloat,MatterHackers.Agg.ScanlineRasterizer)">Initialize(IImageFloat, ScanlineRasterizer)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Initialize(IImageFloat destImage, ScanlineRasterizer rasterizer)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageFloat</span></td>
+                    <td><span class="parametername">destImage</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.ScanlineRasterizer.html">ScanlineRasterizer</a></td>
+                    <td><span class="parametername">rasterizer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Line_" data-uid="MatterHackers.Agg.Graphics2D.Line*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Line_System_Double_System_Double_System_Double_System_Double_MatterHackers_Agg_RGBA_Bytes_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Line(System.Double,System.Double,System.Double,System.Double,MatterHackers.Agg.RGBA_Bytes,System.Double)">Line(Double, Double, Double, Double, RGBA_Bytes, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Line(double x1, double y1, double x2, double y2, RGBA_Bytes color, double strokeWidth = 1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">strokeWidth</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Line_" data-uid="MatterHackers.Agg.Graphics2D.Line*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Line_Vector2_Vector2_MatterHackers_Agg_RGBA_Bytes_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Line(Vector2,Vector2,MatterHackers.Agg.RGBA_Bytes,System.Double)">Line(Vector2, Vector2, RGBA_Bytes, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Line(Vector2 start, Vector2 end, RGBA_Bytes color, double strokeWidth = 1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">start</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">end</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">strokeWidth</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_PopTransform_" data-uid="MatterHackers.Agg.Graphics2D.PopTransform*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_PopTransform" data-uid="MatterHackers.Agg.Graphics2D.PopTransform">PopTransform()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Affine PopTransform()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Affine</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_PushTransform_" data-uid="MatterHackers.Agg.Graphics2D.PushTransform*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_PushTransform" data-uid="MatterHackers.Agg.Graphics2D.PushTransform">PushTransform()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void PushTransform()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Rectangle_" data-uid="MatterHackers.Agg.Graphics2D.Rectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Rectangle_MatterHackers_Agg_RectangleDouble_MatterHackers_Agg_RGBA_Bytes_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Rectangle(MatterHackers.Agg.RectangleDouble,MatterHackers.Agg.RGBA_Bytes,System.Double)">Rectangle(RectangleDouble, RGBA_Bytes, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Rectangle(RectangleDouble rect, RGBA_Bytes color, double strokeWidth = 1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleDouble.html">RectangleDouble</a></td>
+                    <td><span class="parametername">rect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">strokeWidth</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Rectangle_" data-uid="MatterHackers.Agg.Graphics2D.Rectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Rectangle_MatterHackers_Agg_RectangleInt_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Graphics2D.Rectangle(MatterHackers.Agg.RectangleInt,MatterHackers.Agg.RGBA_Bytes)">Rectangle(RectangleInt, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Rectangle(RectangleInt rect, RGBA_Bytes color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td><span class="parametername">rect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Rectangle_" data-uid="MatterHackers.Agg.Graphics2D.Rectangle*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Rectangle_System_Double_System_Double_System_Double_System_Double_MatterHackers_Agg_RGBA_Bytes_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Rectangle(System.Double,System.Double,System.Double,System.Double,MatterHackers.Agg.RGBA_Bytes,System.Double)">Rectangle(Double, Double, Double, Double, RGBA_Bytes, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void Rectangle(double left, double bottom, double right, double top, RGBA_Bytes color, double strokeWidth = 1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">strokeWidth</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageByte_MatterHackers_Agg_Point2D_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageByte,MatterHackers.Agg.Point2D)">Render(IImageByte, Point2D)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IImageByte imageSource, Point2D position)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.Point2D.html">Point2D</a></td>
+                    <td><span class="parametername">position</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageByte_System_Double_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageByte,System.Double,System.Double)">Render(IImageByte, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IImageByte imageSource, double x, double y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageByte_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageByte,System.Double,System.Double,System.Double,System.Double)">Render(IImageByte, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IImageByte imageSource, double x, double y, double width, double height)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">width</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">height</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageByte_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageByte,System.Double,System.Double,System.Double,System.Double,System.Double)">Render(IImageByte, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void Render(IImageByte imageSource, double x, double y, double angleRadians, double scaleX, double ScaleY)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angleRadians</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scaleX</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">ScaleY</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageByte_Vector2_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageByte,Vector2)">Render(IImageByte, Vector2)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IImageByte imageSource, Vector2 position)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">position</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageByte_Vector2_System_Double_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageByte,Vector2,System.Double,System.Double)">Render(IImageByte, Vector2, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IImageByte imageSource, Vector2 position, double width, double height)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageByte</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">position</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">width</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">height</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IImageFloat_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.Agg.Graphics2D.Render(IImageFloat,System.Double,System.Double,System.Double,System.Double,System.Double)">Render(IImageFloat, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void Render(IImageFloat imageSource, double x, double y, double angleRadians, double scaleX, double ScaleY)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IImageFloat</span></td>
+                    <td><span class="parametername">imageSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angleRadians</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scaleX</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">ScaleY</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IVertexSource_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.Render(IVertexSource,MatterHackers.Agg.IColorType)">Render(IVertexSource, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IVertexSource vertexSource, IColorType color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IVertexSource</span></td>
+                    <td><span class="parametername">vertexSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IVertexSource_MatterHackers_Agg_RGBA_Bytes___System_Int32___System_Int32_" data-uid="MatterHackers.Agg.Graphics2D.Render(IVertexSource,MatterHackers.Agg.RGBA_Bytes[],System.Int32[],System.Int32)">Render(IVertexSource, RGBA_Bytes[], Int32[], Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IVertexSource vertexSource, RGBA_Bytes[] colorArray, int[] pathIdArray, int numPaths)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IVertexSource</span></td>
+                    <td><span class="parametername">vertexSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a>[]</td>
+                    <td><span class="parametername">colorArray</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span>[]</td>
+                    <td><span class="parametername">pathIdArray</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">numPaths</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IVertexSource_System_Double_System_Double_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.Render(IVertexSource,System.Double,System.Double,MatterHackers.Agg.IColorType)">Render(IVertexSource, Double, Double, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IVertexSource vertexSource, double x, double y, IColorType color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IVertexSource</span></td>
+                    <td><span class="parametername">vertexSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IVertexSource_System_Int32_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.Render(IVertexSource,System.Int32,MatterHackers.Agg.IColorType)">Render(IVertexSource, Int32, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void Render(IVertexSource vertexSource, int pathIndexToRender, IColorType colorType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IVertexSource</span></td>
+                    <td><span class="parametername">vertexSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">pathIndexToRender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">colorType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_Render_" data-uid="MatterHackers.Agg.Graphics2D.Render*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_Render_IVertexSource_Vector2_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Graphics2D.Render(IVertexSource,Vector2,MatterHackers.Agg.IColorType)">Render(IVertexSource, Vector2, IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Render(IVertexSource vertexSource, Vector2 position, IColorType color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IVertexSource</span></td>
+                    <td><span class="parametername">vertexSource</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">position</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_SetClippingRect_" data-uid="MatterHackers.Agg.Graphics2D.SetClippingRect*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_SetClippingRect_MatterHackers_Agg_RectangleDouble_" data-uid="MatterHackers.Agg.Graphics2D.SetClippingRect(MatterHackers.Agg.RectangleDouble)">SetClippingRect(RectangleDouble)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract void SetClippingRect(RectangleDouble rect_d)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleDouble.html">RectangleDouble</a></td>
+                    <td><span class="parametername">rect_d</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Graphics2D_SetTransform_" data-uid="MatterHackers.Agg.Graphics2D.SetTransform*"></a>
+              <h4 id="MatterHackers_Agg_Graphics2D_SetTransform_Affine_" data-uid="MatterHackers.Agg.Graphics2D.SetTransform(Affine)">SetTransform(Affine)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetTransform(Affine value)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Affine</span></td>
+                    <td><span class="parametername">value</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

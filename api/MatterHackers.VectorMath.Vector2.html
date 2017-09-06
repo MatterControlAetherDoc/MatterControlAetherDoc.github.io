@@ -1,0 +1,3655 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Vector2
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Vector2
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_VectorMath_Vector2" data-uid="MatterHackers.VectorMath.Vector2">Struct Vector2
+              </h1>
+              <div class="markdown level0 summary"><p>Represents a 2D vector using two double-precision floating-point numbers.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.VectorMath</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_VectorMath_Vector2_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public struct Vector2 : IEquatable&lt;Vector2&gt;, IConvertible</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2__ctor_" data-uid="MatterHackers.VectorMath.Vector2.#ctor*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2__ctor_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.Vector2.#ctor(MatterHackers.VectorMath.Vector3)">Vector2(Vector3)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector2(Vector3 vector)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2__ctor_" data-uid="MatterHackers.VectorMath.Vector2.#ctor*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2__ctor_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.#ctor(System.Double,System.Double)">Vector2(Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Constructs left vector with the given coordinates.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector2(double x, double y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td><p>The X coordinate.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td><p>The Y coordinate.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_One" data-uid="MatterHackers.VectorMath.Vector2.One">One</h4>
+              <div class="markdown level1 summary"><p>Defines an instance with all components set to 1.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly Vector2 One</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_SizeInBytes" data-uid="MatterHackers.VectorMath.Vector2.SizeInBytes">SizeInBytes</h4>
+              <div class="markdown level1 summary"><p>Defines the size of the Vector2d struct in bytes.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static readonly int SizeInBytes</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_UnitX" data-uid="MatterHackers.VectorMath.Vector2.UnitX">UnitX</h4>
+              <div class="markdown level1 summary"><p>Defines a unit-length Vector2d that points towards the X-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 UnitX</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_UnitY" data-uid="MatterHackers.VectorMath.Vector2.UnitY">UnitY</h4>
+              <div class="markdown level1 summary"><p>Defines a unit-length Vector2d that points towards the Y-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 UnitY</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_x" data-uid="MatterHackers.VectorMath.Vector2.x">x</h4>
+              <div class="markdown level1 summary"><p>The X coordinate of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double x</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_y" data-uid="MatterHackers.VectorMath.Vector2.y">y</h4>
+              <div class="markdown level1 summary"><p>The Y coordinate of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double y</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Vector2_Zero" data-uid="MatterHackers.VectorMath.Vector2.Zero">Zero</h4>
+              <div class="markdown level1 summary"><p>Defines a zero-length Vector2d.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Zero</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Item_" data-uid="MatterHackers.VectorMath.Vector2.Item*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Item_System_Int32_" data-uid="MatterHackers.VectorMath.Vector2.Item(System.Int32)">Item[Int32]</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double this[int index] { get; set; }</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">index</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Length_" data-uid="MatterHackers.VectorMath.Vector2.Length*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Length" data-uid="MatterHackers.VectorMath.Vector2.Length">Length</h4>
+              <div class="markdown level1 summary"><p>Gets the length (magnitude) of the vector.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Length { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="MatterHackers_VectorMath_Vector2_Length_seealso">See Also</h5>
+              <div class="seealso">
+                  <div><a class="xref" href="MatterHackers.VectorMath.Vector2.html#MatterHackers_VectorMath_Vector2_LengthSquared">LengthSquared</a></div>
+              </div>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_LengthSquared_" data-uid="MatterHackers.VectorMath.Vector2.LengthSquared*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_LengthSquared" data-uid="MatterHackers.VectorMath.Vector2.LengthSquared">LengthSquared</h4>
+              <div class="markdown level1 summary"><p>Gets the square of the vector length (magnitude).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double LengthSquared { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="MatterHackers_VectorMath_Vector2_LengthSquared_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>This property avoids the costly square root operation required by the Length property. This makes it more suitable
+for comparisons.</p>
+</div>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Add_" data-uid="MatterHackers.VectorMath.Vector2.Add*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Add_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Add(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Add(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Adds two vectors.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Add(Vector2 a, Vector2 b)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>Result of operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Add_" data-uid="MatterHackers.VectorMath.Vector2.Add*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Add_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Add(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Add(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Adds two vectors.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Add(ref Vector2 a, ref Vector2 b, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Result of operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_BaryCentric_" data-uid="MatterHackers.VectorMath.Vector2.BaryCentric*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_BaryCentric_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.BaryCentric(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2,System.Double,System.Double)">BaryCentric(Vector2, Vector2, Vector2, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Interpolate 3 Vectors using Barycentric coordinates</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 BaryCentric(Vector2 a, Vector2 b, Vector2 c, double u, double v)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First input Vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second input Vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td><p>Third input Vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">u</span></td>
+                    <td><p>First Barycentric Coordinate</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">v</span></td>
+                    <td><p>Second Barycentric Coordinate</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_BaryCentric_" data-uid="MatterHackers.VectorMath.Vector2.BaryCentric*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_BaryCentric_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__System_Double_System_Double_MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.BaryCentric(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,System.Double,System.Double,MatterHackers.VectorMath.Vector2@)">BaryCentric(ref Vector2, ref Vector2, ref Vector2, Double, Double, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Interpolate 3 Vectors using Barycentric coordinates</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void BaryCentric(ref Vector2 a, ref Vector2 b, ref Vector2 c, double u, double v, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First input Vector.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second input Vector.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td><p>Third input Vector.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">u</span></td>
+                    <td><p>First Barycentric Coordinate.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">v</span></td>
+                    <td><p>Second Barycentric Coordinate.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Output Vector. a when u=v=0, b when u=1,v=0, c when u=0,v=1, and a linear combination of a,b,c otherwise</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Clamp_" data-uid="MatterHackers.VectorMath.Vector2.Clamp*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Clamp_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Clamp(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Clamp(Vector2, Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Clamp a vector to the given minimum and maximum vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Clamp(Vector2 vec, Vector2 min, Vector2 max)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>Input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">min</span></td>
+                    <td><p>Minimum vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">max</span></td>
+                    <td><p>Maximum vector</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The clamped vector</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Clamp_" data-uid="MatterHackers.VectorMath.Vector2.Clamp*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Clamp_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Clamp(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Clamp(ref Vector2, ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Clamp a vector to the given minimum and maximum vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Clamp(ref Vector2 vec, ref Vector2 min, ref Vector2 max, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>Input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">min</span></td>
+                    <td><p>Minimum vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">max</span></td>
+                    <td><p>Maximum vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The clamped vector</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ComponentMax_" data-uid="MatterHackers.VectorMath.Vector2.ComponentMax*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ComponentMax_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.ComponentMax(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">ComponentMax(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise maximum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 ComponentMax(Vector2 a, Vector2 b)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The component-wise maximum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ComponentMax_" data-uid="MatterHackers.VectorMath.Vector2.ComponentMax*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ComponentMax_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.ComponentMax(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">ComponentMax(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise maximum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void ComponentMax(ref Vector2 a, ref Vector2 b, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The component-wise maximum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ComponentMin_" data-uid="MatterHackers.VectorMath.Vector2.ComponentMin*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ComponentMin_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.ComponentMin(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">ComponentMin(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise minimum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 ComponentMin(Vector2 a, Vector2 b)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The component-wise minimum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ComponentMin_" data-uid="MatterHackers.VectorMath.Vector2.ComponentMin*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ComponentMin_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.ComponentMin(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">ComponentMin(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise minimum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void ComponentMin(ref Vector2 a, ref Vector2 b, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The component-wise minimum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Cross_" data-uid="MatterHackers.VectorMath.Vector2.Cross*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Cross_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Cross(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Cross(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the cross product of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static double Cross(Vector2 left, Vector2 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The cross product of the two inputs</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Divide_" data-uid="MatterHackers.VectorMath.Vector2.Divide*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Divide_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Divide(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Divide(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Divides a vector by the components of a vector (scale).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Divide(Vector2 vector, Vector2 scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Divide_" data-uid="MatterHackers.VectorMath.Vector2.Divide*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Divide_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.Divide(MatterHackers.VectorMath.Vector2,System.Double)">Divide(Vector2, Double)</h4>
+              <div class="markdown level1 summary"><p>Divides a vector by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Divide(Vector2 vector, double scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Divide_" data-uid="MatterHackers.VectorMath.Vector2.Divide*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Divide_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Divide(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Divide(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Divide a vector by the components of a vector (scale).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Divide(ref Vector2 vector, ref Vector2 scale, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Divide_" data-uid="MatterHackers.VectorMath.Vector2.Divide*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Divide_MatterHackers_VectorMath_Vector2__System_Double_MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Divide(MatterHackers.VectorMath.Vector2@,System.Double,MatterHackers.VectorMath.Vector2@)">Divide(ref Vector2, Double, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Divides a vector by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Divide(ref Vector2 vector, double scale, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Dot_" data-uid="MatterHackers.VectorMath.Vector2.Dot*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Dot_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Dot(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Dot(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the dot (scalar) product of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static double Dot(Vector2 left, Vector2 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><p>The dot product of the two inputs</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Dot_" data-uid="MatterHackers.VectorMath.Vector2.Dot*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Dot_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__System_Double__" data-uid="MatterHackers.VectorMath.Vector2.Dot(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,System.Double@)">Dot(ref Vector2, ref Vector2, out Double)</h4>
+              <div class="markdown level1 summary"><p>Calculate the dot (scalar) product of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Dot(ref Vector2 left, ref Vector2 right, out double result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The dot product of the two inputs</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Equals_" data-uid="MatterHackers.VectorMath.Vector2.Equals*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Equals_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Equals(MatterHackers.VectorMath.Vector2)">Equals(Vector2)</h4>
+              <div class="markdown level1 summary"><p>Indicates whether the current vector is equal to another vector.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(Vector2 other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">other</span></td>
+                    <td><p>A vector to compare with this vector.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>true if the current vector is equal to the vector parameter; otherwise, false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Equals_" data-uid="MatterHackers.VectorMath.Vector2.Equals*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Equals_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.Equals(MatterHackers.VectorMath.Vector2,System.Double)">Equals(Vector2, Double)</h4>
+              <div class="markdown level1 summary"><p>Indicates whether the current vector is equal to another vector.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(Vector2 other, double errorRange)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">other</span></td>
+                    <td><p>A vector to compare with this vector.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">errorRange</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>true if the current vector is equal to the vector parameter; otherwise, false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Equals_" data-uid="MatterHackers.VectorMath.Vector2.Equals*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Equals_System_Object_" data-uid="MatterHackers.VectorMath.Vector2.Equals(System.Object)">Equals(Object)</h4>
+              <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">obj</span></td>
+                    <td><p>The object to compare to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the instances are equal; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetAngle_" data-uid="MatterHackers.VectorMath.Vector2.GetAngle*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetAngle" data-uid="MatterHackers.VectorMath.Vector2.GetAngle">GetAngle()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetAngle()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetAngle0To2PI_" data-uid="MatterHackers.VectorMath.Vector2.GetAngle0To2PI*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetAngle0To2PI" data-uid="MatterHackers.VectorMath.Vector2.GetAngle0To2PI">GetAngle0To2PI()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double GetAngle0To2PI()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetHashCode_" data-uid="MatterHackers.VectorMath.Vector2.GetHashCode*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetHashCode" data-uid="MatterHackers.VectorMath.Vector2.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"><p>Returns the hashcode for this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>A System.Int32 containing the unique hashcode for this instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetNormal_" data-uid="MatterHackers.VectorMath.Vector2.GetNormal*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetNormal" data-uid="MatterHackers.VectorMath.Vector2.GetNormal">GetNormal()</h4>
+              <div class="markdown level1 summary"><p>Returns a normalized Vector of this.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector2 GetNormal()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetPerpendicularLeft_" data-uid="MatterHackers.VectorMath.Vector2.GetPerpendicularLeft*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetPerpendicularLeft" data-uid="MatterHackers.VectorMath.Vector2.GetPerpendicularLeft">GetPerpendicularLeft()</h4>
+              <div class="markdown level1 summary"><p>Gets the perpendicular vector on the left side of this vector.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector2 GetPerpendicularLeft()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetPerpendicularRight_" data-uid="MatterHackers.VectorMath.Vector2.GetPerpendicularRight*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetPerpendicularRight" data-uid="MatterHackers.VectorMath.Vector2.GetPerpendicularRight">GetPerpendicularRight()</h4>
+              <div class="markdown level1 summary"><p>Gets the perpendicular vector on the right side of this vector.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector2 GetPerpendicularRight()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_GetTypeCode_" data-uid="MatterHackers.VectorMath.Vector2.GetTypeCode*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_GetTypeCode" data-uid="MatterHackers.VectorMath.Vector2.GetTypeCode">GetTypeCode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TypeCode GetTypeCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TypeCode</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Lerp_" data-uid="MatterHackers.VectorMath.Vector2.Lerp*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Lerp_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.Lerp(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2,System.Double)">Lerp(Vector2, Vector2, Double)</h4>
+              <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Lerp(Vector2 a, Vector2 b, double blend)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">blend</span></td>
+                    <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>a when blend=0, b when blend=1, and a linear combination otherwise</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Lerp_" data-uid="MatterHackers.VectorMath.Vector2.Lerp*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Lerp_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__System_Double_MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Lerp(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,System.Double,MatterHackers.VectorMath.Vector2@)">Lerp(ref Vector2, ref Vector2, Double, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Returns a new Vector that is the linear blend of the 2 given Vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Lerp(ref Vector2 a, ref Vector2 b, double blend, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">blend</span></td>
+                    <td><p>The blend factor. a when blend=0, b when blend=1.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>a when blend=0, b when blend=1, and a linear combination otherwise</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Max_" data-uid="MatterHackers.VectorMath.Vector2.Max*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Max_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Max(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Max(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise maximum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Max(Vector2 a, Vector2 b)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The component-wise maximum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Max_" data-uid="MatterHackers.VectorMath.Vector2.Max*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Max_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Max(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Max(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise maximum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Max(ref Vector2 a, ref Vector2 b, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The component-wise maximum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Min_" data-uid="MatterHackers.VectorMath.Vector2.Min*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Min_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Min(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Min(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise minimum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Min(Vector2 a, Vector2 b)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The component-wise minimum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Min_" data-uid="MatterHackers.VectorMath.Vector2.Min*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Min_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Min(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Min(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Calculate the component-wise minimum of two vectors</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Min(ref Vector2 a, ref Vector2 b, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The component-wise minimum</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Multiply_" data-uid="MatterHackers.VectorMath.Vector2.Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Multiply_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Multiply(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Multiply(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Multiplies a vector by the components a vector (scale).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Multiply(Vector2 vector, Vector2 scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Multiply_" data-uid="MatterHackers.VectorMath.Vector2.Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Multiply_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.Multiply(MatterHackers.VectorMath.Vector2,System.Double)">Multiply(Vector2, Double)</h4>
+              <div class="markdown level1 summary"><p>Multiplies a vector by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Multiply(Vector2 vector, double scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Multiply_" data-uid="MatterHackers.VectorMath.Vector2.Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Multiply_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Multiply(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Multiply(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Multiplies a vector by the components of a vector (scale).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Multiply(ref Vector2 vector, ref Vector2 scale, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Multiply_" data-uid="MatterHackers.VectorMath.Vector2.Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Multiply_MatterHackers_VectorMath_Vector2__System_Double_MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Multiply(MatterHackers.VectorMath.Vector2@,System.Double,MatterHackers.VectorMath.Vector2@)">Multiply(ref Vector2, Double, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Multiplies a vector by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Multiply(ref Vector2 vector, double scale, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>Left operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Right operand.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Normalize_" data-uid="MatterHackers.VectorMath.Vector2.Normalize*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Normalize" data-uid="MatterHackers.VectorMath.Vector2.Normalize">Normalize()</h4>
+              <div class="markdown level1 summary"><p>Scales the Vector2 to unit length.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Normalize()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Normalize_" data-uid="MatterHackers.VectorMath.Vector2.Normalize*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Normalize_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Normalize(MatterHackers.VectorMath.Vector2)">Normalize(Vector2)</h4>
+              <div class="markdown level1 summary"><p>Scale a vector to unit length</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Normalize(Vector2 vec)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The input vector</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The normalized vector</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Normalize_" data-uid="MatterHackers.VectorMath.Vector2.Normalize*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Normalize_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Normalize(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Normalize(ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Scale a vector to unit length</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Normalize(ref Vector2 vec, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The input vector</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The normalized vector</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Rotate_" data-uid="MatterHackers.VectorMath.Vector2.Rotate*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Rotate_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.Rotate(MatterHackers.VectorMath.Vector2,System.Double)">Rotate(Vector2, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Rotate(Vector2 toRotate, double radians)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">toRotate</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">radians</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Rotate_" data-uid="MatterHackers.VectorMath.Vector2.Rotate*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Rotate_MatterHackers_VectorMath_Vector2__System_Double_MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Rotate(MatterHackers.VectorMath.Vector2@,System.Double,MatterHackers.VectorMath.Vector2@)">Rotate(ref Vector2, Double, out Vector2)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Rotate(ref Vector2 input, double radians, out Vector2 output)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">input</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">radians</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">output</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Rotate_" data-uid="MatterHackers.VectorMath.Vector2.Rotate*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Rotate_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.Rotate(System.Double)">Rotate(Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Rotate(double radians)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">radians</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Subtract_" data-uid="MatterHackers.VectorMath.Vector2.Subtract*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Subtract_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.Subtract(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Subtract(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Subtract one Vector from another</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Subtract(Vector2 a, Vector2 b)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>Result of subtraction</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Subtract_" data-uid="MatterHackers.VectorMath.Vector2.Subtract*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Subtract_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Subtract(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Vector2@)">Subtract(ref Vector2, ref Vector2, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Subtract one Vector from another</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Subtract(ref Vector2 a, ref Vector2 b, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">a</span></td>
+                    <td><p>First operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">b</span></td>
+                    <td><p>Second operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Result of subtraction</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToBoolean_" data-uid="MatterHackers.VectorMath.Vector2.ToBoolean*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToBoolean_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToBoolean(IFormatProvider)">ToBoolean(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ToBoolean(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToByte_" data-uid="MatterHackers.VectorMath.Vector2.ToByte*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToByte_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToByte(IFormatProvider)">ToByte(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public byte ToByte(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToChar_" data-uid="MatterHackers.VectorMath.Vector2.ToChar*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToChar_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToChar(IFormatProvider)">ToChar(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public char ToChar(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Char</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToDateTime_" data-uid="MatterHackers.VectorMath.Vector2.ToDateTime*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToDateTime_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToDateTime(IFormatProvider)">ToDateTime(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public DateTime ToDateTime(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">DateTime</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToDecimal_" data-uid="MatterHackers.VectorMath.Vector2.ToDecimal*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToDecimal_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToDecimal(IFormatProvider)">ToDecimal(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public decimal ToDecimal(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Decimal</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToDouble_" data-uid="MatterHackers.VectorMath.Vector2.ToDouble*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToDouble_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToDouble(IFormatProvider)">ToDouble(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double ToDouble(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToInt16_" data-uid="MatterHackers.VectorMath.Vector2.ToInt16*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToInt16_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToInt16(IFormatProvider)">ToInt16(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public short ToInt16(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int16</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToInt32_" data-uid="MatterHackers.VectorMath.Vector2.ToInt32*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToInt32_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToInt32(IFormatProvider)">ToInt32(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int ToInt32(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToInt64_" data-uid="MatterHackers.VectorMath.Vector2.ToInt64*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToInt64_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToInt64(IFormatProvider)">ToInt64(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public long ToInt64(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToSByte_" data-uid="MatterHackers.VectorMath.Vector2.ToSByte*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToSByte_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToSByte(IFormatProvider)">ToSByte(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public sbyte ToSByte(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.SByte</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToSingle_" data-uid="MatterHackers.VectorMath.Vector2.ToSingle*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToSingle_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToSingle(IFormatProvider)">ToSingle(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float ToSingle(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToString_" data-uid="MatterHackers.VectorMath.Vector2.ToString*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToString" data-uid="MatterHackers.VectorMath.Vector2.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Returns a System.String that represents the current instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.ValueType.ToString()</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToString_" data-uid="MatterHackers.VectorMath.Vector2.ToString*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToString_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToString(IFormatProvider)">ToString(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string ToString(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToType_" data-uid="MatterHackers.VectorMath.Vector2.ToType*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToType_Type_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToType(Type,IFormatProvider)">ToType(Type, IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public object ToType(Type conversionType, IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Type</span></td>
+                    <td><span class="parametername">conversionType</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToUInt16_" data-uid="MatterHackers.VectorMath.Vector2.ToUInt16*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToUInt16_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToUInt16(IFormatProvider)">ToUInt16(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ushort ToUInt16(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt16</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToUInt32_" data-uid="MatterHackers.VectorMath.Vector2.ToUInt32*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToUInt32_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToUInt32(IFormatProvider)">ToUInt32(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public uint ToUInt32(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_ToUInt64_" data-uid="MatterHackers.VectorMath.Vector2.ToUInt64*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_ToUInt64_IFormatProvider_" data-uid="MatterHackers.VectorMath.Vector2.ToUInt64(IFormatProvider)">ToUInt64(IFormatProvider)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ulong ToUInt64(IFormatProvider provider)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IFormatProvider</span></td>
+                    <td><span class="parametername">provider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.UInt64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Transform_" data-uid="MatterHackers.VectorMath.Vector2.Transform*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Transform_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Quaternion_" data-uid="MatterHackers.VectorMath.Vector2.Transform(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Quaternion)">Transform(Vector2, Quaternion)</h4>
+              <div class="markdown level1 summary"><p>Transforms a vector by a quaternion rotation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 Transform(Vector2 vec, Quaternion quat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The vector to transform.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Quaternion.html">Quaternion</a></td>
+                    <td><span class="parametername">quat</span></td>
+                    <td><p>The quaternion to rotate the vector by.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_Transform_" data-uid="MatterHackers.VectorMath.Vector2.Transform*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_Transform_MatterHackers_VectorMath_Vector2__MatterHackers_VectorMath_Quaternion__MatterHackers_VectorMath_Vector2__" data-uid="MatterHackers.VectorMath.Vector2.Transform(MatterHackers.VectorMath.Vector2@,MatterHackers.VectorMath.Quaternion@,MatterHackers.VectorMath.Vector2@)">Transform(ref Vector2, ref Quaternion, out Vector2)</h4>
+              <div class="markdown level1 summary"><p>Transforms a vector by a quaternion rotation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Transform(ref Vector2 vec, ref Quaternion quat, out Vector2 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The vector to transform.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Quaternion.html">Quaternion</a></td>
+                    <td><span class="parametername">quat</span></td>
+                    <td><p>The quaternion to rotate the vector by.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="operators">Operators
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Addition_" data-uid="MatterHackers.VectorMath.Vector2.op_Addition*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Addition_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_Addition(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Addition(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Adds two instances.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator +(Vector2 left, Vector2 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Division_" data-uid="MatterHackers.VectorMath.Vector2.op_Division*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Division_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.op_Division(MatterHackers.VectorMath.Vector2,System.Double)">Division(Vector2, Double)</h4>
+              <div class="markdown level1 summary"><p>Divides an instance by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator /(Vector2 vec, double f)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">f</span></td>
+                    <td><p>The scalar.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Division_" data-uid="MatterHackers.VectorMath.Vector2.op_Division*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Division_System_Double_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_Division(System.Double,MatterHackers.VectorMath.Vector2)">Division(Double, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Divides a scaler by an instance components wise.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator /(double f, Vector2 vec)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">f</span></td>
+                    <td><p>The instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The scalar.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Equality_" data-uid="MatterHackers.VectorMath.Vector2.op_Equality*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Equality_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_Equality(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Equality(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(Vector2 left, Vector2 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True, if both instances are equal; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Inequality_" data-uid="MatterHackers.VectorMath.Vector2.op_Inequality*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Inequality_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_Inequality(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Inequality(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Compares two instances for ienquality.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(Vector2 left, Vector2 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True, if the instances are not equal; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Multiply_" data-uid="MatterHackers.VectorMath.Vector2.op_Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Multiply_MatterHackers_VectorMath_Vector2_System_Double_" data-uid="MatterHackers.VectorMath.Vector2.op_Multiply(MatterHackers.VectorMath.Vector2,System.Double)">Multiply(Vector2, Double)</h4>
+              <div class="markdown level1 summary"><p>Multiplies an instance by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator *(Vector2 vec, double f)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">f</span></td>
+                    <td><p>The scalar.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Multiply_" data-uid="MatterHackers.VectorMath.Vector2.op_Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Multiply_System_Double_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_Multiply(System.Double,MatterHackers.VectorMath.Vector2)">Multiply(Double, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Multiply an instance by a scalar.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator *(double f, Vector2 vec)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">f</span></td>
+                    <td><p>The scalar.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_Subtraction_" data-uid="MatterHackers.VectorMath.Vector2.op_Subtraction*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_Subtraction_MatterHackers_VectorMath_Vector2_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_Subtraction(MatterHackers.VectorMath.Vector2,MatterHackers.VectorMath.Vector2)">Subtraction(Vector2, Vector2)</h4>
+              <div class="markdown level1 summary"><p>Subtracts two instances.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator -(Vector2 left, Vector2 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Vector2_op_UnaryNegation_" data-uid="MatterHackers.VectorMath.Vector2.op_UnaryNegation*"></a>
+              <h4 id="MatterHackers_VectorMath_Vector2_op_UnaryNegation_MatterHackers_VectorMath_Vector2_" data-uid="MatterHackers.VectorMath.Vector2.op_UnaryNegation(MatterHackers.VectorMath.Vector2)">UnaryNegation(Vector2)</h4>
+              <div class="markdown level1 summary"><p>Negates an instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 operator -(Vector2 vec)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><span class="parametername">vec</span></td>
+                    <td><p>The instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector2.html">Vector2</a></td>
+                    <td><p>The result of the operation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

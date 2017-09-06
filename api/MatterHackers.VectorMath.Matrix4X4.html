@@ -1,0 +1,3410 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Matrix4X4
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Matrix4X4
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_VectorMath_Matrix4X4" data-uid="MatterHackers.VectorMath.Matrix4X4">Struct Matrix4X4
+              </h1>
+              <div class="markdown level0 summary"><p>Represents a 4x4 Matrix with double-precision components.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.VectorMath</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_VectorMath_Matrix4X4_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public struct Matrix4X4 : IEquatable&lt;Matrix4X4&gt;</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4__ctor_" data-uid="MatterHackers.VectorMath.Matrix4X4.#ctor*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4__ctor_MatterHackers_VectorMath_Vector4_MatterHackers_VectorMath_Vector4_MatterHackers_VectorMath_Vector4_MatterHackers_VectorMath_Vector4_" data-uid="MatterHackers.VectorMath.Matrix4X4.#ctor(MatterHackers.VectorMath.Vector4,MatterHackers.VectorMath.Vector4,MatterHackers.VectorMath.Vector4,MatterHackers.VectorMath.Vector4)">Matrix4X4(Vector4, Vector4, Vector4, Vector4)</h4>
+              <div class="markdown level1 summary"><p>Constructs a new instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Matrix4X4(Vector4 row0, Vector4 row1, Vector4 row2, Vector4 row3)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td><span class="parametername">row0</span></td>
+                    <td><p>Top row of the matrix</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td><span class="parametername">row1</span></td>
+                    <td><p>Second row of the matrix</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td><span class="parametername">row2</span></td>
+                    <td><p>Third row of the matrix</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td><span class="parametername">row3</span></td>
+                    <td><p>Bottom row of the matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4__ctor_" data-uid="MatterHackers.VectorMath.Matrix4X4.#ctor*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">Matrix4X4(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Constructs a new instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Matrix4X4(double m00, double m01, double m02, double m03, double m10, double m11, double m12, double m13, double m20, double m21, double m22, double m23, double m30, double m31, double m32, double m33)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m00</span></td>
+                    <td><p>First item of the first row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m01</span></td>
+                    <td><p>Second item of the first row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m02</span></td>
+                    <td><p>Third item of the first row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m03</span></td>
+                    <td><p>Fourth item of the first row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m10</span></td>
+                    <td><p>First item of the second row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m11</span></td>
+                    <td><p>Second item of the second row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m12</span></td>
+                    <td><p>Third item of the second row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m13</span></td>
+                    <td><p>Fourth item of the second row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m20</span></td>
+                    <td><p>First item of the third row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m21</span></td>
+                    <td><p>Second item of the third row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m22</span></td>
+                    <td><p>Third item of the third row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m23</span></td>
+                    <td><p>First item of the third row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m30</span></td>
+                    <td><p>Fourth item of the fourth row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m31</span></td>
+                    <td><p>Second item of the fourth row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m32</span></td>
+                    <td><p>Third item of the fourth row.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">m33</span></td>
+                    <td><p>Fourth item of the fourth row.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4__ctor_" data-uid="MatterHackers.VectorMath.Matrix4X4.#ctor*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4__ctor_System_Double___" data-uid="MatterHackers.VectorMath.Matrix4X4.#ctor(System.Double[])">Matrix4X4(Double[])</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Matrix4X4(double[] double16)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span>[]</td>
+                    <td><span class="parametername">double16</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Identity" data-uid="MatterHackers.VectorMath.Matrix4X4.Identity">Identity</h4>
+              <div class="markdown level1 summary"><p>The identity matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 Identity</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Row0" data-uid="MatterHackers.VectorMath.Matrix4X4.Row0">Row0</h4>
+              <div class="markdown level1 summary"><p>Top row of the matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Row0</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Row1" data-uid="MatterHackers.VectorMath.Matrix4X4.Row1">Row1</h4>
+              <div class="markdown level1 summary"><p>2nd row of the matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Row1</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Row2" data-uid="MatterHackers.VectorMath.Matrix4X4.Row2">Row2</h4>
+              <div class="markdown level1 summary"><p>3rd row of the matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Row2</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Row3" data-uid="MatterHackers.VectorMath.Matrix4X4.Row3">Row3</h4>
+              <div class="markdown level1 summary"><p>Bottom row of the matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Row3</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Column0_" data-uid="MatterHackers.VectorMath.Matrix4X4.Column0*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Column0" data-uid="MatterHackers.VectorMath.Matrix4X4.Column0">Column0</h4>
+              <div class="markdown level1 summary"><p>The first column of this matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Column0 { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Column1_" data-uid="MatterHackers.VectorMath.Matrix4X4.Column1*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Column1" data-uid="MatterHackers.VectorMath.Matrix4X4.Column1">Column1</h4>
+              <div class="markdown level1 summary"><p>The second column of this matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Column1 { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Column2_" data-uid="MatterHackers.VectorMath.Matrix4X4.Column2*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Column2" data-uid="MatterHackers.VectorMath.Matrix4X4.Column2">Column2</h4>
+              <div class="markdown level1 summary"><p>The third column of this matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Column2 { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Column3_" data-uid="MatterHackers.VectorMath.Matrix4X4.Column3*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Column3" data-uid="MatterHackers.VectorMath.Matrix4X4.Column3">Column3</h4>
+              <div class="markdown level1 summary"><p>The fourth column of this matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector4 Column3 { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector4.html">Vector4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Determinant_" data-uid="MatterHackers.VectorMath.Matrix4X4.Determinant*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Determinant" data-uid="MatterHackers.VectorMath.Matrix4X4.Determinant">Determinant</h4>
+              <div class="markdown level1 summary"><p>The determinant of this matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double Determinant { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Item_" data-uid="MatterHackers.VectorMath.Matrix4X4.Item*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Item_System_Int32_System_Int32_" data-uid="MatterHackers.VectorMath.Matrix4X4.Item(System.Int32,System.Int32)">Item[Int32, Int32]</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double this[int row, int column] { get; set; }</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">row</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">column</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M11_" data-uid="MatterHackers.VectorMath.Matrix4X4.M11*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M11" data-uid="MatterHackers.VectorMath.Matrix4X4.M11">M11</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 1, column 1 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M11 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M12_" data-uid="MatterHackers.VectorMath.Matrix4X4.M12*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M12" data-uid="MatterHackers.VectorMath.Matrix4X4.M12">M12</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 1, column 2 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M12 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M13_" data-uid="MatterHackers.VectorMath.Matrix4X4.M13*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M13" data-uid="MatterHackers.VectorMath.Matrix4X4.M13">M13</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 1, column 3 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M13 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M14_" data-uid="MatterHackers.VectorMath.Matrix4X4.M14*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M14" data-uid="MatterHackers.VectorMath.Matrix4X4.M14">M14</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 1, column 4 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M14 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M21_" data-uid="MatterHackers.VectorMath.Matrix4X4.M21*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M21" data-uid="MatterHackers.VectorMath.Matrix4X4.M21">M21</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 2, column 1 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M21 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M22_" data-uid="MatterHackers.VectorMath.Matrix4X4.M22*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M22" data-uid="MatterHackers.VectorMath.Matrix4X4.M22">M22</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 2, column 2 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M22 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M23_" data-uid="MatterHackers.VectorMath.Matrix4X4.M23*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M23" data-uid="MatterHackers.VectorMath.Matrix4X4.M23">M23</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 2, column 3 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M23 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M24_" data-uid="MatterHackers.VectorMath.Matrix4X4.M24*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M24" data-uid="MatterHackers.VectorMath.Matrix4X4.M24">M24</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 2, column 4 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M24 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M31_" data-uid="MatterHackers.VectorMath.Matrix4X4.M31*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M31" data-uid="MatterHackers.VectorMath.Matrix4X4.M31">M31</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 3, column 1 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M31 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M32_" data-uid="MatterHackers.VectorMath.Matrix4X4.M32*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M32" data-uid="MatterHackers.VectorMath.Matrix4X4.M32">M32</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 3, column 2 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M32 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M33_" data-uid="MatterHackers.VectorMath.Matrix4X4.M33*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M33" data-uid="MatterHackers.VectorMath.Matrix4X4.M33">M33</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 3, column 3 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M33 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M34_" data-uid="MatterHackers.VectorMath.Matrix4X4.M34*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M34" data-uid="MatterHackers.VectorMath.Matrix4X4.M34">M34</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 3, column 4 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M34 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M41_" data-uid="MatterHackers.VectorMath.Matrix4X4.M41*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M41" data-uid="MatterHackers.VectorMath.Matrix4X4.M41">M41</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 4, column 1 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M41 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M42_" data-uid="MatterHackers.VectorMath.Matrix4X4.M42*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M42" data-uid="MatterHackers.VectorMath.Matrix4X4.M42">M42</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 4, column 2 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M42 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M43_" data-uid="MatterHackers.VectorMath.Matrix4X4.M43*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M43" data-uid="MatterHackers.VectorMath.Matrix4X4.M43">M43</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 4, column 3 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M43 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_M44_" data-uid="MatterHackers.VectorMath.Matrix4X4.M44*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_M44" data-uid="MatterHackers.VectorMath.Matrix4X4.M44">M44</h4>
+              <div class="markdown level1 summary"><p>Gets or sets the value at row 4, column 4 of this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double M44 { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Position_" data-uid="MatterHackers.VectorMath.Matrix4X4.Position*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Position" data-uid="MatterHackers.VectorMath.Matrix4X4.Position">Position</h4>
+              <div class="markdown level1 summary"><p>Get just the position out of the matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 Position { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateFromAxisAngle_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateFromAxisAngle*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateFromAxisAngle_MatterHackers_VectorMath_Vector3_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateFromAxisAngle(MatterHackers.VectorMath.Vector3,System.Double)">CreateFromAxisAngle(Vector3, Double)</h4>
+              <div class="markdown level1 summary"><p>Build a rotation matrix from the specified axis/angle rotation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateFromAxisAngle(Vector3 axis, double angle)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td><p>The axis to rotate about.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>Angle in radians to rotate counter-clockwise (looking in the direction of the given axis).</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A matrix instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateFromAxisAngle_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateFromAxisAngle*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateFromAxisAngle_MatterHackers_VectorMath_Vector3_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateFromAxisAngle(MatterHackers.VectorMath.Vector3,System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateFromAxisAngle(Vector3, Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Build a rotation matrix from the specified axis/angle rotation.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateFromAxisAngle(Vector3 axis, double angle, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td><p>The axis to rotate about.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>Angle in radians to rotate counter-clockwise (looking in the direction of the given axis).</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>A matrix instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographic_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographic*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographic_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographic(System.Double,System.Double,System.Double,System.Double)">CreateOrthographic(Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates an orthographic projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateOrthographic(double width, double height, double zNear, double zFar)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">width</span></td>
+                    <td><p>The width of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">height</span></td>
+                    <td><p>The height of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>The near edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>The far edge of the projection volume.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographic_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographic*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographic_System_Double_System_Double_System_Double_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographic(System.Double,System.Double,System.Double,System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateOrthographic(Double, Double, Double, Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Creates an orthographic projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateOrthographic(double width, double height, double zNear, double zFar, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">width</span></td>
+                    <td><p>The width of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">height</span></td>
+                    <td><p>The height of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>The near edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>The far edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographicOffCenter_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographicOffCenter*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographicOffCenter_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographicOffCenter(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">CreateOrthographicOffCenter(Double, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates an orthographic projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateOrthographicOffCenter(double left, double right, double bottom, double top, double zNear, double zFar)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td><p>The bottom edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td><p>The top edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>The near edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>The far edge of the projection volume.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographicOffCenter_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographicOffCenter*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateOrthographicOffCenter_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateOrthographicOffCenter(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateOrthographicOffCenter(Double, Double, Double, Double, Double, Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Creates an orthographic projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateOrthographicOffCenter(double left, double right, double bottom, double top, double zNear, double zFar, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td><p>The bottom edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td><p>The top edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>The near edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>The far edge of the projection volume.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveFieldOfView_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveFieldOfView*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveFieldOfView_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveFieldOfView(System.Double,System.Double,System.Double,System.Double)">CreatePerspectiveFieldOfView(Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates a perspective projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreatePerspectiveFieldOfView(double fovYRadians, double aspectWidthOverHeight, double zNear, double zFar)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">fovYRadians</span></td>
+                    <td><p>Angle of the field of view in the y direction (in radians)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">aspectWidthOverHeight</span></td>
+                    <td><p>Aspect ratio of the view (width / height)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>Distance to the near clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>Distance to the far clip plane</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A projection matrix that transforms camera space to raster space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>Thrown under the following conditions:
+<ul><li></li><li></li><li></li><li></li><li></li></ul></p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveFieldOfView_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveFieldOfView*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveFieldOfView_System_Double_System_Double_System_Double_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveFieldOfView(System.Double,System.Double,System.Double,System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreatePerspectiveFieldOfView(Double, Double, Double, Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Creates a perspective projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreatePerspectiveFieldOfView(double fovYRadians, double aspectWidthOverHeight, double zNear, double zFar, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">fovYRadians</span></td>
+                    <td><p>Angle of the field of view in the y direction (in radians)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">aspectWidthOverHeight</span></td>
+                    <td><p>Aspect ratio of the view (width / height)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>Distance to the near clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>Distance to the far clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>A projection matrix that transforms camera space to raster space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>Thrown under the following conditions:
+<ul><li></li><li></li><li></li><li></li><li></li></ul></p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveOffCenter_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveOffCenter*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveOffCenter_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveOffCenter(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">CreatePerspectiveOffCenter(Double, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates an perspective projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreatePerspectiveOffCenter(double left, double right, double bottom, double top, double zNear, double zFar)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>Left edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>Right edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td><p>Bottom edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td><p>Top edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>Distance to the near clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>Distance to the far clip plane</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A projection matrix that transforms camera space to raster space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>Thrown under the following conditions:
+<ul><li></li><li></li><li></li></ul></p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveOffCenter_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveOffCenter*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreatePerspectiveOffCenter_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreatePerspectiveOffCenter(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreatePerspectiveOffCenter(Double, Double, Double, Double, Double, Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Creates an perspective projection matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreatePerspectiveOffCenter(double left, double right, double bottom, double top, double zNear, double zFar, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>Left edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>Right edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td><p>Bottom edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td><p>Top edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zNear</span></td>
+                    <td><p>Distance to the near clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">zFar</span></td>
+                    <td><p>Distance to the far clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>A projection matrix that transforms camera space to raster space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+                    <td><p>Thrown under the following conditions:
+<ul><li></li><li></li><li></li></ul></p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_MatterHackers_VectorMath_Quaternion_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation(MatterHackers.VectorMath.Quaternion)">CreateRotation(Quaternion)</h4>
+              <div class="markdown level1 summary"><p>Build a rotation matrix from a quaternion</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotation(Quaternion q)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Quaternion.html">Quaternion</a></td>
+                    <td><span class="parametername">q</span></td>
+                    <td><p>the quaternion</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A rotation matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation(MatterHackers.VectorMath.Vector3)">CreateRotation(Vector3)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotation(Vector3 radians)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">radians</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_MatterHackers_VectorMath_Vector3_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation(MatterHackers.VectorMath.Vector3,MatterHackers.VectorMath.Vector3)">CreateRotation(Vector3, Vector3)</h4>
+              <div class="markdown level1 summary"><p>Build a rotation matrix that will rotate from one direction to another</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotation(Vector3 startingDirection, Vector3 endingDirection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">startingDirection</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">endingDirection</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotation_MatterHackers_VectorMath_Vector3_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotation(MatterHackers.VectorMath.Vector3,System.Double)">CreateRotation(Vector3, Double)</h4>
+              <div class="markdown level1 summary"><p>Build a rotation matrix to rotate about the given axis</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotation(Vector3 axis, double angle)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">axis</span></td>
+                    <td><p>the axis to rotate about</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>angle in radians to rotate counter-clockwise (looking in the direction of the given axis)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A rotation matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotationX_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationX*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotationX_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationX(System.Double)">CreateRotationX(Double)</h4>
+              <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the x-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotationX(double angle)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>The counter-clockwise angle in radians.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The resulting Matrix4 instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotationX_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationX*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotationX_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationX(System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateRotationX(Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the x-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateRotationX(double angle, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>The counter-clockwise angle in radians.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4 instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotationY_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationY*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotationY_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationY(System.Double)">CreateRotationY(Double)</h4>
+              <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotationY(double angle)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>The counter-clockwise angle in radians.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The resulting Matrix4 instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotationY_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationY*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotationY_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationY(System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateRotationY(Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the y-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateRotationY(double angle, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>The counter-clockwise angle in radians.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4 instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotationZ_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationZ*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotationZ_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationZ(System.Double)">CreateRotationZ(Double)</h4>
+              <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the z-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateRotationZ(double angle)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>The counter-clockwise angle in radians.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The resulting Matrix4 instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateRotationZ_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationZ*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateRotationZ_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateRotationZ(System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateRotationZ(Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Builds a rotation matrix for a rotation around the z-axis.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateRotationZ(double angle, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">angle</span></td>
+                    <td><p>The counter-clockwise angle in radians.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4 instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateScale_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateScale*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateScale_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateScale(MatterHackers.VectorMath.Vector3)">CreateScale(Vector3)</h4>
+              <div class="markdown level1 summary"><p>Build a scaling matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateScale(Vector3 scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Scale factors for x,y and z axes</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A scaling matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateScale_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateScale*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateScale_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateScale(System.Double)">CreateScale(Double)</h4>
+              <div class="markdown level1 summary"><p>Build a scaling matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateScale(double scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td><p>Single scale factor for x,y and z axes</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A scaling matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateScale_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateScale*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateScale_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateScale(System.Double,System.Double,System.Double)">CreateScale(Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Build a scaling matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateScale(double x, double y, double z)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td><p>Scale factor for x-axis</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td><p>Scale factor for y-axis</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">z</span></td>
+                    <td><p>Scale factor for z-axis</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A scaling matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation(MatterHackers.VectorMath.Vector3)">CreateTranslation(Vector3)</h4>
+              <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateTranslation(Vector3 vector)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>The translation vector.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_MatterHackers_VectorMath_Vector3__MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation(MatterHackers.VectorMath.Vector3@,MatterHackers.VectorMath.Matrix4X4@)">CreateTranslation(ref Vector3, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateTranslation(ref Vector3 vector, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">vector</span></td>
+                    <td><p>The translation vector.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation(System.Double,System.Double,System.Double)">CreateTranslation(Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 CreateTranslation(double x, double y, double z)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td><p>X translation.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td><p>Y translation.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">z</span></td>
+                    <td><p>Z translation.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_CreateTranslation_System_Double_System_Double_System_Double_MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.CreateTranslation(System.Double,System.Double,System.Double,MatterHackers.VectorMath.Matrix4X4@)">CreateTranslation(Double, Double, Double, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Creates a translation matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void CreateTranslation(double x, double y, double z, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td><p>X translation.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td><p>Y translation.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">z</span></td>
+                    <td><p>Z translation.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The resulting Matrix4d instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Equals_" data-uid="MatterHackers.VectorMath.Matrix4X4.Equals*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Equals_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.Equals(MatterHackers.VectorMath.Matrix4X4)">Equals(Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Indicates whether the current matrix is equal to another matrix.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Equals(Matrix4X4 other)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">other</span></td>
+                    <td><p>An matrix to compare with this matrix.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>true if the current matrix is equal to the matrix parameter; otherwise, false.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Equals_" data-uid="MatterHackers.VectorMath.Matrix4X4.Equals*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Equals_System_Object_" data-uid="MatterHackers.VectorMath.Matrix4X4.Equals(System.Object)">Equals(Object)</h4>
+              <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">obj</span></td>
+                    <td><p>The object to compare to.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True if the instances are equal; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Frustum_" data-uid="MatterHackers.VectorMath.Matrix4X4.Frustum*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Frustum_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.Frustum(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">Frustum(Double, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Build a projection matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 Frustum(double left, double right, double bottom, double top, double near, double far)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>Left edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>Right edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottom</span></td>
+                    <td><p>Bottom edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">top</span></td>
+                    <td><p>Top edge of the view frustum</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">near</span></td>
+                    <td><p>Distance to the near clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">far</span></td>
+                    <td><p>Distance to the far clip plane</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A projection matrix that transforms camera space to raster space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_GetAsDoubleArray_" data-uid="MatterHackers.VectorMath.Matrix4X4.GetAsDoubleArray*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_GetAsDoubleArray" data-uid="MatterHackers.VectorMath.Matrix4X4.GetAsDoubleArray">GetAsDoubleArray()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double[] GetAsDoubleArray()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_GetAsFloatArray_" data-uid="MatterHackers.VectorMath.Matrix4X4.GetAsFloatArray*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_GetAsFloatArray" data-uid="MatterHackers.VectorMath.Matrix4X4.GetAsFloatArray">GetAsFloatArray()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float[] GetAsFloatArray()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span>[]</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_GetHashCode_" data-uid="MatterHackers.VectorMath.Matrix4X4.GetHashCode*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_GetHashCode" data-uid="MatterHackers.VectorMath.Matrix4X4.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"><p>Returns the hashcode for this instance.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><p>A System.Int32 containing the unique hashcode for this instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_GetRotation_" data-uid="MatterHackers.VectorMath.Matrix4X4.GetRotation*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_GetRotation" data-uid="MatterHackers.VectorMath.Matrix4X4.GetRotation">GetRotation()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Quaternion GetRotation()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Quaternion.html">Quaternion</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Invert_" data-uid="MatterHackers.VectorMath.Matrix4X4.Invert*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Invert" data-uid="MatterHackers.VectorMath.Matrix4X4.Invert">Invert()</h4>
+              <div class="markdown level1 summary"><p>Converts this instance into its inverse.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Invert()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Invert_" data-uid="MatterHackers.VectorMath.Matrix4X4.Invert*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Invert_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.Invert(MatterHackers.VectorMath.Matrix4X4)">Invert(Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Calculate the inverse of the given matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 Invert(Matrix4X4 mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td><p>The matrix to invert</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The inverse of the given matrix if it has one, or the input if it is singular</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_LookAt_" data-uid="MatterHackers.VectorMath.Matrix4X4.LookAt*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_LookAt_MatterHackers_VectorMath_Vector3_MatterHackers_VectorMath_Vector3_MatterHackers_VectorMath_Vector3_" data-uid="MatterHackers.VectorMath.Matrix4X4.LookAt(MatterHackers.VectorMath.Vector3,MatterHackers.VectorMath.Vector3,MatterHackers.VectorMath.Vector3)">LookAt(Vector3, Vector3, Vector3)</h4>
+              <div class="markdown level1 summary"><p>Build a world space to camera space matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 LookAt(Vector3 eye, Vector3 target, Vector3 up)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">eye</span></td>
+                    <td><p>Eye (camera) position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">target</span></td>
+                    <td><p>Target position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Vector3.html">Vector3</a></td>
+                    <td><span class="parametername">up</span></td>
+                    <td><p>Up vector in world space (should not be parallel to the camera direction, that is target - eye)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A Matrix that transforms world space to camera space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_LookAt_" data-uid="MatterHackers.VectorMath.Matrix4X4.LookAt*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_LookAt_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.LookAt(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">LookAt(Double, Double, Double, Double, Double, Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Build a world space to camera space matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 LookAt(double eyeX, double eyeY, double eyeZ, double targetX, double targetY, double targetZ, double upX, double upY, double upZ)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">eyeX</span></td>
+                    <td><p>Eye (camera) position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">eyeY</span></td>
+                    <td><p>Eye (camera) position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">eyeZ</span></td>
+                    <td><p>Eye (camera) position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">targetX</span></td>
+                    <td><p>Target position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">targetY</span></td>
+                    <td><p>Target position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">targetZ</span></td>
+                    <td><p>Target position in world space</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">upX</span></td>
+                    <td><p>Up vector in world space (should not be parallel to the camera direction, that is target - eye)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">upY</span></td>
+                    <td><p>Up vector in world space (should not be parallel to the camera direction, that is target - eye)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">upZ</span></td>
+                    <td><p>Up vector in world space (should not be parallel to the camera direction, that is target - eye)</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A Matrix4 that transforms world space to camera space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Mult_" data-uid="MatterHackers.VectorMath.Matrix4X4.Mult*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Mult_MatterHackers_VectorMath_Matrix4X4_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.Mult(MatterHackers.VectorMath.Matrix4X4,MatterHackers.VectorMath.Matrix4X4)">Mult(Matrix4X4, Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 Mult(Matrix4X4 left, Matrix4X4 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left operand of the multiplication.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right operand of the multiplication.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A new instance that is the result of the multiplication</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Mult_" data-uid="MatterHackers.VectorMath.Matrix4X4.Mult*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Mult_MatterHackers_VectorMath_Matrix4X4__MatterHackers_VectorMath_Matrix4X4__MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.Mult(MatterHackers.VectorMath.Matrix4X4@,MatterHackers.VectorMath.Matrix4X4@,MatterHackers.VectorMath.Matrix4X4@)">Mult(ref Matrix4X4, ref Matrix4X4, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Multiplies two instances.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Mult(ref Matrix4X4 left, ref Matrix4X4 right, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The left operand of the multiplication.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The right operand of the multiplication.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>A new instance that is the result of the multiplication</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Perspective_" data-uid="MatterHackers.VectorMath.Matrix4X4.Perspective*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Perspective_System_Double_System_Double_System_Double_System_Double_" data-uid="MatterHackers.VectorMath.Matrix4X4.Perspective(System.Double,System.Double,System.Double,System.Double)">Perspective(Double, Double, Double, Double)</h4>
+              <div class="markdown level1 summary"><p>Build a projection matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 Perspective(double fovy, double aspect, double near, double far)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">fovy</span></td>
+                    <td><p>Angle of the field of view in the y direction (in radians)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">aspect</span></td>
+                    <td><p>Aspect ratio of the view (width / height)</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">near</span></td>
+                    <td><p>Distance to the near clip plane</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">far</span></td>
+                    <td><p>Distance to the far clip plane</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A projection matrix that transforms camera space to raster space</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_ToString_" data-uid="MatterHackers.VectorMath.Matrix4X4.ToString*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_ToString" data-uid="MatterHackers.VectorMath.Matrix4X4.ToString">ToString()</h4>
+              <div class="markdown level1 summary"><p>Returns a System.String that represents the current Matrix44.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.ValueType.ToString()</span></div>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Transpose_" data-uid="MatterHackers.VectorMath.Matrix4X4.Transpose*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Transpose" data-uid="MatterHackers.VectorMath.Matrix4X4.Transpose">Transpose()</h4>
+              <div class="markdown level1 summary"><p>Converts this instance into its transpose.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void Transpose()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Transpose_" data-uid="MatterHackers.VectorMath.Matrix4X4.Transpose*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Transpose_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.Transpose(MatterHackers.VectorMath.Matrix4X4)">Transpose(Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Calculate the transpose of the given matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 Transpose(Matrix4X4 mat)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td><p>The matrix to transpose</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>The transpose of the given matrix</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_Transpose_" data-uid="MatterHackers.VectorMath.Matrix4X4.Transpose*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_Transpose_MatterHackers_VectorMath_Matrix4X4__MatterHackers_VectorMath_Matrix4X4__" data-uid="MatterHackers.VectorMath.Matrix4X4.Transpose(MatterHackers.VectorMath.Matrix4X4@,MatterHackers.VectorMath.Matrix4X4@)">Transpose(ref Matrix4X4, out Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Calculate the transpose of the given matrix</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void Transpose(ref Matrix4X4 mat, out Matrix4X4 result)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">mat</span></td>
+                    <td><p>The matrix to transpose</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>The result of the calculation</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="operators">Operators
+              </h3>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_op_Equality_" data-uid="MatterHackers.VectorMath.Matrix4X4.op_Equality*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_op_Equality_MatterHackers_VectorMath_Matrix4X4_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.op_Equality(MatterHackers.VectorMath.Matrix4X4,MatterHackers.VectorMath.Matrix4X4)">Equality(Matrix4X4, Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Compares two instances for equality.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator ==(Matrix4X4 left, Matrix4X4 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The first instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The second instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True, if left equals right; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_op_Inequality_" data-uid="MatterHackers.VectorMath.Matrix4X4.op_Inequality*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_op_Inequality_MatterHackers_VectorMath_Matrix4X4_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.op_Inequality(MatterHackers.VectorMath.Matrix4X4,MatterHackers.VectorMath.Matrix4X4)">Inequality(Matrix4X4, Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Compares two instances for inequality.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static bool operator !=(Matrix4X4 left, Matrix4X4 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>The first instance.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>The second instance.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><p>True, if left does not equal right; false otherwise.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_VectorMath_Matrix4X4_op_Multiply_" data-uid="MatterHackers.VectorMath.Matrix4X4.op_Multiply*"></a>
+              <h4 id="MatterHackers_VectorMath_Matrix4X4_op_Multiply_MatterHackers_VectorMath_Matrix4X4_MatterHackers_VectorMath_Matrix4X4_" data-uid="MatterHackers.VectorMath.Matrix4X4.op_Multiply(MatterHackers.VectorMath.Matrix4X4,MatterHackers.VectorMath.Matrix4X4)">Multiply(Matrix4X4, Matrix4X4)</h4>
+              <div class="markdown level1 summary"><p>Matrix multiplication</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Matrix4X4 operator *(Matrix4X4 left, Matrix4X4 right)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">left</span></td>
+                    <td><p>left-hand operand</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><span class="parametername">right</span></td>
+                    <td><p>right-hand operand</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.VectorMath.Matrix4X4.html">Matrix4X4</a></td>
+                    <td><p>A new Matrix44 which holds the result of the multiplication</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

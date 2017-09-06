@@ -1,0 +1,1421 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImageClippingProxy
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImageClippingProxy
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_Agg_Image_ImageClippingProxy" data-uid="MatterHackers.Agg.Image.ImageClippingProxy">Class ImageClippingProxy
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html">ImageProxy</a></div>
+                  <div class="level2"><span class="xref">ImageClippingProxy</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_linkedImage">ImageProxy.linkedImage</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_LinkedImage">ImageProxy.LinkedImage</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_OriginOffset">ImageProxy.OriginOffset</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_Width">ImageProxy.Width</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_Height">ImageProxy.Height</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_StrideInBytes">ImageProxy.StrideInBytes()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_StrideInBytesAbs">ImageProxy.StrideInBytesAbs()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetBounds">ImageProxy.GetBounds()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_NewGraphics2D">ImageProxy.NewGraphics2D()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetRecieveBlender">ImageProxy.GetRecieveBlender()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_SetRecieveBlender_MatterHackers_Agg_Image_IRecieveBlenderByte_">ImageProxy.SetRecieveBlender(IRecieveBlenderByte)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_CopyFrom_MatterHackers_Agg_Image_IImageByte_">ImageProxy.CopyFrom(IImageByte)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_BlendPixel_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte_">ImageProxy.BlendPixel(Int32, Int32, RGBA_Bytes, Byte)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetBuffer">ImageProxy.GetBuffer()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetBufferOffsetXY_System_Int32_System_Int32_">ImageProxy.GetBufferOffsetXY(Int32, Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetBufferOffsetY_System_Int32_">ImageProxy.GetBufferOffsetY(Int32)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetBytesBetweenPixelsInclusive">ImageProxy.GetBytesBetweenPixelsInclusive()</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_BitDepth">ImageProxy.BitDepth</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_MarkImageChanged">ImageProxy.MarkImageChanged()</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.Agg.Image</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_Agg_Image_ImageClippingProxy_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class ImageClippingProxy : ImageProxy, IImageByte, IImage</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy__ctor_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.#ctor*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy__ctor_MatterHackers_Agg_Image_IImageByte_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.#ctor(MatterHackers.Agg.Image.IImageByte)">ImageClippingProxy(IImageByte)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ImageClippingProxy(IImageByte ren)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.Image.IImageByte.html">IImageByte</a></td>
+                    <td><span class="parametername">ren</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_cover_full" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.cover_full">cover_full</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public const byte cover_full = 255</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Byte</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_blend_color_hspan_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_color_hspan*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_blend_color_hspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_System_Byte___System_Int32_System_Boolean_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_color_hspan(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes[],System.Int32,System.Byte[],System.Int32,System.Boolean)">blend_color_hspan(Int32, Int32, Int32, RGBA_Bytes[], Int32, Byte[], Int32, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void blend_color_hspan(int x, int y, int in_len, RGBA_Bytes[] colors, int colorsIndex, byte[] covers, int coversIndex, bool firstCoverForAll)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">in_len</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a>[]</td>
+                    <td><span class="parametername">colors</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">colorsIndex</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">covers</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">coversIndex</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">firstCoverForAll</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_blend_color_hspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_System_Byte___System_Int32_System_Boolean_">ImageProxy.blend_color_hspan(Int32, Int32, Int32, RGBA_Bytes[], Int32, Byte[], Int32, Boolean)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_blend_color_vspan_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_color_vspan*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_blend_color_vspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_System_Byte___System_Int32_System_Boolean_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_color_vspan(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes[],System.Int32,System.Byte[],System.Int32,System.Boolean)">blend_color_vspan(Int32, Int32, Int32, RGBA_Bytes[], Int32, Byte[], Int32, Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void blend_color_vspan(int x, int y, int len, RGBA_Bytes[] colors, int colorsIndex, byte[] covers, int coversIndex, bool firstCoverForAll)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">len</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a>[]</td>
+                    <td><span class="parametername">colors</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">colorsIndex</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">covers</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">coversIndex</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">firstCoverForAll</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_blend_color_vspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_System_Byte___System_Int32_System_Boolean_">ImageProxy.blend_color_vspan(Int32, Int32, Int32, RGBA_Bytes[], Int32, Byte[], Int32, Boolean)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_blend_hline_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_hline*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_blend_hline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_hline(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes,System.Byte)">blend_hline(Int32, Int32, Int32, RGBA_Bytes, Byte)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void blend_hline(int x1, int y, int x2, RGBA_Bytes c, byte cover)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span></td>
+                    <td><span class="parametername">cover</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_blend_hline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte_">ImageProxy.blend_hline(Int32, Int32, Int32, RGBA_Bytes, Byte)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_blend_solid_hspan_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_solid_hspan*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_blend_solid_hspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte___System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_solid_hspan(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes,System.Byte[],System.Int32)">blend_solid_hspan(Int32, Int32, Int32, RGBA_Bytes, Byte[], Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void blend_solid_hspan(int x, int y, int len, RGBA_Bytes c, byte[] covers, int coversIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">len</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">covers</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">coversIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_blend_solid_hspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte___System_Int32_">ImageProxy.blend_solid_hspan(Int32, Int32, Int32, RGBA_Bytes, Byte[], Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_blend_solid_vspan_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_solid_vspan*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_blend_solid_vspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte___System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_solid_vspan(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes,System.Byte[],System.Int32)">blend_solid_vspan(Int32, Int32, Int32, RGBA_Bytes, Byte[], Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void blend_solid_vspan(int x, int y, int len, RGBA_Bytes c, byte[] covers, int coversIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">len</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">covers</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">coversIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_blend_solid_vspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte___System_Int32_">ImageProxy.blend_solid_vspan(Int32, Int32, Int32, RGBA_Bytes, Byte[], Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_blend_vline_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_vline*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_blend_vline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.blend_vline(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes,System.Byte)">blend_vline(Int32, Int32, Int32, RGBA_Bytes, Byte)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void blend_vline(int x, int y1, int y2, RGBA_Bytes c, byte cover)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span></td>
+                    <td><span class="parametername">cover</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_blend_vline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_System_Byte_">ImageProxy.blend_vline(Int32, Int32, Int32, RGBA_Bytes, Byte)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_clip_box_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_clip_box*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_clip_box" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_clip_box">bounding_clip_box()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RectangleInt bounding_clip_box()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_xmax_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_xmax*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_xmax" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_xmax">bounding_xmax()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int bounding_xmax()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_xmin_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_xmin*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_xmin" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_xmin">bounding_xmin()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int bounding_xmin()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_ymax_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_ymax*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_ymax" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_ymax">bounding_ymax()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int bounding_ymax()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_ymin_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_ymin*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_bounding_ymin" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.bounding_ymin">bounding_ymin()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int bounding_ymin()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_clear_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clear*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_clear_MatterHackers_Agg_IColorType_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clear(MatterHackers.Agg.IColorType)">clear(IColorType)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void clear(IColorType in_c)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.IColorType.html">IColorType</a></td>
+                    <td><span class="parametername">in_c</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_clip_box_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clip_box*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_clip_box" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clip_box">clip_box()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RectangleInt clip_box()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_clip_box_naked_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clip_box_naked*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_clip_box_naked_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clip_box_naked(System.Int32,System.Int32,System.Int32,System.Int32)">clip_box_naked(Int32, Int32, Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void clip_box_naked(int x1, int y1, int x2, int y2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y2</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_clip_rect_area_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clip_rect_area*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_clip_rect_area_MatterHackers_Agg_RectangleInt__MatterHackers_Agg_RectangleInt__System_Int32_System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.clip_rect_area(MatterHackers.Agg.RectangleInt@,MatterHackers.Agg.RectangleInt@,System.Int32,System.Int32)">clip_rect_area(ref RectangleInt, ref RectangleInt, Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RectangleInt clip_rect_area(ref RectangleInt destRect, ref RectangleInt sourceRect, int sourceWidth, int sourceHeight)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td><span class="parametername">destRect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td><span class="parametername">sourceRect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">sourceWidth</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">sourceHeight</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_copy_color_hspan_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_color_hspan*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_copy_color_hspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_color_hspan(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes[],System.Int32)">copy_color_hspan(Int32, Int32, Int32, RGBA_Bytes[], Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void copy_color_hspan(int x, int y, int len, RGBA_Bytes[] colors, int colorsIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">len</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a>[]</td>
+                    <td><span class="parametername">colors</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">colorsIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_copy_color_hspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_">ImageProxy.copy_color_hspan(Int32, Int32, Int32, RGBA_Bytes[], Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_copy_color_vspan_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_color_vspan*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_copy_color_vspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_color_vspan(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes[],System.Int32)">copy_color_vspan(Int32, Int32, Int32, RGBA_Bytes[], Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void copy_color_vspan(int x, int y, int len, RGBA_Bytes[] colors, int colorsIndex)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">len</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a>[]</td>
+                    <td><span class="parametername">colors</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">colorsIndex</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_copy_color_vspan_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes___System_Int32_">ImageProxy.copy_color_vspan(Int32, Int32, Int32, RGBA_Bytes[], Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_copy_from_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_from*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_copy_from_MatterHackers_Agg_Image_IImageByte_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_from(MatterHackers.Agg.Image.IImageByte)">copy_from(IImageByte)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void copy_from(IImageByte src)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.Image.IImageByte.html">IImageByte</a></td>
+                    <td><span class="parametername">src</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_copy_hline_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_hline*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_copy_hline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_hline(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes)">copy_hline(Int32, Int32, Int32, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void copy_hline(int x1, int y, int x2, RGBA_Bytes c)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_copy_hline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_">ImageProxy.copy_hline(Int32, Int32, Int32, RGBA_Bytes)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_copy_pixel_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_pixel*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_copy_pixel_System_Int32_System_Int32_System_Byte___System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_pixel(System.Int32,System.Int32,System.Byte[],System.Int32)">copy_pixel(Int32, Int32, Byte[], Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void copy_pixel(int x, int y, byte[] c, int ByteOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Byte</span>[]</td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">ByteOffset</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_copy_pixel_System_Int32_System_Int32_System_Byte___System_Int32_">ImageProxy.copy_pixel(Int32, Int32, Byte[], Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_copy_vline_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_vline*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_copy_vline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.copy_vline(System.Int32,System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes)">copy_vline(Int32, Int32, Int32, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void copy_vline(int x, int y1, int y2, RGBA_Bytes c)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">c</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_copy_vline_System_Int32_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_">ImageProxy.copy_vline(Int32, Int32, Int32, RGBA_Bytes)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_CopyFrom_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.CopyFrom*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_CopyFrom_MatterHackers_Agg_Image_IImageByte_MatterHackers_Agg_RectangleInt_System_Int32_System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.CopyFrom(MatterHackers.Agg.Image.IImageByte,MatterHackers.Agg.RectangleInt,System.Int32,System.Int32)">CopyFrom(IImageByte, RectangleInt, Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void CopyFrom(IImageByte sourceImage, RectangleInt sourceImageRect, int destXOffset, int destYOffset)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.Image.IImageByte.html">IImageByte</a></td>
+                    <td><span class="parametername">sourceImage</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RectangleInt.html">RectangleInt</a></td>
+                    <td><span class="parametername">sourceImageRect</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">destXOffset</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">destYOffset</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_CopyFrom_MatterHackers_Agg_Image_IImageByte_MatterHackers_Agg_RectangleInt_System_Int32_System_Int32_">ImageProxy.CopyFrom(IImageByte, RectangleInt, Int32, Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_GetPixel_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.GetPixel*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_GetPixel_System_Int32_System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.GetPixel(System.Int32,System.Int32)">GetPixel(Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override RGBA_Bytes GetPixel(int x, int y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_GetPixel_System_Int32_System_Int32_">ImageProxy.GetPixel(Int32, Int32)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_inbox_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.inbox*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_inbox_System_Int32_System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.inbox(System.Int32,System.Int32)">inbox(Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool inbox(int x, int y)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_LinkToImage_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.LinkToImage*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_LinkToImage_MatterHackers_Agg_Image_IImageByte_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.LinkToImage(MatterHackers.Agg.Image.IImageByte)">LinkToImage(IImageByte)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void LinkToImage(IImageByte ren)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.Image.IImageByte.html">IImageByte</a></td>
+                    <td><span class="parametername">ren</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_LinkToImage_MatterHackers_Agg_Image_IImageByte_">ImageProxy.LinkToImage(IImageByte)</a></div>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_reset_clipping_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.reset_clipping*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_reset_clipping_System_Boolean_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.reset_clipping(System.Boolean)">reset_clipping(Boolean)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void reset_clipping(bool visibility)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">visibility</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_SetClippingBox_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.SetClippingBox*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_SetClippingBox_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.SetClippingBox(System.Int32,System.Int32,System.Int32,System.Int32)">SetClippingBox(Int32, Int32, Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool SetClippingBox(int x1, int y1, int x2, int y2)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x2</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y2</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Agg_Image_ImageClippingProxy_SetPixel_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.SetPixel*"></a>
+              <h4 id="MatterHackers_Agg_Image_ImageClippingProxy_SetPixel_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_" data-uid="MatterHackers.Agg.Image.ImageClippingProxy.SetPixel(System.Int32,System.Int32,MatterHackers.Agg.RGBA_Bytes)">SetPixel(Int32, Int32, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void SetPixel(int x, int y, RGBA_Bytes color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">x</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">y</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Agg.RGBA_Bytes.html">RGBA_Bytes</a></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.Agg.Image.ImageProxy.html#MatterHackers_Agg_Image_ImageProxy_SetPixel_System_Int32_System_Int32_MatterHackers_Agg_RGBA_Bytes_">ImageProxy.SetPixel(Int32, Int32, RGBA_Bytes)</a></div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

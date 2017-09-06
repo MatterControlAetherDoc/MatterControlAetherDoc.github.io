@@ -1,0 +1,716 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IntPointNode
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IntPointNode
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_Pathfinding_IntPointNode" data-uid="MatterHackers.Pathfinding.IntPointNode">Class IntPointNode
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">IntPointNode</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.Pathfinding</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_Pathfinding_IntPointNode_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class IntPointNode : IPathNode, IPoint, IComparable</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode__ctor_" data-uid="MatterHackers.Pathfinding.IntPointNode.#ctor*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode__ctor_IntPoint_" data-uid="MatterHackers.Pathfinding.IntPointNode.#ctor(IntPoint)">IntPointNode(IntPoint)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPointNode(IntPoint intPoint)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IntPoint</span></td>
+                    <td><span class="parametername">intPoint</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode__ctor_" data-uid="MatterHackers.Pathfinding.IntPointNode.#ctor*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode__ctor_System_Int64_System_Int64_" data-uid="MatterHackers.Pathfinding.IntPointNode.#ctor(System.Int64,System.Int64)">IntPointNode(Int64, Int64)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPointNode(long pX, long pY)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><span class="parametername">pX</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td><span class="parametername">pY</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_CostMultiplier_" data-uid="MatterHackers.Pathfinding.IntPointNode.CostMultiplier*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_CostMultiplier" data-uid="MatterHackers.Pathfinding.IntPointNode.CostMultiplier">CostMultiplier</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float CostMultiplier { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_CostMultiplier">IPathNode.CostMultiplier</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_DistanceToGoal_" data-uid="MatterHackers.Pathfinding.IntPointNode.DistanceToGoal*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_DistanceToGoal" data-uid="MatterHackers.Pathfinding.IntPointNode.DistanceToGoal">DistanceToGoal</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float DistanceToGoal { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_DistanceToGoal">IPathNode.DistanceToGoal</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_IsGoalNode_" data-uid="MatterHackers.Pathfinding.IntPointNode.IsGoalNode*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_IsGoalNode" data-uid="MatterHackers.Pathfinding.IntPointNode.IsGoalNode">IsGoalNode</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsGoalNode { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_IsGoalNode">IPathNode.IsGoalNode</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_IsStartNode_" data-uid="MatterHackers.Pathfinding.IntPointNode.IsStartNode*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_IsStartNode" data-uid="MatterHackers.Pathfinding.IntPointNode.IsStartNode">IsStartNode</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool IsStartNode { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_IsStartNode">IPathNode.IsStartNode</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_LinkLeadingHere_" data-uid="MatterHackers.Pathfinding.IntPointNode.LinkLeadingHere*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_LinkLeadingHere" data-uid="MatterHackers.Pathfinding.IntPointNode.LinkLeadingHere">LinkLeadingHere</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PathLink LinkLeadingHere { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Pathfinding.PathLink.html">PathLink</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_LinkLeadingHere">IPathNode.LinkLeadingHere</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_Links_" data-uid="MatterHackers.Pathfinding.IntPointNode.Links*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_Links" data-uid="MatterHackers.Pathfinding.IntPointNode.Links">Links</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;PathLink&gt; Links { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="MatterHackers.Pathfinding.PathLink.html">PathLink</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_Links">IPathNode.Links</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_PathCostHere_" data-uid="MatterHackers.Pathfinding.IntPointNode.PathCostHere*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_PathCostHere" data-uid="MatterHackers.Pathfinding.IntPointNode.PathCostHere">PathCostHere</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public float PathCostHere { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_PathCostHere">IPathNode.PathCostHere</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_Position_" data-uid="MatterHackers.Pathfinding.IntPointNode.Position*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_Position" data-uid="MatterHackers.Pathfinding.IntPointNode.Position">Position</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IntPoint Position { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IntPoint</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_Visited_" data-uid="MatterHackers.Pathfinding.IntPointNode.Visited*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_Visited" data-uid="MatterHackers.Pathfinding.IntPointNode.Visited">Visited</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool Visited { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_Visited">IPathNode.Visited</a></div>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_AddLink_" data-uid="MatterHackers.Pathfinding.IntPointNode.AddLink*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_AddLink_MatterHackers_Pathfinding_PathLink_" data-uid="MatterHackers.Pathfinding.IntPointNode.AddLink(MatterHackers.Pathfinding.PathLink)">AddLink(PathLink)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddLink(PathLink pLink)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Pathfinding.PathLink.html">PathLink</a></td>
+                    <td><span class="parametername">pLink</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_AddLink_MatterHackers_Pathfinding_PathLink_">IPathNode.AddLink(PathLink)</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_CompareTo_" data-uid="MatterHackers.Pathfinding.IntPointNode.CompareTo*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_CompareTo_System_Object_" data-uid="MatterHackers.Pathfinding.IntPointNode.CompareTo(System.Object)">CompareTo(Object)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Object</span></td>
+                    <td><span class="parametername">obj</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_DistanceTo_" data-uid="MatterHackers.Pathfinding.IntPointNode.DistanceTo*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_DistanceTo_MatterHackers_Pathfinding_IPoint_" data-uid="MatterHackers.Pathfinding.IntPointNode.DistanceTo(MatterHackers.Pathfinding.IPoint)">DistanceTo(IPoint)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual float DistanceTo(IPoint pPoint)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Pathfinding.IPoint.html">IPoint</a></td>
+                    <td><span class="parametername">pPoint</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Single</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPoint.html#MatterHackers_Pathfinding_IPoint_DistanceTo_MatterHackers_Pathfinding_IPoint_">IPoint.DistanceTo(IPoint)</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_GetHashCode_" data-uid="MatterHackers.Pathfinding.IntPointNode.GetHashCode*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_GetHashCode" data-uid="MatterHackers.Pathfinding.IntPointNode.GetHashCode">GetHashCode()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.GetHashCode()</span></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_GetLinkTo_" data-uid="MatterHackers.Pathfinding.IntPointNode.GetLinkTo*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_GetLinkTo_MatterHackers_Pathfinding_IPathNode_" data-uid="MatterHackers.Pathfinding.IntPointNode.GetLinkTo(MatterHackers.Pathfinding.IPathNode)">GetLinkTo(IPathNode)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public PathLink GetLinkTo(IPathNode pNode)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html">IPathNode</a></td>
+                    <td><span class="parametername">pNode</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Pathfinding.PathLink.html">PathLink</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_GetLinkTo_MatterHackers_Pathfinding_IPathNode_">IPathNode.GetLinkTo(IPathNode)</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_GetUniqueID_" data-uid="MatterHackers.Pathfinding.IntPointNode.GetUniqueID*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_GetUniqueID" data-uid="MatterHackers.Pathfinding.IntPointNode.GetUniqueID">GetUniqueID()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual long GetUniqueID()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int64</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_GetUniqueID">IPathNode.GetUniqueID()</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_RemoveLink_" data-uid="MatterHackers.Pathfinding.IntPointNode.RemoveLink*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_RemoveLink_MatterHackers_Pathfinding_PathLink_" data-uid="MatterHackers.Pathfinding.IntPointNode.RemoveLink(MatterHackers.Pathfinding.PathLink)">RemoveLink(PathLink)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RemoveLink(PathLink pLink)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.Pathfinding.PathLink.html">PathLink</a></td>
+                    <td><span class="parametername">pLink</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="MatterHackers.Pathfinding.IPathNode.html#MatterHackers_Pathfinding_IPathNode_RemoveLink_MatterHackers_Pathfinding_PathLink_">IPathNode.RemoveLink(PathLink)</a></div>
+              
+              
+              <a id="MatterHackers_Pathfinding_IntPointNode_ToString_" data-uid="MatterHackers.Pathfinding.IntPointNode.ToString*"></a>
+              <h4 id="MatterHackers_Pathfinding_IntPointNode_ToString" data-uid="MatterHackers.Pathfinding.IntPointNode.ToString">ToString()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

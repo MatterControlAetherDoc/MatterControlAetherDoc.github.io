@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CylinderShape
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CylinderShape
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_RayTracer_CylinderShape" data-uid="MatterHackers.RayTracer.CylinderShape">Class CylinderShape
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="MatterHackers.RayTracer.BaseShape.html">BaseShape</a></div>
+                  <div class="level2"><span class="xref">CylinderShape</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_Material">BaseShape.Material</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetContained_List_MatterHackers_RayTracer_IPrimitive__AxisAlignedBoundingBox_">BaseShape.GetContained(List&lt;IPrimitive&gt;, AxisAlignedBoundingBox)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetClosestIntersections_MatterHackers_RayTracer_RayBundle_System_Int32_MatterHackers_RayTracer_IntersectInfo___">BaseShape.GetClosestIntersections(RayBundle, Int32, IntersectInfo[])</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetCenter">BaseShape.GetCenter()</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.RayTracer</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_RayTracer_CylinderShape_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class CylinderShape : BaseShape, IPrimitive</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape__ctor_" data-uid="MatterHackers.RayTracer.CylinderShape.#ctor*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape__ctor_System_Double_System_Double_MatterHackers_RayTracer_MaterialAbstract_" data-uid="MatterHackers.RayTracer.CylinderShape.#ctor(System.Double,System.Double,MatterHackers.RayTracer.MaterialAbstract)">CylinderShape(Double, Double, MaterialAbstract)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CylinderShape(double radius, double height, MaterialAbstract material)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">radius</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">height</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.RayTracer.MaterialAbstract.html">MaterialAbstract</a></td>
+                    <td><span class="parametername">material</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape__ctor_" data-uid="MatterHackers.RayTracer.CylinderShape.#ctor*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape__ctor_System_Double_System_Double_System_Double_MatterHackers_RayTracer_MaterialAbstract_" data-uid="MatterHackers.RayTracer.CylinderShape.#ctor(System.Double,System.Double,System.Double,MatterHackers.RayTracer.MaterialAbstract)">CylinderShape(Double, Double, Double, MaterialAbstract)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public CylinderShape(double bottomRadius, double topRadius, double height, MaterialAbstract material)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bottomRadius</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">topRadius</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">height</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.RayTracer.MaterialAbstract.html">MaterialAbstract</a></td>
+                    <td><span class="parametername">material</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_RayTracer_CylinderShape_height" data-uid="MatterHackers.RayTracer.CylinderShape.height">height</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double height</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_RayTracer_CylinderShape_radius" data-uid="MatterHackers.RayTracer.CylinderShape.radius">radius</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double radius</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_RayTracer_CylinderShape_topRadius" data-uid="MatterHackers.RayTracer.CylinderShape.topRadius">topRadius</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double topRadius</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_FindFirstRay_" data-uid="MatterHackers.RayTracer.CylinderShape.FindFirstRay*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_FindFirstRay_MatterHackers_RayTracer_RayBundle_System_Int32_" data-uid="MatterHackers.RayTracer.CylinderShape.FindFirstRay(MatterHackers.RayTracer.RayBundle,System.Int32)">FindFirstRay(RayBundle, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int FindFirstRay(RayBundle rayBundle, int rayIndexToStartCheckingFrom)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.RayTracer.RayBundle.html">RayBundle</a></td>
+                    <td><span class="parametername">rayBundle</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">rayIndexToStartCheckingFrom</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_FindFirstRay_MatterHackers_RayTracer_RayBundle_System_Int32_">BaseShape.FindFirstRay(RayBundle, Int32)</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_GetAxisAlignedBoundingBox_" data-uid="MatterHackers.RayTracer.CylinderShape.GetAxisAlignedBoundingBox*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_GetAxisAlignedBoundingBox" data-uid="MatterHackers.RayTracer.CylinderShape.GetAxisAlignedBoundingBox">GetAxisAlignedBoundingBox()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override AxisAlignedBoundingBox GetAxisAlignedBoundingBox()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AxisAlignedBoundingBox</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetAxisAlignedBoundingBox">BaseShape.GetAxisAlignedBoundingBox()</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_GetClosestIntersection_" data-uid="MatterHackers.RayTracer.CylinderShape.GetClosestIntersection*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_GetClosestIntersection_Ray_" data-uid="MatterHackers.RayTracer.CylinderShape.GetClosestIntersection(Ray)">GetClosestIntersection(Ray)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IntersectInfo GetClosestIntersection(Ray ray)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Ray</span></td>
+                    <td><span class="parametername">ray</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.RayTracer.IntersectInfo.html">IntersectInfo</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetClosestIntersection_Ray_">BaseShape.GetClosestIntersection(Ray)</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_GetColor_" data-uid="MatterHackers.RayTracer.CylinderShape.GetColor*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_GetColor_MatterHackers_RayTracer_IntersectInfo_" data-uid="MatterHackers.RayTracer.CylinderShape.GetColor(MatterHackers.RayTracer.IntersectInfo)">GetColor(IntersectInfo)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override RGBA_Floats GetColor(IntersectInfo info)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.RayTracer.IntersectInfo.html">IntersectInfo</a></td>
+                    <td><span class="parametername">info</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Floats</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetColor_MatterHackers_RayTracer_IntersectInfo_">BaseShape.GetColor(IntersectInfo)</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_GetIntersectCost_" data-uid="MatterHackers.RayTracer.CylinderShape.GetIntersectCost*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_GetIntersectCost" data-uid="MatterHackers.RayTracer.CylinderShape.GetIntersectCost">GetIntersectCost()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetIntersectCost()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetIntersectCost">BaseShape.GetIntersectCost()</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_GetSurfaceArea_" data-uid="MatterHackers.RayTracer.CylinderShape.GetSurfaceArea*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_GetSurfaceArea" data-uid="MatterHackers.RayTracer.CylinderShape.GetSurfaceArea">GetSurfaceArea()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override double GetSurfaceArea()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_GetSurfaceArea">BaseShape.GetSurfaceArea()</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_IntersectionIterator_" data-uid="MatterHackers.RayTracer.CylinderShape.IntersectionIterator*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_IntersectionIterator_Ray_" data-uid="MatterHackers.RayTracer.CylinderShape.IntersectionIterator(Ray)">IntersectionIterator(Ray)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override IEnumerable IntersectionIterator(Ray ray)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Ray</span></td>
+                    <td><span class="parametername">ray</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="MatterHackers.RayTracer.BaseShape.html#MatterHackers_RayTracer_BaseShape_IntersectionIterator_Ray_">BaseShape.IntersectionIterator(Ray)</a></div>
+              
+              
+              <a id="MatterHackers_RayTracer_CylinderShape_ToString_" data-uid="MatterHackers.RayTracer.CylinderShape.ToString*"></a>
+              <h4 id="MatterHackers_RayTracer_CylinderShape_ToString" data-uid="MatterHackers.RayTracer.CylinderShape.ToString">ToString()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="overrides">Overrides</h5>
+              <div><span class="xref">System.Object.ToString()</span></div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

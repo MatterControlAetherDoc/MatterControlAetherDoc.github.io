@@ -1,0 +1,1518 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MeshViewerWidget
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MeshViewerWidget
+   ">
+    <meta name="generator" content="docfx 2.15.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="MatterHackers_MeshVisualizer_MeshViewerWidget" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget">Class MeshViewerWidget
+              </h1>
+              <div class="markdown level0 summary"></div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">GuiWidget</span></div>
+                  <div class="level1"><span class="xref">MeshViewerWidget</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:MatterHackers.MeshVisualizer</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="MatterHackers_MeshVisualizer_MeshViewerWidget_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public class MeshViewerWidget : GuiWidget, GuiWidget</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget__ctor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.#ctor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget__ctor_System_Double_System_Double_System_Double_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.#ctor(System.Double,System.Double,System.Double)">MeshViewerWidget(Double, Double, Double)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MeshViewerWidget(double bedXSize, double bedYSize, double scale)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bedXSize</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">bedYSize</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">scale</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget__ctor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.#ctor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget__ctor_Vector3_Vector2_MatterHackers_MeshVisualizer_BedShape_System_String_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.#ctor(Vector3,Vector2,MatterHackers.MeshVisualizer.BedShape,System.String)">MeshViewerWidget(Vector3, Vector2, BedShape, String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MeshViewerWidget(Vector3 displayVolume, Vector2 bedCenter, BedShape bedShape, string startingTextMessage = &quot;&quot;)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td><span class="parametername">displayVolume</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">bedCenter</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MeshVisualizer.BedShape.html">BedShape</a></td>
+                    <td><span class="parametername">bedShape</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">startingTextMessage</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="fields">Fields
+              </h3>
+              
+              
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_BedImage" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BedImage">BedImage</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static ImageBuffer BedImage</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ImageBuffer</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_interactionVolumes" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.interactionVolumes">interactionVolumes</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;InteractionVolume&gt; interactionVolumes</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<a class="xref" href="MatterHackers.MeshVisualizer.InteractionVolume.html">InteractionVolume</a>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_partProcessingInfo" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.partProcessingInfo">partProcessingInfo</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MeshViewerWidget.PartProcessingInfo partProcessingInfo</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MeshVisualizer.MeshViewerWidget.PartProcessingInfo.html">MeshViewerWidget.PartProcessingInfo</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedInteractionVolume" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedInteractionVolume">SelectedInteractionVolume</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public InteractionVolume SelectedInteractionVolume</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MeshVisualizer.InteractionVolume.html">InteractionVolume</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_AllowBedRenderingWhenEmpty_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.AllowBedRenderingWhenEmpty*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_AllowBedRenderingWhenEmpty" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.AllowBedRenderingWhenEmpty">AllowBedRenderingWhenEmpty</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool AllowBedRenderingWhenEmpty { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_BedCenter_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BedCenter*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_BedCenter" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BedCenter">BedCenter</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static Vector2 BedCenter { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_BedColor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BedColor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_BedColor" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BedColor">BedColor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RGBA_Bytes BedColor { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Bytes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_BuildVolumeColor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BuildVolumeColor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_BuildVolumeColor" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.BuildVolumeColor">BuildVolumeColor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RGBA_Bytes BuildVolumeColor { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Bytes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_DisplayVolume_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.DisplayVolume*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_DisplayVolume" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.DisplayVolume">DisplayVolume</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Vector3 DisplayVolume { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_HaveSelection_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.HaveSelection*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_HaveSelection" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.HaveSelection">HaveSelection</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool HaveSelection { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_MeshGroups_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.MeshGroups*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_MeshGroups" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.MeshGroups">MeshGroups</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;MeshGroup&gt; MeshGroups { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">MeshGroup</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_MeshGroupTransforms_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.MeshGroupTransforms*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_MeshGroupTransforms" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.MeshGroupTransforms">MeshGroupTransforms</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;Matrix4X4&gt; MeshGroupTransforms { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">Matrix4X4</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_Meshs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.Meshs*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_Meshs" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.Meshs">Meshs</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public List&lt;Mesh&gt; Meshs { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">Mesh</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_MouseDownOnInteractionVolume_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.MouseDownOnInteractionVolume*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_MouseDownOnInteractionVolume" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.MouseDownOnInteractionVolume">MouseDownOnInteractionVolume</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool MouseDownOnInteractionVolume { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_PartColor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.PartColor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_PartColor" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.PartColor">PartColor</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RGBA_Bytes PartColor { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Bytes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_PrinterBed_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.PrinterBed*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_PrinterBed" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.PrinterBed">PrinterBed</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Mesh PrinterBed { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Mesh</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderBed_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderBed*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderBed" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderBed">RenderBed</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool RenderBed { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderBed_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderBed*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderBed" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderBed">RenderBed</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool RenderBed { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderBuildVolume_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderBuildVolume*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderBuildVolume" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderBuildVolume">RenderBuildVolume</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool RenderBuildVolume { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderType_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderType*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_RenderType" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.RenderType">RenderType</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RenderTypes RenderType { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RenderTypes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedMeshGroup_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedMeshGroup*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedMeshGroup" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedMeshGroup">SelectedMeshGroup</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public MeshGroup SelectedMeshGroup { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MeshGroup</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedMeshGroupIndex_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedMeshGroupIndex*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedMeshGroupIndex" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedMeshGroupIndex">SelectedMeshGroupIndex</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public int SelectedMeshGroupIndex { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedMeshGroupTransform_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedMeshGroupTransform*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SelectedMeshGroupTransform" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SelectedMeshGroupTransform">SelectedMeshGroupTransform</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public Matrix4X4 SelectedMeshGroupTransform { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Matrix4X4</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_ShowWireFrame_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.ShowWireFrame*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_ShowWireFrame" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.ShowWireFrame">ShowWireFrame</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ShowWireFrame { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SnapGridDistance_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SnapGridDistance*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SnapGridDistance" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SnapGridDistance">SnapGridDistance</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public double SnapGridDistance { get; set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_TrackballTumbleWidget_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.TrackballTumbleWidget*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_TrackballTumbleWidget" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.TrackballTumbleWidget">TrackballTumbleWidget</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TrackballTumbleWidget TrackballTumbleWidget { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TrackballTumbleWidget</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_TrackballTumbleWidget_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.TrackballTumbleWidget*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_TrackballTumbleWidget" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.TrackballTumbleWidget">TrackballTumbleWidget</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public TrackballTumbleWidget TrackballTumbleWidget { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TrackballTumbleWidget</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_AssertDebugNotDefined_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.AssertDebugNotDefined*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_AssertDebugNotDefined" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.AssertDebugNotDefined">AssertDebugNotDefined()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void AssertDebugNotDefined()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_CreateGlDataForMeshes_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.CreateGlDataForMeshes*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_CreateGlDataForMeshes_List_MeshGroup__" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.CreateGlDataForMeshes(List{MeshGroup})">CreateGlDataForMeshes(List&lt;MeshGroup&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void CreateGlDataForMeshes(List&lt;MeshGroup&gt; meshGroupsToPrepare)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">MeshGroup</span>&gt;</td>
+                    <td><span class="parametername">meshGroupsToPrepare</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_CreatePrintBed_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.CreatePrintBed*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_CreatePrintBed_Vector3_Vector2_MatterHackers_MeshVisualizer_BedShape_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.CreatePrintBed(Vector3,Vector2,MatterHackers.MeshVisualizer.BedShape)">CreatePrintBed(Vector3, Vector2, BedShape)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void CreatePrintBed(Vector3 displayVolume, Vector2 bedCenter, BedShape bedShape)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Vector3</span></td>
+                    <td><span class="parametername">displayVolume</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">bedCenter</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MeshVisualizer.BedShape.html">BedShape</a></td>
+                    <td><span class="parametername">bedShape</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetAxisAlignedBoundingBox_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetAxisAlignedBoundingBox*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetAxisAlignedBoundingBox_List_MeshGroup__" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetAxisAlignedBoundingBox(List{MeshGroup})">GetAxisAlignedBoundingBox(List&lt;MeshGroup&gt;)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static AxisAlignedBoundingBox GetAxisAlignedBoundingBox(List&lt;MeshGroup&gt; meshGroups)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">MeshGroup</span>&gt;</td>
+                    <td><span class="parametername">meshGroups</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AxisAlignedBoundingBox</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetBoundsForSelection_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetBoundsForSelection*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetBoundsForSelection" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetBoundsForSelection">GetBoundsForSelection()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public AxisAlignedBoundingBox GetBoundsForSelection()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">AxisAlignedBoundingBox</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetMaterialColor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetMaterialColor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetMaterialColor_System_Int32_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetMaterialColor(System.Int32)">GetMaterialColor(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static RGBA_Bytes GetMaterialColor(int materialIndexBase1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">materialIndexBase1</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Bytes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetSelectedMaterialColor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetSelectedMaterialColor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_GetSelectedMaterialColor_System_Int32_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.GetSelectedMaterialColor(System.Int32)">GetSelectedMaterialColor(Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static RGBA_Bytes GetSelectedMaterialColor(int materialIndexBase1)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">materialIndexBase1</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RGBA_Bytes</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_LoadMesh_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.LoadMesh*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_LoadMesh_System_String_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.LoadMesh(System.String)">LoadMesh(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void LoadMesh(string meshPathAndFileName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">meshPathAndFileName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_LoadMesh_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.LoadMesh*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_LoadMesh_System_String_MatterHackers_MeshVisualizer_MeshViewerWidget_CenterPartAfterLoad_Vector2_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.LoadMesh(System.String,MatterHackers.MeshVisualizer.MeshViewerWidget.CenterPartAfterLoad,Vector2)">LoadMesh(String, MeshViewerWidget.CenterPartAfterLoad, Vector2)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void LoadMesh(string meshPathAndFileName, MeshViewerWidget.CenterPartAfterLoad centerPart, Vector2 bedCenter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">meshPathAndFileName</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MeshVisualizer.MeshViewerWidget.CenterPartAfterLoad.html">MeshViewerWidget.CenterPartAfterLoad</a></td>
+                    <td><span class="parametername">centerPart</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">bedCenter</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnClosed_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnClosed*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnClosed_ClosedEventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnClosed(ClosedEventArgs)">OnClosed(ClosedEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnClosed(ClosedEventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">ClosedEventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnClosed_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnClosed*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnClosed_EventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnClosed(EventArgs)">OnClosed(EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnClosed(EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnDraw_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnDraw*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnDraw_Graphics2D_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnDraw(Graphics2D)">OnDraw(Graphics2D)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnDraw(Graphics2D graphics2D)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Graphics2D</span></td>
+                    <td><span class="parametername">graphics2D</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseDown_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseDown*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseDown_MouseEventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseDown(MouseEventArgs)">OnMouseDown(MouseEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnMouseDown(MouseEventArgs mouseEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MouseEventArgs</span></td>
+                    <td><span class="parametername">mouseEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseDown_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseDown*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseDown_MouseEventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseDown(MouseEventArgs)">OnMouseDown(MouseEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnMouseDown(MouseEventArgs mouseEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MouseEventArgs</span></td>
+                    <td><span class="parametername">mouseEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseMove_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseMove*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseMove_MouseEventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseMove(MouseEventArgs)">OnMouseMove(MouseEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnMouseMove(MouseEventArgs mouseEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MouseEventArgs</span></td>
+                    <td><span class="parametername">mouseEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseUp_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseUp*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseUp_MouseEventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseUp(MouseEventArgs)">OnMouseUp(MouseEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnMouseUp(MouseEventArgs mouseEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MouseEventArgs</span></td>
+                    <td><span class="parametername">mouseEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseUp_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseUp*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_OnMouseUp_MouseEventArgs_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.OnMouseUp(MouseEventArgs)">OnMouseUp(MouseEventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override void OnMouseUp(MouseEventArgs mouseEvent)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">MouseEventArgs</span></td>
+                    <td><span class="parametername">mouseEvent</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_ResetView_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.ResetView*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_ResetView" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.ResetView">ResetView()</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void ResetView()</code></pre>
+              </div>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SetMaterialColor_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SetMaterialColor*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SetMaterialColor_System_Int32_RGBA_Bytes_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SetMaterialColor(System.Int32,RGBA_Bytes)">SetMaterialColor(Int32, RGBA_Bytes)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static void SetMaterialColor(int materialIndexBase1, RGBA_Bytes color)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">materialIndexBase1</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">RGBA_Bytes</span></td>
+                    <td><span class="parametername">color</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SetMeshAfterLoad_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SetMeshAfterLoad*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SetMeshAfterLoad_List_MeshGroup__MatterHackers_MeshVisualizer_MeshViewerWidget_CenterPartAfterLoad_Vector2_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SetMeshAfterLoad(List{MeshGroup},MatterHackers.MeshVisualizer.MeshViewerWidget.CenterPartAfterLoad,Vector2)">SetMeshAfterLoad(List&lt;MeshGroup&gt;, MeshViewerWidget.CenterPartAfterLoad, Vector2)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMeshAfterLoad(List&lt;MeshGroup&gt; loadedMeshGroups, MeshViewerWidget.CenterPartAfterLoad centerPart, Vector2 bedCenter)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">List</span>&lt;<span class="xref">MeshGroup</span>&gt;</td>
+                    <td><span class="parametername">loadedMeshGroups</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="MatterHackers.MeshVisualizer.MeshViewerWidget.CenterPartAfterLoad.html">MeshViewerWidget.CenterPartAfterLoad</a></td>
+                    <td><span class="parametername">centerPart</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Vector2</span></td>
+                    <td><span class="parametername">bedCenter</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MeshVisualizer_MeshViewerWidget_SetMeshAfterLoad_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SetMeshAfterLoad*"></a>
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_SetMeshAfterLoad_Mesh_" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.SetMeshAfterLoad(Mesh)">SetMeshAfterLoad(Mesh)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void SetMeshAfterLoad(Mesh loadedMesh)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Mesh</span></td>
+                    <td><span class="parametername">loadedMesh</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="events">Events
+              </h3>
+              
+              
+              <h4 id="MatterHackers_MeshVisualizer_MeshViewerWidget_LoadDone" data-uid="MatterHackers.MeshVisualizer.MeshViewerWidget.LoadDone">LoadDone</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public event EventHandler LoadDone</code></pre>
+              </div>
+              <h5 class="eventType">Event Type</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">EventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
