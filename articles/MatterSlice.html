@@ -69,9 +69,34 @@ to the specific tool parameters (e.g., width, speed, intensity, PSI, etc.),
 and to insert tool specific code where needed to effectively use the tool for
 printing purposes.</p>
 <p>Since MatterSlice is a command line application, tools can be specified on
-the command line or in a configuration file.</p>
+the command line or in a configuration file. Tools settings are checked and
+validated at runtime where it is ensured that all tools have at least a
+width and a valid tool position on the printer. A tool type and settings data
+model is used in conjunction with additional command line configuration
+capabilities and minor modifications in the G-code exporting module of
+MatterSlice to appropriately generate G-code to be used with the Aether 1 bioprinter.</p>
 <h2 id="tool-data-model--helpers">Tool Data Model &amp; Helpers</h2>
-<h2 id="tool-integration-in-matterslice">Tool Integration In MatterSlice</h2>
+<p>The architecture of the tool specification was built with an object oriented
+mind set and several classes were built from a base class to represent all the
+possible tool attachments and their respective properties. The base class for
+the architecture is the <a href="../api/MatterHackers.MatterSlice.Tool.html">Tool</a>.
+The base <code>Tool</code> class is an abstract class, and no instances of it should
+ever be allocated. However, there are several sub-classes that implement the
+abstract <code>Tool</code> methods which may be used to store specific tool configuration data in.</p>
+<p>The direct descendants of <code>Tool</code> are:</p>
+<ul>
+<li><a href="../api/MatterHackers.MatterSlice.FFFExtruderTool.html">FFFExtruderTool</a></li>
+<li><a href="../api/MatterHackers.MatterSlice.SyringeTool.html">SyringeTool</a></li>
+<li><a href="../api/MatterHackers.MatterSlice.MicroValveTool.html">MicroValveTool</a></li>
+<li><a href="../api/MatterHackers.MatterSlice.IOTool.html">IOTool</a>
+  which has two sub-classes:<ul>
+<li><a href="../api/MatterHackers.MatterSlice.LaserTool.html">LaserTool</a></li>
+<li><a href="../api/MatterHackers.MatterSlice.LEDTool.html">LEDTool</a><br>These can be sued</li>
+</ul>
+</li>
+</ul>
+<p><a href="../api/MatterHackers.MatterSlice.Positions.html">link</a></p>
+<h2 id="tool-integration-in-slicing">Tool Integration In Slicing</h2>
 
             </article>
           </div>
