@@ -74,29 +74,98 @@ validated at runtime where it is ensured that all tools have at least a
 width and a valid tool position on the printer. A tool type and settings data
 model is used in conjunction with additional command line configuration
 capabilities and minor modifications in the G-code exporting module of
-MatterSlice to appropriately generate G-code to be used with the Aether 1 bioprinter.</p>
+MatterSlice to appropriately generate G-code to be used with the Aether 1
+bioprinter.</p>
 <h2 id="tool-data-model--helpers">Tool Data Model &amp; Helpers</h2>
 <p>The architecture of the tool specification was built with an object oriented
 mind set and several classes were built from a base class to represent all the
 possible tool attachments and their respective properties. The base class for
 the architecture is the <a href="../api/MatterHackers.MatterSlice.Tool.html">Tool</a>.
 The base <code>Tool</code> class is an abstract class, and no instances of it should
-ever be allocated. However, there are several sub-classes that implement the
-abstract <code>Tool</code> methods which may be used to store specific tool configuration data in.</p>
+ever be allocated. However, there are several subclasses that implement the
+abstract <code>Tool</code> methods which may be used to store an individual tool&#39;s
+configuration data in. The base <code>Tool</code> class contains all the parameters and
+configuration capabilities that all tool types may use, that is knowledge of
+tool position, speed, acceleration, and jerk.</p>
+<p>There are six virtual <code>Tool</code> methods that may be selectively overridden by
+each subclass to insert tool specific G-code for initial setup, final tear
+down, tool change (e.g., <code>T</code><em># code</em>), when changing to a different tool,
+before extrusion moves, and before travel moves. These methods are
+<code>Tool.PreambleCode()</code>, <code>Tool.Cleanup()</code>, <code>Tool.Activate()</code>,
+<code>Tool.Deactivate()</code>, <code>Tool.Start()</code>, and <code>Tool.Stop()</code> respectively. The
+default behavior of these methods (when not overridden) is to return an empty
+string, so if a tool does not need G-code at the corresponding location in
+the print file the method may remain un-overridden.</p>
 <p>The direct descendants of <code>Tool</code> are:</p>
 <ul>
 <li><a href="../api/MatterHackers.MatterSlice.FFFExtruderTool.html">FFFExtruderTool</a></li>
 <li><a href="../api/MatterHackers.MatterSlice.SyringeTool.html">SyringeTool</a></li>
 <li><a href="../api/MatterHackers.MatterSlice.MicroValveTool.html">MicroValveTool</a></li>
 <li><a href="../api/MatterHackers.MatterSlice.IOTool.html">IOTool</a>
-  which has two sub-classes:<ul>
+  , which has two subclasses:<ul>
 <li><a href="../api/MatterHackers.MatterSlice.LaserTool.html">LaserTool</a></li>
-<li><a href="../api/MatterHackers.MatterSlice.LEDTool.html">LEDTool</a><br>These can be sued</li>
+<li><a href="../api/MatterHackers.MatterSlice.LEDTool.html">LEDTool</a></li>
 </ul>
 </li>
 </ul>
+<p>Each <code>Tool</code> subclass is used to store all the data of that particular tool
+type that could be specified on the command line. This data is collectively
+stored in a <a href="../api/MatterHackers.MatterSlice.Tools.html">Tools</a> class
+instance. The <code>Tools</code> class serves as the main interface for tool allocation
+and instantiation. It is also used to keep track of which tool in the set is
+currently active in the slicing.</p>
+<p>A tool is added to a <code>Tools</code> object instance&#39;s set of tools with
+<code>instance.AddNewTool(</code><em>toolSettings</em><code>)</code> where <em>toolSettings</em> is
+a string that specifies the tool settings of the new tool being added. Or,
+multiple tools may be added at once with
+<code>instance.AddNewTools(</code><em>toolsSettings</em><code>)</code> where <em>toolsSettings</em> is one or
+more <em>toolSettings</em> strings, each separated  by <code>^</code>&#39;s. The string
+<em>toolSettings</em> is formatted as such:</p>
+<p><em>toolType</em> <code>:</code><em>settingName</em> <code>=</code><em>settingValue</em>[<code>,</code><em>settingName</em>
+<code>=</code><em>settingValue</em>]...</p>
+<p>where,</p>
+<ul>
+<li><em>toolType</em> is one of FFF, Syringe, MicroValve, LED, Laser, IO</li>
+<li><em>settingName</em> is tool dependent</li>
+<li><em>settingValue</em> is an int or float, depending on <em>settingName</em></li>
+</ul>
+<p>When a new tool is being added to a <code>Tools</code> instance, a new tool
+corresponding to <em>toolType</em> is allocated and attempts to set the new <code>Tool</code>
+instance&#39;s properties that were specified as given <em>settingName</em>&#39;s. If a
+given <em>settingName</em> does not map to a property of the specified <em>toolType</em>,
+the allocation fails.</p>
+<p>Modifications have been put in place which allow for entering <em>toolSettings</em>
+and <em>toolsSettings</em> strings from command line or from a configuration file.</p>
 <p><a href="../api/MatterHackers.MatterSlice.Positions.html">link</a></p>
-<h2 id="tool-integration-in-slicing">Tool Integration In Slicing</h2>
+<h2 id="tool-integration-in-matterslice">Tool Integration In MatterSlice</h2>
+<p>ConfigSettings</p>
+<p>The actual in-line modifications of MatterSlice primarily occur in the
+files <code>ConfigSettings.cs</code>, <code>GCodePlanner.cs</code>, <code>fffProcessor.cs</code>, and
+<code>gcodeExport.cs</code>. All current tools are defined in the <code>Tools.cs</code> file and
+that is where more should be defined if needed. The majority of the slicer
+modifications were made in the <code>fffProcessor</code> and <code>GCodeExport</code> classes. The
+modifications in <code>fffProcessor</code> are primarily related to configuring the
+tool width <code>fffProcessor.SetWidths()</code> method throughout the slicing process,
+and calling the  <code>tools.PreambleCode()</code> and <code>tools.ActiveTool.Activate(0)</code>
+methods at the beginning of slicing to add lines to the beginning of the
+created G-Code to set up the tools the printer will be using and to activate
+the first tool before the movement commands start. The modifications in the
+<code>GCodeExport</code> class restricts all retraction related code to only run when an
+<code>FFFTool</code> is active in the slicing, and modifying and/or inserting code
+before <code>G1</code> and <code>G0</code> moves during tool activation (i.e., <code>T</code> commands).</p>
+<p>The function <code>tools.PreambleCode()</code> has some global preamble configuration
+as part of its output, but the output of the function is primarrily built
+from calling the <code>PreambleCode()</code> metod on all the <code>tool</code> objects stored
+insite a given <code>Tools</code> instance.</p>
+<p>The return value of <code>tool.PreambleCode()</code> will be written to
+G-code before the print begins, so any setup or one time execution code for a
+tool can be placed in that method. The return value of <code>tool.Cleanup()</code> is
+written to G-code after the print has completed, so any tool cleanup or
+shutdown G-code can be placed in this method. The method <code>tool.Start()</code>&#39;s
+return value is written to G-code before every <code>G1</code> command and <code>Tool.Stop()</code>
+before every <code>G0</code> command. It is not usually desirable to place code before
+every <code>G1</code> or <code>G0</code>, but to insert lines before each string of such G-Code
+commands.</p>
 
             </article>
           </div>
