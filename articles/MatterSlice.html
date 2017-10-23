@@ -149,23 +149,33 @@ tool width <code>fffProcessor.SetWidths()</code> method throughout the slicing p
 and calling the  <code>tools.PreambleCode()</code> and <code>tools.ActiveTool.Activate(0)</code>
 methods at the beginning of slicing to add lines to the beginning of the
 created G-Code to set up the tools the printer will be using and to activate
-the first tool before the movement commands start. The modifications in the
-<code>GCodeExport</code> class restricts all retraction related code to only run when an
-<code>FFFTool</code> is active in the slicing, and modifying and/or inserting code
-before <code>G1</code> and <code>G0</code> moves during tool activation (i.e., <code>T</code> commands).</p>
+the first tool before the movement commands start.</p>
 <p>The function <code>tools.PreambleCode()</code> has some global preamble configuration
-as part of its output, but the output of the function is primarrily built
-from calling the <code>PreambleCode()</code> metod on all the <code>tool</code> objects stored
-insite a given <code>Tools</code> instance.</p>
-<p>The return value of <code>tool.PreambleCode()</code> will be written to
-G-code before the print begins, so any setup or one time execution code for a
-tool can be placed in that method. The return value of <code>tool.Cleanup()</code> is
-written to G-code after the print has completed, so any tool cleanup or
-shutdown G-code can be placed in this method. The method <code>tool.Start()</code>&#39;s
-return value is written to G-code before every <code>G1</code> command and <code>Tool.Stop()</code>
-before every <code>G0</code> command. It is not usually desirable to place code before
-every <code>G1</code> or <code>G0</code>, but to insert lines before each string of such G-Code
-commands.</p>
+as part of its output, but the output of the function is primarily built
+from calling the <code>PreambleCode()</code> method on all the <code>tool</code> objects stored
+inside a given <code>Tools</code> instance. The function <code>tools.Cleanup()</code> serves a
+similar purpose but at the end of the generated G-Code.</p>
+<p>The modifications in the <code>GCodeExport</code> class restricts all retraction
+related code to only run when an <code>FFFTool</code> is active in the slicing, and
+modifying and/or inserting code before <code>G1</code> and <code>G0</code> moves during tool
+activation (i.e., <code>T</code> commands). Within the <code>GCodeExport</code> class, the code
+has been modified to generate G-Code to activate by switching to, start
+using, and stop using the specified tool. This is done with the methods
+<code>tool.Activate(#)</code>, <code>tool.Start()</code>, and <code>tool.Stop()</code>. The method
+<code>tool.Start()</code>&#39;s return value is written to G-code before every <code>G1</code> command
+and <code>Tool.Stop()</code> before every <code>G0</code> command. It is not usually desirable to
+place code before every <code>G1</code> or <code>G0</code>, but to insert lines before each string
+of such G-Code commands.</p>
+<p>helpful links: </p>
+<p><code>GCodeExport</code> modifications primarily in
+<a href="../api/MatterHackers.MatterSlice.GCodeExport.html#MatterHackers_MatterSlice_GCodeExport_WriteMove_IntPoint_System_Double_System_Int64_">WriteMove(IntPoint, Double, Int64)</a>,
+<a href="../api/MatterHackers.MatterSlice.GCodeExport.html#MatterHackers_MatterSlice_GCodeExport_SwitchExtruder_System_Int32_">SwitchExtruder(Int32)</a></p>
+<p><code>fffProcessor</code> modifications are the addition of
+<code>fffProcessor.SetWidths(Double, Int32)</code>, and adding some lines to
+<a href="../api/MatterHackers.MatterSlice.fffProcessor.html#MatterHackers_MatterSlice_fffProcessor_DoProcessing">DoProcessing()</a>,
+<code>fffProcessor.WriteGCode(LayerDataStorage)</code>, and
+<code>fffProcessor.QueueAirGappedExtruderLayerToGCode(</code>many arguments<code>)</code>.</p>
+<h2 id="adding-a-new-tool-to-the-slicer">Adding A New Tool To The Slicer</h2>
 
             </article>
           </div>
