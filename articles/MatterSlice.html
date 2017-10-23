@@ -136,7 +136,6 @@ given <em>settingName</em> does not map to a property of the specified <em>toolT
 the allocation fails.</p>
 <p>Modifications have been put in place which allow for entering <em>toolSettings</em>
 and <em>toolsSettings</em> strings from command line or from a configuration file.</p>
-<p><a href="../api/MatterHackers.MatterSlice.Positions.html">link</a></p>
 <h2 id="tool-integration-in-matterslice">Tool Integration In MatterSlice</h2>
 <p>ConfigSettings</p>
 <p>The actual in-line modifications of MatterSlice primarily occur in the
@@ -166,16 +165,53 @@ using, and stop using the specified tool. This is done with the methods
 and <code>Tool.Stop()</code> before every <code>G0</code> command. It is not usually desirable to
 place code before every <code>G1</code> or <code>G0</code>, but to insert lines before each string
 of such G-Code commands.</p>
-<p>helpful links: </p>
+<p>helpful links:</p>
 <p><code>GCodeExport</code> modifications primarily in
-<a href="../api/MatterHackers.MatterSlice.GCodeExport.html#MatterHackers_MatterSlice_GCodeExport_WriteMove_IntPoint_System_Double_System_Int64_">WriteMove(IntPoint, Double, Int64)</a>,
+<a href="../api/MatterHackers.MatterSlice.GCodeExport.html#MatterHackers_MatterSlice_GCodeExport_WriteMove_IntPoint_System_Double_System_Int64_">WriteMove(IntPoint, Double, Int64)</a> and
 <a href="../api/MatterHackers.MatterSlice.GCodeExport.html#MatterHackers_MatterSlice_GCodeExport_SwitchExtruder_System_Int32_">SwitchExtruder(Int32)</a></p>
 <p><code>fffProcessor</code> modifications are the addition of
 <code>fffProcessor.SetWidths(Double, Int32)</code>, and adding some lines to
 <a href="../api/MatterHackers.MatterSlice.fffProcessor.html#MatterHackers_MatterSlice_fffProcessor_DoProcessing">DoProcessing()</a>,
 <code>fffProcessor.WriteGCode(LayerDataStorage)</code>, and
 <code>fffProcessor.QueueAirGappedExtruderLayerToGCode(</code>many arguments<code>)</code>.</p>
-<h2 id="adding-a-new-tool-to-the-slicer">Adding A New Tool To The Slicer</h2>
+<h2 id="adding-a-new-tool">Adding A New Tool</h2>
+<p>To add a new tool into the slicing environment, a new class must be created,
+and a few existing classes methods will need slight modifications to know
+about the new tool. Adding a new tool will only require modifications in the
+<code>Tools.cs</code> file.</p>
+<h3 id="modifications-to-existing">Modifications To Existing</h3>
+<p>The first necessary modification to add a new tool is to add a new type to
+the <a href="../api/MatterHackers.MatterSlice.TOOL_TYPE.html">TOOL_TYPE</a> enum. Add the
+new type at the end of the enum to keep backward compatibility of user
+configuration files.</p>
+<p>The private method <code>GetToolType(string)</code> of the <code>Tools</code> class needs to be
+modified to detect tool type from configuration file or from the command
+line. Before this method is called, its argument is shortened to the first
+two characters presented in the tool configuration information. So it is
+necessary to add a new unique, two letter string to be recognized in this
+function.</p>
+<p>The last function that must be modified is the private static method
+<code>AllocateTool(TOOL_TYPE)</code> of the <code>Tool</code> class. This method can only be
+appropriately modified once the new tool type class has been defined. Follow
+the existing tool allocation pattern in the switch-case to add in the new
+tool type.</p>
+<h3 id="the-new-tool-class">The New Tool Class</h3>
+<p>To actually create the functionality of a new tool, a new subclass of <code>Tool</code>
+is needed. There are only two abstract <code>Tool</code> properties (i.e., position and
+width) that <em>must</em> be implemented in the new subclass. As a guide when
+making a new <code>Tool</code> subclass look at the other, already existing subclasses,
+especially the
+<a href="../api/MatterHackers.MatterSlice.SyringeTool.html">SyringeTool</a> class.</p>
+<p>Occupied tool positions are kept track of in the
+<a href="../api/MatterHackers.MatterSlice.Positions.html">Positions</a> class. It can
+keep track of filament extruder, barrel, microvalve, and LED positions. This
+set of positions should be enough to use for any tool added to the print
+head of the Aether 1</p>
+<p>If the new tool has any configurable parameters, an <code>AddConfig(string,
+string)</code> method will need to be declared as an override in the new <code>Tool</code>
+subclass. A call to <code>base.AddConfig(string, string)</code> inside the subclasses
+override is recommended so that the parameters that are on all tools can be
+captured and set in the data model.</p>
 
             </article>
           </div>
