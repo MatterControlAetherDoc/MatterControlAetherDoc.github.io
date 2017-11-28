@@ -624,12 +624,12 @@
               
               
               <a id="MatterHackers_MatterSlice_GCodeExport_SetRetractionSettings_" data-uid="MatterHackers.MatterSlice.GCodeExport.SetRetractionSettings*"></a>
-              <h4 id="MatterHackers_MatterSlice_GCodeExport_SetRetractionSettings_System_Double_System_Int32_System_Double_System_Double_System_Double_System_Boolean_System_Double_System_Double_" data-uid="MatterHackers.MatterSlice.GCodeExport.SetRetractionSettings(System.Double,System.Int32,System.Double,System.Double,System.Double,System.Boolean,System.Double,System.Double)">SetRetractionSettings(Double, Int32, Double, Double, Double, Boolean, Double, Double)</h4>
+              <h4 id="MatterHackers_MatterSlice_GCodeExport_SetRetractionSettings_System_Double_System_Int32_System_Double_System_Double_System_Double_System_Boolean_System_Double_System_Double_System_Double_" data-uid="MatterHackers.MatterSlice.GCodeExport.SetRetractionSettings(System.Double,System.Int32,System.Double,System.Double,System.Double,System.Boolean,System.Double,System.Double,System.Double)">SetRetractionSettings(Double, Int32, Double, Double, Double, Boolean, Double, Double, Double)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SetRetractionSettings(double retractionAmount, int retractionSpeed, double extruderSwitchRetraction, double minimumExtrusionBeforeRetraction_mm, double retractionZHop_mm, bool wipeAfterRetraction, double unretractExtrusionExtra_mm, double unretractExtraOnExtruderSwitch_mm)</code></pre>
+                <pre><code class="lang-csharp hljs">public void SetRetractionSettings(double retractionAmount, int retractionSpeed, double extruderSwitchRetraction, double minimumExtrusionBeforeRetraction_mm, double retractionZHop_mm, bool wipeAfterRetraction, double unretractExtrusionExtra_mm, double unretractExtrusionExtraSeconds, double unretractExtraOnExtruderSwitch)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -678,7 +678,12 @@
                   </tr>
                   <tr>
                     <td><span class="xref">System.Double</span></td>
-                    <td><span class="parametername">unretractExtraOnExtruderSwitch_mm</span></td>
+                    <td><span class="parametername">unretractExtrusionExtraSeconds</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">unretractExtraOnExtruderSwitch</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -964,13 +969,35 @@
               
               
               <a id="MatterHackers_MatterSlice_GCodeExport_WriteRetraction_" data-uid="MatterHackers.MatterSlice.GCodeExport.WriteRetraction*"></a>
-              <h4 id="MatterHackers_MatterSlice_GCodeExport_WriteRetraction" data-uid="MatterHackers.MatterSlice.GCodeExport.WriteRetraction">WriteRetraction()</h4>
+              <h4 id="MatterHackers_MatterSlice_GCodeExport_WriteRetraction_System_Double_System_Boolean_" data-uid="MatterHackers.MatterSlice.GCodeExport.WriteRetraction(System.Double,System.Boolean)">WriteRetraction(Double, Boolean)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void WriteRetraction()</code></pre>
+                <pre><code class="lang-csharp hljs">public void WriteRetraction(double timeForNextMove, bool forceRetraction)</code></pre>
               </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Double</span></td>
+                    <td><span class="parametername">timeForNextMove</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">forceRetraction</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
                         </article>
           </div>
           

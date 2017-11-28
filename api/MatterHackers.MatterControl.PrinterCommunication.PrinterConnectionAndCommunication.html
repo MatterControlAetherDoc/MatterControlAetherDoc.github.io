@@ -452,12 +452,60 @@ It should be refactored into better modules at some point.</p>
               </table>
               
               
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FilamentRunout" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FilamentRunout">FilamentRunout</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler FilamentRunout</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
               <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_FirmwareVersionRead" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.FirmwareVersionRead">FirmwareVersionRead</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public RootedObjectEventHandler FirmwareVersionRead</code></pre>
+              </div>
+              <h5 class="fieldValue">Field Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">RootedObjectEventHandler</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_PauseOnLayer" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.PauseOnLayer">PauseOnLayer</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public RootedObjectEventHandler PauseOnLayer</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1546,6 +1594,31 @@ It should be refactored into better modules at some point.</p>
                   </tr>
                 </tbody>
               </table>
+              
+              
+              <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_WatingForPositionRead_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.WatingForPositionRead*"></a>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_WatingForPositionRead" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.WatingForPositionRead">WatingForPositionRead</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool WatingForPositionRead { get; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
               <h3 id="methods">Methods
               </h3>
               
@@ -2449,13 +2522,30 @@ of occasional OnConnectionFailed calls, .Disable and .stopTryingToConnect</p>
               
               
               <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadPosition_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadPosition*"></a>
-              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadPosition" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadPosition">ReadPosition()</h4>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadPosition_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadPosition(System.Boolean)">ReadPosition(Boolean)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void ReadPosition()</code></pre>
+                <pre><code class="lang-csharp hljs">public void ReadPosition(bool forceToTopOfQueue = false)</code></pre>
               </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">forceToTopOfQueue</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
               
               
               <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_ReadSdProgress_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.ReadSdProgress*"></a>
@@ -2632,12 +2722,12 @@ of occasional OnConnectionFailed calls, .Disable and .stopTryingToConnect</p>
               
               
               <a id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLineToPrinterNow_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLineToPrinterNow*"></a>
-              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLineToPrinterNow_System_String_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLineToPrinterNow(System.String)">SendLineToPrinterNow(String)</h4>
+              <h4 id="MatterHackers_MatterControl_PrinterCommunication_PrinterConnectionAndCommunication_SendLineToPrinterNow_System_String_System_Boolean_" data-uid="MatterHackers.MatterControl.PrinterCommunication.PrinterConnectionAndCommunication.SendLineToPrinterNow(System.String,System.Boolean)">SendLineToPrinterNow(String, Boolean)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public void SendLineToPrinterNow(string lineToWrite)</code></pre>
+                <pre><code class="lang-csharp hljs">public void SendLineToPrinterNow(string lineToWrite, bool forceTopOfQueue = false)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -2652,6 +2742,11 @@ of occasional OnConnectionFailed calls, .Disable and .stopTryingToConnect</p>
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><span class="parametername">lineToWrite</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">forceTopOfQueue</span></td>
                     <td></td>
                   </tr>
                 </tbody>

@@ -95,7 +95,7 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public StyledMessageBox(Action&lt;bool&gt; callback, String message, string windowTitle, StyledMessageBox.MessageType messageType, GuiWidget[] extraWidgetsToAdd, double width, double height, string yesOk, string no)</code></pre>
+                <pre><code class="lang-csharp hljs">public StyledMessageBox(Action&lt;bool&gt; callback, String message, string windowTitle, StyledMessageBox.MessageType messageType, GuiWidget[] extraWidgetsToAdd, double width, double height, string yesOk, string noCancel)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -149,7 +149,7 @@
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">no</span></td>
+                    <td><span class="parametername">noCancel</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -191,7 +191,7 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static void ShowMessageBox(Action&lt;bool&gt; callback, String message, string caption, StyledMessageBox.MessageType messageType = StyledMessageBox.MessageType.OK, string yesOk = &quot;&quot;, string no = &quot;&quot;)</code></pre>
+                <pre><code class="lang-csharp hljs">public static void ShowMessageBox(Action&lt;bool&gt; callback, String message, string caption, StyledMessageBox.MessageType messageType = StyledMessageBox.MessageType.OK, string yesOk = &quot;&quot;, string noCancel = &quot;&quot;)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -230,7 +230,7 @@
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">no</span></td>
+                    <td><span class="parametername">noCancel</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -243,7 +243,7 @@
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static void ShowMessageBox(Action&lt;bool&gt; callback, string message, string caption, GuiWidget[] extraWidgetsToAdd, StyledMessageBox.MessageType messageType, string yesOk = &quot;&quot;, string no = &quot;&quot;)</code></pre>
+                <pre><code class="lang-csharp hljs">public static void ShowMessageBox(Action&lt;bool&gt; callback, string message, string caption, GuiWidget[] extraWidgetsToAdd, StyledMessageBox.MessageType messageType, string yesOk = &quot;&quot;, string noCancel = &quot;&quot;)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -287,7 +287,7 @@
                   </tr>
                   <tr>
                     <td><span class="xref">System.String</span></td>
-                    <td><span class="parametername">no</span></td>
+                    <td><span class="parametername">noCancel</span></td>
                     <td></td>
                   </tr>
                 </tbody>

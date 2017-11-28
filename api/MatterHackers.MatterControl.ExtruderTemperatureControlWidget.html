@@ -89,9 +89,6 @@
                   <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_actualTempIndicator">TemperatureControlBase.actualTempIndicator</a>
                 </div>
                 <div>
-                  <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_tempOffButton">TemperatureControlBase.tempOffButton</a>
-                </div>
-                <div>
                   <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_presetButtonsContainer">TemperatureControlBase.presetButtonsContainer</a>
                 </div>
                 <div>
@@ -110,7 +107,7 @@
                   <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_LocalBounds">TemperatureControlBase.LocalBounds</a>
                 </div>
                 <div>
-                  <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_tempSliderContainer">TemperatureControlBase.tempSliderContainer</a>
+                  <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_tempEditContainer">TemperatureControlBase.tempEditContainer</a>
                 </div>
                 <div>
                   <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_AddChildElements">TemperatureControlBase.AddChildElements()</a>
@@ -125,7 +122,10 @@
                   <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_onTemperatureRead_Object_EventArgs_">TemperatureControlBase.onTemperatureRead(Object, EventArgs)</a>
                 </div>
                 <div>
-                  <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_onTemperatureSet_Object_EventArgs_">TemperatureControlBase.onTemperatureSet(Object, EventArgs)</a>
+                  <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_ExtruderTemperatureSet_Object_EventArgs_">TemperatureControlBase.ExtruderTemperatureSet(Object, EventArgs)</a>
+                </div>
+                <div>
+                  <a class="xref" href="MatterHackers.MatterControl.TemperatureControlBase.html#MatterHackers_MatterControl_TemperatureControlBase_BedTemperatureSet_Object_EventArgs_">TemperatureControlBase.BedTemperatureSet(Object, EventArgs)</a>
                 </div>
               </div>
               <h6><strong>Namespace</strong>:MatterHackers.MatterControl</h6>
@@ -136,16 +136,6 @@
               </div>
               <h3 id="constructors">Constructors
               </h3>
-              
-              
-              <a id="MatterHackers_MatterControl_ExtruderTemperatureControlWidget__ctor_" data-uid="MatterHackers.MatterControl.ExtruderTemperatureControlWidget.#ctor*"></a>
-              <h4 id="MatterHackers_MatterControl_ExtruderTemperatureControlWidget__ctor" data-uid="MatterHackers.MatterControl.ExtruderTemperatureControlWidget.#ctor">ExtruderTemperatureControlWidget()</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public ExtruderTemperatureControlWidget()</code></pre>
-              </div>
               
               
               <a id="MatterHackers_MatterControl_ExtruderTemperatureControlWidget__ctor_" data-uid="MatterHackers.MatterControl.ExtruderTemperatureControlWidget.#ctor*"></a>
@@ -169,6 +159,38 @@
                   <tr>
                     <td><span class="xref">System.Int32</span></td>
                     <td><span class="parametername">extruderIndex0Based</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_ExtruderTemperatureControlWidget__ctor_" data-uid="MatterHackers.MatterControl.ExtruderTemperatureControlWidget.#ctor*"></a>
+              <h4 id="MatterHackers_MatterControl_ExtruderTemperatureControlWidget__ctor_System_Int32_System_Int32_" data-uid="MatterHackers.MatterControl.ExtruderTemperatureControlWidget.#ctor(System.Int32,System.Int32)">ExtruderTemperatureControlWidget(Int32, Int32)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public ExtruderTemperatureControlWidget(int extruderIndex0Based, int extruderNumber)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">extruderIndex0Based</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">extruderNumber</span></td>
                     <td></td>
                   </tr>
                 </tbody>

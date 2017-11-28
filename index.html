@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Aether additions to MatterSlice and MatterControl </title>
+    <title>Element Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Aether additions to MatterSlice and MatterControl ">
+    <meta name="title" content="Element Documentation ">
     <meta name="generator" content="docfx 2.15.5.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -59,11 +59,17 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="aether-additions-to-matterslice-and-mattercontrol">Aether additions to MatterSlice and MatterControl</h1>
+              <h1 id="element-documentation">Element Documentation</h1>
               
-<p>Both these pieces of software have been modified to adapt to the Aether
+<p>Both MatterControl and MatterSlice have been modified to adapt to the Aether
 bioprinter.</p>
-<h2 id="mattercontrol">MatterControl</h2>
+<p><strong>NOTE:</strong> Currently all main development is happening in the <code>1.7</code> branch of
+the <code>Element</code> git repository and its submodules (<code>MatterSlice</code> and
+<code>agg-sharp</code>). Make temporary/personal branches off the <code>1.7</code> branch. The
+<code>master</code> branch is to be kept around to see commit order if needed. Not that
+it matters, but the active development branch in upstream MatterControl is
+<code>design_tools</code>.</p>
+<h2 id="element-formerly-mattercontrol">Element (Formerly MatterControl)</h2>
 <p>MatterControl was extended to allow specification of multiple tool types and
 various individual tool settings for each type. This tool setting
 specification is done in the same application that the 3D model is sliced in.
@@ -75,6 +81,23 @@ line spacing throughout the slicing process, override general slicer speed
 settings, and insert tool appropriate code during tool change and
 extrusion/non-extrusion moves. Implementation details are located
 <a href="articles/MatterSlice.html">here</a>.</p>
+<h2 id="creation-plugins">Creation Plugins</h2>
+<p>Plugins can be easily added to Element to allow for arbitrary, easy
+expansion of element features.</p>
+<h3 id="uv-path-generator">UV Path Generator</h3>
+<p>This is a plugin that was created to aid in the use of a curing LED on
+Aether printers. The mesh viewing and interaction (e.g., click, drag,
+delete, etc.) is largely copied from MatterControl&#39;s <code>TextCreator</code> plugin.
+The main class of this plugin is <a href="api/MatterHackers.MatterControl.Plugins.PathGenerator.View3DPathGenerator.html">View3DPathGenerator</a>
+which is heavily based on the <a href="api/MatterHackers.MatterControl.Plugins.TextCreator.View3DTextCreator.html">View3DTextCreator</a>
+class. Both of these classes are subclasses of <a href="api/MatterHackers.MatterControl.PartPreviewWindow.PartPreview3DWidget.html">PartPreview3DWidget</a>.</p>
+<p>The <a href="api/MatterHackers.MatterControl.Plugins.PathGenerator.UVPathMeshMaker.html">UVPathMeshMaker</a>
+class is used to do the actual path mesh generation. The entire UV path is
+generated from a private
+<a href="api/MatterHackers.Agg.VertexSource.PathStorage.html">PathStorage</a> instance.
+Each segment in the UP path is added to the path storage as a clockwise
+listing of the four corner veracities of the segment. When this data is
+converted into a mesh, all the segment&#39;s intersections are merged to form one solid path. This, as a result, generates one contiguous, manifold mesh.</p>
 
             </article>
           </div>

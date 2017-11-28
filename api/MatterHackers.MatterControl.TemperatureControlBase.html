@@ -274,36 +274,12 @@
               </table>
               
               
-              <h4 id="MatterHackers_MatterControl_TemperatureControlBase_tempOffButton" data-uid="MatterHackers.MatterControl.TemperatureControlBase.tempOffButton">tempOffButton</h4>
+              <h4 id="MatterHackers_MatterControl_TemperatureControlBase_tempEditContainer" data-uid="MatterHackers.MatterControl.TemperatureControlBase.tempEditContainer">tempEditContainer</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected Button tempOffButton</code></pre>
-              </div>
-              <h5 class="fieldValue">Field Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">Button</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              
-              
-              <h4 id="MatterHackers_MatterControl_TemperatureControlBase_tempSliderContainer" data-uid="MatterHackers.MatterControl.TemperatureControlBase.tempSliderContainer">tempSliderContainer</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected FlowLayoutWidget tempSliderContainer</code></pre>
+                <pre><code class="lang-csharp hljs">protected FlowLayoutWidget tempEditContainer</code></pre>
               </div>
               <h5 class="fieldValue">Field Value</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -408,6 +384,70 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">protected void AddChildElements()</code></pre>
               </div>
+              
+              
+              <a id="MatterHackers_MatterControl_TemperatureControlBase_BedTemperatureSet_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.BedTemperatureSet*"></a>
+              <h4 id="MatterHackers_MatterControl_TemperatureControlBase_BedTemperatureSet_Object_EventArgs_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.BedTemperatureSet(Object,EventArgs)">BedTemperatureSet(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void BedTemperatureSet(Object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="MatterHackers_MatterControl_TemperatureControlBase_ExtruderTemperatureSet_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.ExtruderTemperatureSet*"></a>
+              <h4 id="MatterHackers_MatterControl_TemperatureControlBase_ExtruderTemperatureSet_Object_EventArgs_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.ExtruderTemperatureSet(Object,EventArgs)">ExtruderTemperatureSet(Object, EventArgs)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected void ExtruderTemperatureSet(Object sender, EventArgs e)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Object</span></td>
+                    <td><span class="parametername">sender</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">EventArgs</span></td>
+                    <td><span class="parametername">e</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
               
               
               <a id="MatterHackers_MatterControl_TemperatureControlBase_GetActualTemperature_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.GetActualTemperature*"></a>
@@ -567,38 +607,6 @@
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">protected void onTemperatureRead(Object sender, EventArgs e)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">Object</span></td>
-                    <td><span class="parametername">sender</span></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">EventArgs</span></td>
-                    <td><span class="parametername">e</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              
-              
-              <a id="MatterHackers_MatterControl_TemperatureControlBase_onTemperatureSet_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.onTemperatureSet*"></a>
-              <h4 id="MatterHackers_MatterControl_TemperatureControlBase_onTemperatureSet_Object_EventArgs_" data-uid="MatterHackers.MatterControl.TemperatureControlBase.onTemperatureSet(Object,EventArgs)">onTemperatureSet(Object, EventArgs)</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected void onTemperatureSet(Object sender, EventArgs e)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
